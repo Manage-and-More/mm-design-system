@@ -1,5 +1,5 @@
 {
-  "$description": "Machine-readable index of every file in assets/. Keep it complete: scripts/validate.py fails if a file is missing here or an entry points nowhere. kind: logo|symbol|label|lockup|icon|ui-glyph|illustration|infographic|photo|font|license. ui-glyph = small functional UI marks (arrows, chevron, check, plus/minus, close, menu, quote, social) from the live site's icon set, distinct from the brand pictogram icons. use_on: backgrounds the asset is approved for.",
+  "$description": "Machine-readable index of every file in assets/. Keep it complete: scripts/validate.py fails if a file is missing here or an entry points nowhere. kind: logo|symbol|label|lockup|icon|ui-glyph|illustration|infographic|photo|font|license. ui-glyph = small functional UI marks (arrows, chevron, check, plus/minus, close, menu, quote, social) from the live site's icon set, distinct from the brand pictogram icons. use_on: backgrounds the asset is approved for; [\"any\"] for self-contained artwork and photos, [] for files that are not placed on a background (fonts, licences). rights: usage note where rights or consent need checking.",
   "assets": [
     {
       "path": "assets/logo/svg/mm-logo-primary.svg",
@@ -328,11 +328,12 @@
     {
       "path": "assets/labels/svg/by-unternehmertum-label-outline-white.svg",
       "kind": "label",
-      "description": "BY UNTERNEHMERTUM logo label, white outline, transparent.",
+      "description": "BY UNTERNEHMERTUM logo label, white outline, transparent. On photos only when calm or shaded (website hero); on busy photos use the solid white label.",
       "source": "derived from pdf p.13 (colour swap)",
       "use_on": [
         "black",
-        "blue"
+        "blue",
+        "dark-photo"
       ],
       "tags": [
         "endorsement",
@@ -342,11 +343,12 @@
     {
       "path": "assets/labels/png/by-unternehmertum-label-outline-white.png",
       "kind": "label",
-      "description": "BY UNTERNEHMERTUM logo label, white outline, transparent.",
+      "description": "BY UNTERNEHMERTUM logo label, white outline, transparent. On photos only when calm or shaded (website hero); on busy photos use the solid white label.",
       "source": "derived from pdf p.13 (colour swap)",
       "use_on": [
         "black",
-        "blue"
+        "blue",
+        "dark-photo"
       ],
       "tags": [
         "endorsement",
@@ -1137,6 +1139,10 @@
       "tags": [
         "illustration",
         "style-reference"
+      ],
+      "use_on": [
+        "white",
+        "light-grey"
       ]
     },
     {
@@ -1147,6 +1153,10 @@
       "tags": [
         "illustration",
         "style-reference"
+      ],
+      "use_on": [
+        "white",
+        "light-grey"
       ]
     },
     {
@@ -1157,6 +1167,9 @@
       "tags": [
         "illustration",
         "style-reference"
+      ],
+      "use_on": [
+        "any"
       ]
     },
     {
@@ -1167,6 +1180,9 @@
       "tags": [
         "illustration",
         "style-reference"
+      ],
+      "use_on": [
+        "any"
       ]
     },
     {
@@ -1177,6 +1193,10 @@
       "tags": [
         "illustration",
         "style-reference"
+      ],
+      "use_on": [
+        "white",
+        "light-grey"
       ]
     },
     {
@@ -1187,6 +1207,10 @@
       "tags": [
         "illustration",
         "style-reference"
+      ],
+      "use_on": [
+        "white",
+        "light-grey"
       ]
     },
     {
@@ -1197,6 +1221,9 @@
       "tags": [
         "illustration",
         "style-reference"
+      ],
+      "use_on": [
+        "any"
       ]
     },
     {
@@ -1207,6 +1234,9 @@
       "tags": [
         "illustration",
         "style-reference"
+      ],
+      "use_on": [
+        "any"
       ]
     },
     {
@@ -1218,6 +1248,10 @@
         "infographic",
         "chart",
         "style-reference"
+      ],
+      "use_on": [
+        "white",
+        "light-grey"
       ]
     },
     {
@@ -1229,6 +1263,10 @@
         "infographic",
         "chart",
         "style-reference"
+      ],
+      "use_on": [
+        "white",
+        "light-grey"
       ]
     },
     {
@@ -1241,7 +1279,10 @@
         "cover",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/events/events-01.jpg",
@@ -1253,7 +1294,10 @@
         "events",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/events/events-02.jpg",
@@ -1265,7 +1309,10 @@
         "events",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/events/events-03.jpg",
@@ -1277,7 +1324,10 @@
         "events",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/events/events-04.jpg",
@@ -1289,7 +1339,10 @@
         "events",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/merchandise/merchandise-01.jpg",
@@ -1301,7 +1354,10 @@
         "merchandise",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/people/people-01.jpg",
@@ -1313,7 +1369,10 @@
         "people",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/people/people-02.jpg",
@@ -1325,7 +1384,10 @@
         "people",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/people/people-03.jpg",
@@ -1337,7 +1399,10 @@
         "people",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/people/people-04.jpg",
@@ -1349,7 +1414,10 @@
         "people",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/people/people-05.jpg",
@@ -1361,7 +1429,10 @@
         "people",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/principles/principles-01.jpg",
@@ -1373,7 +1444,10 @@
         "principles",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/principles/principles-02.jpg",
@@ -1385,7 +1459,10 @@
         "principles",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/principles/principles-03.jpg",
@@ -1397,7 +1474,10 @@
         "principles",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/principles/principles-04.jpg",
@@ -1409,7 +1489,10 @@
         "principles",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/principles/principles-05.jpg",
@@ -1421,7 +1504,10 @@
         "principles",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/principles/principles-06.jpg",
@@ -1433,7 +1519,10 @@
         "principles",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/startups/startups-01.jpg",
@@ -1445,7 +1534,10 @@
         "startups",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/startups/startups-02.jpg",
@@ -1457,7 +1549,10 @@
         "startups",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/startups/startups-03.jpg",
@@ -1469,7 +1564,10 @@
         "startups",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/startups/startups-04.jpg",
@@ -1481,7 +1579,10 @@
         "startups",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/startups/startups-05.jpg",
@@ -1493,7 +1594,10 @@
         "startups",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/tech/tech-01.jpg",
@@ -1505,7 +1609,10 @@
         "tech",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/tech/tech-02.jpg",
@@ -1517,7 +1624,10 @@
         "tech",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/tech/tech-03.jpg",
@@ -1529,7 +1639,10 @@
         "tech",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/tech/tech-04.jpg",
@@ -1541,7 +1654,10 @@
         "tech",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/tech/tech-05.jpg",
@@ -1553,7 +1669,10 @@
         "tech",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/toning/toning-01.jpg",
@@ -1565,7 +1684,10 @@
         "toning",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/toning/toning-02-blue-tint.jpg",
@@ -1577,7 +1699,10 @@
         "toning",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/toning/toning-02.jpg",
@@ -1589,7 +1714,10 @@
         "toning",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/toning/toning-03.jpg",
@@ -1601,7 +1729,10 @@
         "toning",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/toning/toning-04-blue-tint.jpg",
@@ -1613,7 +1744,10 @@
         "toning",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/photography/toning/toning-04.jpg",
@@ -1625,7 +1759,10 @@
         "toning",
         "style-reference"
       ],
-      "rights": "UnternehmerTUM example image; check rights before publishing"
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ]
     },
     {
       "path": "assets/fonts/work-sans/OFL.txt",
@@ -1635,7 +1772,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/desktop/WorkSans-Italic[wght].ttf",
@@ -1645,7 +1783,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/desktop/WorkSans[wght].ttf",
@@ -1655,7 +1794,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-400-italic.woff2",
@@ -1665,7 +1805,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-400-normal.woff2",
@@ -1675,7 +1816,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-500-italic.woff2",
@@ -1685,7 +1827,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-500-normal.woff2",
@@ -1695,7 +1838,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-700-italic.woff2",
@@ -1705,7 +1849,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-700-normal.woff2",
@@ -1715,7 +1860,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-800-italic.woff2",
@@ -1725,7 +1871,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-800-normal.woff2",
@@ -1735,7 +1882,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-ext-wght-italic.woff2",
@@ -1745,7 +1893,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-ext-wght-normal.woff2",
@@ -1755,7 +1904,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-wght-italic.woff2",
@@ -1765,7 +1915,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-wght-normal.woff2",
@@ -1775,7 +1926,8 @@
       "tags": [
         "font",
         "work-sans"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/fonts/work-sans/work-sans.css",
@@ -1786,7 +1938,8 @@
         "font",
         "work-sans",
         "css"
-      ]
+      ],
+      "use_on": []
     },
     {
       "path": "assets/labels/svg/descriptor-lockup-outline-white.svg",
@@ -1925,7 +2078,7 @@
     {
       "path": "assets/photography/website/cohort-group.webp",
       "kind": "photo",
-      "description": "Whole cohort in black M&M hoodies cheering outdoors, shot from above. 1920x960. People-page hero. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "description": "Whole cohort in black M&M hoodies cheering outdoors, shot from above. 1920x960. People-page hero.",
       "source": "manage-and-more-website public/images/people/hero.webp (Manage and More's own photo)",
       "use_on": [
         "any"
@@ -1937,12 +2090,13 @@
         "group",
         "hero",
         "community"
-      ]
+      ],
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
     },
     {
       "path": "assets/photography/website/bootcamp-workshop.webp",
       "kind": "photo",
-      "description": "Scholars at a table in a Business Design Bootcamp, whiteboard and sticky notes. 1920x960. Program-page hero. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "description": "Scholars at a table in a Business Design Bootcamp, whiteboard and sticky notes. 1920x960. Program-page hero.",
       "source": "manage-and-more-website public/images/program/curriculum-header.webp (Manage and More's own photo)",
       "use_on": [
         "any"
@@ -1953,12 +2107,13 @@
         "workshop",
         "program",
         "hero"
-      ]
+      ],
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
     },
     {
       "path": "assets/photography/website/graduation.webp",
       "kind": "photo",
-      "description": "Graduating generation celebrating on a stage. 1600x640. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "description": "Graduating generation celebrating on a stage. 1600x640.",
       "source": "manage-and-more-website public/images/program/graduation.webp (Manage and More's own photo)",
       "use_on": [
         "any"
@@ -1969,12 +2124,13 @@
         "event",
         "celebration",
         "group"
-      ]
+      ],
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
     },
     {
       "path": "assets/photography/website/event-talk.webp",
       "kind": "photo",
-      "description": "Audience in a modern hall facing a talk on a big screen. 800x800. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "description": "Audience in a modern hall facing a talk on a big screen. 800x800.",
       "source": "manage-and-more-website public/images/program/events.webp (Manage and More's own photo)",
       "use_on": [
         "any"
@@ -1985,12 +2141,13 @@
         "event",
         "talk",
         "audience"
-      ]
+      ],
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
     },
     {
       "path": "assets/photography/website/scholars-group.webp",
       "kind": "photo",
-      "description": "Close group of smiling scholars in M&M hoodies. 800x800. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "description": "Close group of smiling scholars in M&M hoodies. 800x800.",
       "source": "manage-and-more-website public/images/program/workshops.webp (Manage and More's own photo)",
       "use_on": [
         "any"
@@ -2001,12 +2158,13 @@
         "people",
         "group",
         "portrait"
-      ]
+      ],
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
     },
     {
       "path": "assets/photography/website/startup-tour-dinner.webp",
       "kind": "photo",
-      "description": "Startup Tour group dinner in Istanbul, warm evening light. 800x600. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "description": "Startup Tour group dinner in Istanbul, warm evening light. 800x600.",
       "source": "manage-and-more-website public/images/program/istanbul.webp (Manage and More's own photo)",
       "use_on": [
         "any"
@@ -2017,12 +2175,13 @@
         "startup-tour",
         "international",
         "event"
-      ]
+      ],
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
     },
     {
       "path": "assets/photography/website/coaching.webp",
       "kind": "photo",
-      "description": "One-to-one coaching conversation at a table, over-the-shoulder view. 800x800. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "description": "One-to-one coaching conversation at a table, over-the-shoulder view. 800x800.",
       "source": "manage-and-more-website public/images/program/coaching-1.webp (Manage and More's own photo)",
       "use_on": [
         "any"
@@ -2033,12 +2192,13 @@
         "coaching",
         "people",
         "interaction"
-      ]
+      ],
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
     },
     {
       "path": "assets/photography/website/alumni-group.webp",
       "kind": "photo",
-      "description": "Alumni group sitting on concrete steps. 1600x640. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "description": "Alumni group sitting on concrete steps. 1600x640.",
       "source": "manage-and-more-website public/images/alumni/community-edited.webp (Manage and More's own photo)",
       "use_on": [
         "any"
@@ -2049,7 +2209,8 @@
         "alumni",
         "group",
         "community"
-      ]
+      ],
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
     },
     {
       "path": "assets/ui/svg/arrow-up.svg",
@@ -2151,6 +2312,731 @@
       "tags": [
         "ui",
         "hamburger"
+      ]
+    },
+    {
+      "path": "assets/icons/web/artificial-intelligence.svg",
+      "kind": "icon",
+      "description": "Artificial intelligence pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "ai",
+        "technology"
+      ]
+    },
+    {
+      "path": "assets/icons/web/digital.svg",
+      "kind": "icon",
+      "description": "Digital pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "digital",
+        "screen"
+      ]
+    },
+    {
+      "path": "assets/icons/web/drone.svg",
+      "kind": "icon",
+      "description": "Drone pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "drone",
+        "technology"
+      ]
+    },
+    {
+      "path": "assets/icons/web/education-skills.svg",
+      "kind": "icon",
+      "description": "Education skills pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "education",
+        "learning"
+      ]
+    },
+    {
+      "path": "assets/icons/web/events.svg",
+      "kind": "icon",
+      "description": "Events pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "events"
+      ]
+    },
+    {
+      "path": "assets/icons/web/fast-track.svg",
+      "kind": "icon",
+      "description": "Fast track pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "speed",
+        "fast-track"
+      ]
+    },
+    {
+      "path": "assets/icons/web/flexible.svg",
+      "kind": "icon",
+      "description": "Flexible pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "flexible"
+      ]
+    },
+    {
+      "path": "assets/icons/web/goals.svg",
+      "kind": "icon",
+      "description": "Goals pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "goals",
+        "target"
+      ]
+    },
+    {
+      "path": "assets/icons/web/grant-equity-budget.svg",
+      "kind": "icon",
+      "description": "Grant equity budget pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "money",
+        "funding"
+      ]
+    },
+    {
+      "path": "assets/icons/web/healthcare.svg",
+      "kind": "icon",
+      "description": "Healthcare pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "health"
+      ]
+    },
+    {
+      "path": "assets/icons/web/heart.svg",
+      "kind": "icon",
+      "description": "Heart pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "community",
+        "heart"
+      ]
+    },
+    {
+      "path": "assets/icons/web/human-centered.svg",
+      "kind": "icon",
+      "description": "Human centered pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "people",
+        "design-thinking"
+      ]
+    },
+    {
+      "path": "assets/icons/web/international.svg",
+      "kind": "icon",
+      "description": "International pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "international",
+        "globe"
+      ]
+    },
+    {
+      "path": "assets/icons/web/location-campus.svg",
+      "kind": "icon",
+      "description": "Location campus pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "location",
+        "campus"
+      ]
+    },
+    {
+      "path": "assets/icons/web/location-hotspot.svg",
+      "kind": "icon",
+      "description": "Location hotspot pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "location"
+      ]
+    },
+    {
+      "path": "assets/icons/web/mentoring-coaching.svg",
+      "kind": "icon",
+      "description": "Mentoring coaching pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "coaching",
+        "mentoring"
+      ]
+    },
+    {
+      "path": "assets/icons/web/mobility.svg",
+      "kind": "icon",
+      "description": "Mobility pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "mobility",
+        "logistics",
+        "transport"
+      ]
+    },
+    {
+      "path": "assets/icons/web/network.svg",
+      "kind": "icon",
+      "description": "Network pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "network"
+      ]
+    },
+    {
+      "path": "assets/icons/web/pitch.svg",
+      "kind": "icon",
+      "description": "Pitch pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "pitch",
+        "presentation"
+      ]
+    },
+    {
+      "path": "assets/icons/web/rocket.svg",
+      "kind": "icon",
+      "description": "Rocket pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "rocket",
+        "startup"
+      ]
+    },
+    {
+      "path": "assets/icons/web/schedule-appointment.svg",
+      "kind": "icon",
+      "description": "Schedule appointment pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "calendar",
+        "schedule"
+      ]
+    },
+    {
+      "path": "assets/icons/web/smart-city.svg",
+      "kind": "icon",
+      "description": "Smart city pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "city"
+      ]
+    },
+    {
+      "path": "assets/icons/web/smart-industry.svg",
+      "kind": "icon",
+      "description": "Smart industry pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "industry",
+        "manufacturing",
+        "factory"
+      ]
+    },
+    {
+      "path": "assets/icons/web/talents-news.svg",
+      "kind": "icon",
+      "description": "Talents news pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "talents",
+        "news"
+      ]
+    },
+    {
+      "path": "assets/icons/web/team.svg",
+      "kind": "icon",
+      "description": "Team pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "team",
+        "people"
+      ]
+    },
+    {
+      "path": "assets/icons/web/technology.svg",
+      "kind": "icon",
+      "description": "Technology pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "technology"
+      ]
+    },
+    {
+      "path": "assets/icons/web/time.svg",
+      "kind": "icon",
+      "description": "Time pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "time",
+        "clock"
+      ]
+    },
+    {
+      "path": "assets/icons/web/unicorn.svg",
+      "kind": "icon",
+      "description": "Unicorn pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "unicorn",
+        "startup"
+      ]
+    },
+    {
+      "path": "assets/icons/web/workshop.svg",
+      "kind": "icon",
+      "description": "Workshop pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "workshop"
+      ]
+    },
+    {
+      "path": "assets/icons/web/info.svg",
+      "kind": "icon",
+      "description": "Info pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "info"
+      ]
+    },
+    {
+      "path": "assets/icons/web/mail.svg",
+      "kind": "icon",
+      "description": "Mail pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "mail",
+        "contact"
+      ]
+    },
+    {
+      "path": "assets/icons/web/phone.svg",
+      "kind": "icon",
+      "description": "Phone pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "phone",
+        "contact"
+      ]
+    },
+    {
+      "path": "assets/icons/web/search.svg",
+      "kind": "icon",
+      "description": "Search pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "search"
+      ]
+    },
+    {
+      "path": "assets/icons/web/download.svg",
+      "kind": "icon",
+      "description": "Download pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "download"
+      ]
+    },
+    {
+      "path": "assets/icons/web/play.svg",
+      "kind": "icon",
+      "description": "Play pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "play",
+        "video"
+      ]
+    },
+    {
+      "path": "assets/icons/web/zoom.svg",
+      "kind": "icon",
+      "description": "Zoom pictogram from the live web icon set: 40x40 grid, thin filled outline, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "blue",
+        "yellow",
+        "grey"
+      ],
+      "tags": [
+        "icon",
+        "web",
+        "zoom"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/chevron-left.svg",
+      "kind": "ui-glyph",
+      "description": "Chevron left, 2-unit filled path on a 40 grid, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "chevron"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/chevron-right.svg",
+      "kind": "ui-glyph",
+      "description": "Chevron right, 2-unit filled path on a 40 grid, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "chevron"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/chevron-up.svg",
+      "kind": "ui-glyph",
+      "description": "Chevron up, 2-unit filled path on a 40 grid, square ends, currentColor.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "chevron"
       ]
     }
   ]

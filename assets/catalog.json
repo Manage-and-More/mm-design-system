@@ -1,0 +1,2062 @@
+{
+  "$description": "Machine-readable index of every file in assets/. Keep it complete: scripts/validate.py fails if a file is missing here or an entry points nowhere. kind: logo|symbol|label|lockup|icon|ui-glyph|illustration|infographic|photo|font|license. ui-glyph = small functional UI marks (arrows, check, plus, quote, social), distinct from the brand pictogram icons. use_on: backgrounds the asset is approved for.",
+  "assets": [
+    {
+      "path": "assets/logo/svg/mm-logo-primary.svg",
+      "kind": "logo",
+      "description": "Primary logo: blue symbol, black wordmark. Vector.",
+      "source": "pdf p.11",
+      "use_on": [
+        "white",
+        "light-grey",
+        "yellow",
+        "light-photo"
+      ],
+      "tags": [
+        "logo",
+        "primary"
+      ]
+    },
+    {
+      "path": "assets/logo/png/mm-logo-primary.png",
+      "kind": "logo",
+      "description": "Primary logo: blue symbol, black wordmark. PNG 1200px wide, transparent.",
+      "source": "pdf p.11",
+      "use_on": [
+        "white",
+        "light-grey",
+        "yellow",
+        "light-photo"
+      ],
+      "tags": [
+        "logo",
+        "primary"
+      ]
+    },
+    {
+      "path": "assets/logo/svg/mm-logo-primary-on-dark.svg",
+      "kind": "logo",
+      "description": "Primary logo for dark backgrounds: blue symbol, white wordmark. Vector.",
+      "source": "pdf p.11",
+      "use_on": [
+        "black",
+        "dark-photo"
+      ],
+      "tags": [
+        "logo",
+        "primary"
+      ]
+    },
+    {
+      "path": "assets/logo/png/mm-logo-primary-on-dark.png",
+      "kind": "logo",
+      "description": "Primary logo for dark backgrounds: blue symbol, white wordmark. PNG 1200px wide, transparent.",
+      "source": "pdf p.11",
+      "use_on": [
+        "black",
+        "dark-photo"
+      ],
+      "tags": [
+        "logo",
+        "primary"
+      ]
+    },
+    {
+      "path": "assets/logo/svg/mm-logo-black.svg",
+      "kind": "logo",
+      "description": "One-colour black logo. Vector.",
+      "source": "pdf p.11",
+      "use_on": [
+        "white",
+        "light-grey",
+        "yellow"
+      ],
+      "tags": [
+        "logo",
+        "mono"
+      ]
+    },
+    {
+      "path": "assets/logo/png/mm-logo-black.png",
+      "kind": "logo",
+      "description": "One-colour black logo. PNG 1200px wide, transparent.",
+      "source": "pdf p.11",
+      "use_on": [
+        "white",
+        "light-grey",
+        "yellow"
+      ],
+      "tags": [
+        "logo",
+        "mono"
+      ]
+    },
+    {
+      "path": "assets/logo/svg/mm-logo-white.svg",
+      "kind": "logo",
+      "description": "One-colour white logo. Vector.",
+      "source": "pdf p.11",
+      "use_on": [
+        "blue",
+        "black",
+        "dark-photo"
+      ],
+      "tags": [
+        "logo",
+        "mono"
+      ]
+    },
+    {
+      "path": "assets/logo/png/mm-logo-white.png",
+      "kind": "logo",
+      "description": "One-colour white logo. PNG 1200px wide, transparent.",
+      "source": "pdf p.11",
+      "use_on": [
+        "blue",
+        "black",
+        "dark-photo"
+      ],
+      "tags": [
+        "logo",
+        "mono"
+      ]
+    },
+    {
+      "path": "assets/logo/svg/mm-symbol-blue.svg",
+      "kind": "symbol",
+      "description": "Symbol only (blue). For favicons, avatars and sizes below 32px.",
+      "source": "derived from pdf p.11",
+      "use_on": [
+        "white",
+        "black",
+        "light-grey"
+      ],
+      "tags": [
+        "symbol",
+        "favicon"
+      ]
+    },
+    {
+      "path": "assets/logo/png/mm-symbol-blue.png",
+      "kind": "symbol",
+      "description": "Symbol only (blue). For favicons, avatars and sizes below 32px.",
+      "source": "derived from pdf p.11",
+      "use_on": [
+        "white",
+        "black",
+        "light-grey"
+      ],
+      "tags": [
+        "symbol",
+        "favicon"
+      ]
+    },
+    {
+      "path": "assets/logo/svg/mm-symbol-black.svg",
+      "kind": "symbol",
+      "description": "Symbol only (black). For favicons, avatars and sizes below 32px.",
+      "source": "derived from pdf p.11",
+      "use_on": [
+        "white",
+        "light-grey",
+        "yellow"
+      ],
+      "tags": [
+        "symbol",
+        "favicon"
+      ]
+    },
+    {
+      "path": "assets/logo/png/mm-symbol-black.png",
+      "kind": "symbol",
+      "description": "Symbol only (black). For favicons, avatars and sizes below 32px.",
+      "source": "derived from pdf p.11",
+      "use_on": [
+        "white",
+        "light-grey",
+        "yellow"
+      ],
+      "tags": [
+        "symbol",
+        "favicon"
+      ]
+    },
+    {
+      "path": "assets/logo/svg/mm-symbol-white.svg",
+      "kind": "symbol",
+      "description": "Symbol only (white). For favicons, avatars and sizes below 32px.",
+      "source": "derived from pdf p.11",
+      "use_on": [
+        "blue",
+        "black"
+      ],
+      "tags": [
+        "symbol",
+        "favicon"
+      ]
+    },
+    {
+      "path": "assets/logo/png/mm-symbol-white.png",
+      "kind": "symbol",
+      "description": "Symbol only (white). For favicons, avatars and sizes below 32px.",
+      "source": "derived from pdf p.11",
+      "use_on": [
+        "blue",
+        "black"
+      ],
+      "tags": [
+        "symbol",
+        "favicon"
+      ]
+    },
+    {
+      "path": "assets/labels/svg/by-unternehmertum-label-black.svg",
+      "kind": "label",
+      "description": "BY UNTERNEHMERTUM logo label, solid black.",
+      "source": "pdf p.13",
+      "use_on": [
+        "white",
+        "light-grey",
+        "photo"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/png/by-unternehmertum-label-black.png",
+      "kind": "label",
+      "description": "BY UNTERNEHMERTUM logo label, solid black.",
+      "source": "pdf p.13",
+      "use_on": [
+        "white",
+        "light-grey",
+        "photo"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/svg/by-unternehmertum-label-blue.svg",
+      "kind": "label",
+      "description": "BY UNTERNEHMERTUM logo label, solid M&M blue.",
+      "source": "pdf p.13",
+      "use_on": [
+        "white",
+        "black"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/png/by-unternehmertum-label-blue.png",
+      "kind": "label",
+      "description": "BY UNTERNEHMERTUM logo label, solid M&M blue.",
+      "source": "pdf p.13",
+      "use_on": [
+        "white",
+        "black"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/svg/by-unternehmertum-label-outline-black.svg",
+      "kind": "label",
+      "description": "BY UNTERNEHMERTUM logo label, black outline, transparent.",
+      "source": "pdf p.13",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/png/by-unternehmertum-label-outline-black.png",
+      "kind": "label",
+      "description": "BY UNTERNEHMERTUM logo label, black outline, transparent.",
+      "source": "pdf p.13",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/svg/by-unternehmertum-label-white.svg",
+      "kind": "label",
+      "description": "BY UNTERNEHMERTUM logo label, solid white.",
+      "source": "derived from pdf p.13 (colour swap)",
+      "use_on": [
+        "black",
+        "blue",
+        "dark-photo"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/png/by-unternehmertum-label-white.png",
+      "kind": "label",
+      "description": "BY UNTERNEHMERTUM logo label, solid white.",
+      "source": "derived from pdf p.13 (colour swap)",
+      "use_on": [
+        "black",
+        "blue",
+        "dark-photo"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/svg/by-unternehmertum-label-outline-white.svg",
+      "kind": "label",
+      "description": "BY UNTERNEHMERTUM logo label, white outline, transparent.",
+      "source": "derived from pdf p.13 (colour swap)",
+      "use_on": [
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/png/by-unternehmertum-label-outline-white.png",
+      "kind": "label",
+      "description": "BY UNTERNEHMERTUM logo label, white outline, transparent.",
+      "source": "derived from pdf p.13 (colour swap)",
+      "use_on": [
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/svg/descriptor-lockup-outline-black.svg",
+      "kind": "lockup",
+      "description": "ENTREPRENEURIAL EDUCATION descriptor + logo label, both black outline.",
+      "source": "pdf p.15",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/png/descriptor-lockup-outline-black.png",
+      "kind": "lockup",
+      "description": "ENTREPRENEURIAL EDUCATION descriptor + logo label, both black outline.",
+      "source": "pdf p.15",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/svg/descriptor-lockup-outline-label-black.svg",
+      "kind": "lockup",
+      "description": "Descriptor black outline + solid black logo label.",
+      "source": "pdf p.15",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/png/descriptor-lockup-outline-label-black.png",
+      "kind": "lockup",
+      "description": "Descriptor black outline + solid black logo label.",
+      "source": "pdf p.15",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/svg/descriptor-lockup-solid-black.svg",
+      "kind": "lockup",
+      "description": "Descriptor solid black + logo label black outline.",
+      "source": "pdf p.15",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/png/descriptor-lockup-solid-black.png",
+      "kind": "lockup",
+      "description": "Descriptor solid black + logo label black outline.",
+      "source": "pdf p.15",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/svg/descriptor-lockup-label-blue.svg",
+      "kind": "lockup",
+      "description": "Descriptor black outline + solid blue logo label.",
+      "source": "pdf p.15",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/png/descriptor-lockup-label-blue.png",
+      "kind": "lockup",
+      "description": "Descriptor black outline + solid blue logo label.",
+      "source": "pdf p.15",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/svg/descriptor-lockup-solid-blue.svg",
+      "kind": "lockup",
+      "description": "Descriptor solid blue + logo label black outline.",
+      "source": "pdf p.15",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/labels/png/descriptor-lockup-solid-blue.png",
+      "kind": "lockup",
+      "description": "Descriptor solid blue + logo label black outline.",
+      "source": "pdf p.15",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/building.svg",
+      "kind": "icon",
+      "description": "Building line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/building-blue.png",
+      "kind": "icon",
+      "description": "Building line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/building-black.png",
+      "kind": "icon",
+      "description": "Building line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/calendar.svg",
+      "kind": "icon",
+      "description": "Calendar line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/calendar-blue.png",
+      "kind": "icon",
+      "description": "Calendar line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/calendar-black.png",
+      "kind": "icon",
+      "description": "Calendar line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/chat.svg",
+      "kind": "icon",
+      "description": "Chat line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/chat-blue.png",
+      "kind": "icon",
+      "description": "Chat line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/chat-black.png",
+      "kind": "icon",
+      "description": "Chat line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/connected-car.svg",
+      "kind": "icon",
+      "description": "Connected car line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/connected-car-blue.png",
+      "kind": "icon",
+      "description": "Connected car line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/connected-car-black.png",
+      "kind": "icon",
+      "description": "Connected car line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/education.svg",
+      "kind": "icon",
+      "description": "Education line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/education-blue.png",
+      "kind": "icon",
+      "description": "Education line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/education-black.png",
+      "kind": "icon",
+      "description": "Education line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/globe.svg",
+      "kind": "icon",
+      "description": "Globe line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/globe-blue.png",
+      "kind": "icon",
+      "description": "Globe line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/globe-black.png",
+      "kind": "icon",
+      "description": "Globe line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/health.svg",
+      "kind": "icon",
+      "description": "Health line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/health-blue.png",
+      "kind": "icon",
+      "description": "Health line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/health-black.png",
+      "kind": "icon",
+      "description": "Health line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/map.svg",
+      "kind": "icon",
+      "description": "Map line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/map-blue.png",
+      "kind": "icon",
+      "description": "Map line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/map-black.png",
+      "kind": "icon",
+      "description": "Map line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/money.svg",
+      "kind": "icon",
+      "description": "Money line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/money-blue.png",
+      "kind": "icon",
+      "description": "Money line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/money-black.png",
+      "kind": "icon",
+      "description": "Money line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/network.svg",
+      "kind": "icon",
+      "description": "Network line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/network-blue.png",
+      "kind": "icon",
+      "description": "Network line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/network-black.png",
+      "kind": "icon",
+      "description": "Network line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/robot-arm.svg",
+      "kind": "icon",
+      "description": "Robot arm line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/robot-arm-blue.png",
+      "kind": "icon",
+      "description": "Robot arm line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/robot-arm-black.png",
+      "kind": "icon",
+      "description": "Robot arm line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/rocket.svg",
+      "kind": "icon",
+      "description": "Rocket line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/rocket-blue.png",
+      "kind": "icon",
+      "description": "Rocket line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/rocket-black.png",
+      "kind": "icon",
+      "description": "Rocket line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/signpost.svg",
+      "kind": "icon",
+      "description": "Signpost line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/signpost-blue.png",
+      "kind": "icon",
+      "description": "Signpost line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/signpost-black.png",
+      "kind": "icon",
+      "description": "Signpost line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/team.svg",
+      "kind": "icon",
+      "description": "Team line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/team-blue.png",
+      "kind": "icon",
+      "description": "Team line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/team-black.png",
+      "kind": "icon",
+      "description": "Team line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/technology.svg",
+      "kind": "icon",
+      "description": "Technology line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/technology-blue.png",
+      "kind": "icon",
+      "description": "Technology line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/technology-black.png",
+      "kind": "icon",
+      "description": "Technology line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/svg/tools.svg",
+      "kind": "icon",
+      "description": "Tools line icon. Uses currentColor.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "black",
+        "blue"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/tools-blue.png",
+      "kind": "icon",
+      "description": "Tools line icon, blue, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/icons/png/tools-black.png",
+      "kind": "icon",
+      "description": "Tools line icon, black, 256px PNG.",
+      "source": "pdf p.22",
+      "use_on": [
+        "white",
+        "yellow",
+        "light-grey"
+      ],
+      "tags": [
+        "icon"
+      ]
+    },
+    {
+      "path": "assets/illustrations/svg/illustration-city-port.svg",
+      "kind": "illustration",
+      "description": "City and port scene, line art with a big blue circle. Page crop; contains off-canvas leftovers.",
+      "source": "pdf p.25",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ]
+    },
+    {
+      "path": "assets/illustrations/png/illustration-city-port.png",
+      "kind": "illustration",
+      "description": "City and port scene, line art with a big blue circle.",
+      "source": "pdf p.25",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ]
+    },
+    {
+      "path": "assets/illustrations/svg/illustration-idea-head-on-yellow.svg",
+      "kind": "illustration",
+      "description": "Head in profile with gears, bulb, rocket; line art on full yellow. Page crop; contains off-canvas leftovers.",
+      "source": "pdf p.26",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ]
+    },
+    {
+      "path": "assets/illustrations/png/illustration-idea-head-on-yellow.png",
+      "kind": "illustration",
+      "description": "Head in profile with gears, bulb, rocket; line art on full yellow.",
+      "source": "pdf p.26",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ]
+    },
+    {
+      "path": "assets/illustrations/svg/illustration-wind-tower.svg",
+      "kind": "illustration",
+      "description": "Wind turbine, Olympic tower and drone; line art with a big blue circle. Page crop; contains off-canvas leftovers.",
+      "source": "pdf p.26",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ]
+    },
+    {
+      "path": "assets/illustrations/png/illustration-wind-tower.png",
+      "kind": "illustration",
+      "description": "Wind turbine, Olympic tower and drone; line art with a big blue circle.",
+      "source": "pdf p.26",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ]
+    },
+    {
+      "path": "assets/illustrations/svg/illustration-ufo-on-black.svg",
+      "kind": "illustration",
+      "description": "White UFO with dashed orbit rings on black. Page crop; contains off-canvas leftovers.",
+      "source": "pdf p.23",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ]
+    },
+    {
+      "path": "assets/illustrations/png/illustration-ufo-on-black.png",
+      "kind": "illustration",
+      "description": "White UFO with dashed orbit rings on black.",
+      "source": "pdf p.23",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ]
+    },
+    {
+      "path": "assets/infographics/svg/infographics-examples.svg",
+      "kind": "infographic",
+      "description": "Infographic examples: stacked bar, bubble chart, timeline, area chart.",
+      "source": "pdf p.24",
+      "tags": [
+        "infographic",
+        "chart",
+        "style-reference"
+      ]
+    },
+    {
+      "path": "assets/infographics/png/infographics-examples.png",
+      "kind": "infographic",
+      "description": "Infographic examples: stacked bar, bubble chart, timeline, area chart.",
+      "source": "pdf p.24",
+      "tags": [
+        "infographic",
+        "chart",
+        "style-reference"
+      ]
+    },
+    {
+      "path": "assets/photography/cover/cover-01.jpg",
+      "kind": "photo",
+      "description": "Reference photo: cover.",
+      "source": "pdf p.1",
+      "tags": [
+        "photo",
+        "cover",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/events/events-01.jpg",
+      "kind": "photo",
+      "description": "Reference photo: events.",
+      "source": "pdf p.29",
+      "tags": [
+        "photo",
+        "events",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/events/events-02.jpg",
+      "kind": "photo",
+      "description": "Reference photo: events.",
+      "source": "pdf p.29",
+      "tags": [
+        "photo",
+        "events",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/events/events-03.jpg",
+      "kind": "photo",
+      "description": "Reference photo: events.",
+      "source": "pdf p.29",
+      "tags": [
+        "photo",
+        "events",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/events/events-04.jpg",
+      "kind": "photo",
+      "description": "Reference photo: events.",
+      "source": "pdf p.29",
+      "tags": [
+        "photo",
+        "events",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/merchandise/merchandise-01.jpg",
+      "kind": "photo",
+      "description": "Reference photo: merchandise.",
+      "source": "pdf p.40",
+      "tags": [
+        "photo",
+        "merchandise",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/people/people-01.jpg",
+      "kind": "photo",
+      "description": "Reference photo: people.",
+      "source": "pdf p.28",
+      "tags": [
+        "photo",
+        "people",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/people/people-02.jpg",
+      "kind": "photo",
+      "description": "Reference photo: people.",
+      "source": "pdf p.28",
+      "tags": [
+        "photo",
+        "people",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/people/people-03.jpg",
+      "kind": "photo",
+      "description": "Reference photo: people.",
+      "source": "pdf p.28",
+      "tags": [
+        "photo",
+        "people",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/people/people-04.jpg",
+      "kind": "photo",
+      "description": "Reference photo: people.",
+      "source": "pdf p.28",
+      "tags": [
+        "photo",
+        "people",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/people/people-05.jpg",
+      "kind": "photo",
+      "description": "Reference photo: people.",
+      "source": "pdf p.28",
+      "tags": [
+        "photo",
+        "people",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/principles/principles-01.jpg",
+      "kind": "photo",
+      "description": "Reference photo: principles.",
+      "source": "pdf p.27",
+      "tags": [
+        "photo",
+        "principles",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/principles/principles-02.jpg",
+      "kind": "photo",
+      "description": "Reference photo: principles.",
+      "source": "pdf p.27",
+      "tags": [
+        "photo",
+        "principles",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/principles/principles-03.jpg",
+      "kind": "photo",
+      "description": "Reference photo: principles.",
+      "source": "pdf p.27",
+      "tags": [
+        "photo",
+        "principles",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/principles/principles-04.jpg",
+      "kind": "photo",
+      "description": "Reference photo: principles.",
+      "source": "pdf p.27",
+      "tags": [
+        "photo",
+        "principles",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/principles/principles-05.jpg",
+      "kind": "photo",
+      "description": "Reference photo: principles.",
+      "source": "pdf p.27",
+      "tags": [
+        "photo",
+        "principles",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/principles/principles-06.jpg",
+      "kind": "photo",
+      "description": "Reference photo: principles.",
+      "source": "pdf p.27",
+      "tags": [
+        "photo",
+        "principles",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/startups/startups-01.jpg",
+      "kind": "photo",
+      "description": "Reference photo: startups.",
+      "source": "pdf p.30",
+      "tags": [
+        "photo",
+        "startups",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/startups/startups-02.jpg",
+      "kind": "photo",
+      "description": "Reference photo: startups.",
+      "source": "pdf p.30",
+      "tags": [
+        "photo",
+        "startups",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/startups/startups-03.jpg",
+      "kind": "photo",
+      "description": "Reference photo: startups.",
+      "source": "pdf p.30",
+      "tags": [
+        "photo",
+        "startups",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/startups/startups-04.jpg",
+      "kind": "photo",
+      "description": "Reference photo: startups.",
+      "source": "pdf p.30",
+      "tags": [
+        "photo",
+        "startups",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/startups/startups-05.jpg",
+      "kind": "photo",
+      "description": "Reference photo: startups.",
+      "source": "pdf p.30",
+      "tags": [
+        "photo",
+        "startups",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/tech/tech-01.jpg",
+      "kind": "photo",
+      "description": "Reference photo: tech.",
+      "source": "pdf p.31",
+      "tags": [
+        "photo",
+        "tech",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/tech/tech-02.jpg",
+      "kind": "photo",
+      "description": "Reference photo: tech.",
+      "source": "pdf p.31",
+      "tags": [
+        "photo",
+        "tech",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/tech/tech-03.jpg",
+      "kind": "photo",
+      "description": "Reference photo: tech.",
+      "source": "pdf p.31",
+      "tags": [
+        "photo",
+        "tech",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/tech/tech-04.jpg",
+      "kind": "photo",
+      "description": "Reference photo: tech.",
+      "source": "pdf p.31",
+      "tags": [
+        "photo",
+        "tech",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/tech/tech-05.jpg",
+      "kind": "photo",
+      "description": "Reference photo: tech.",
+      "source": "pdf p.31",
+      "tags": [
+        "photo",
+        "tech",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/toning/toning-01.jpg",
+      "kind": "photo",
+      "description": "Reference photo: toning.",
+      "source": "pdf p.32",
+      "tags": [
+        "photo",
+        "toning",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/toning/toning-02-blue-tint.jpg",
+      "kind": "photo",
+      "description": "Reference photo: toning. Blue tint made with scripts/tint_photo.py.",
+      "source": "derived (scripts/tint_photo.py)",
+      "tags": [
+        "photo",
+        "toning",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/toning/toning-02.jpg",
+      "kind": "photo",
+      "description": "Reference photo: toning.",
+      "source": "pdf p.32",
+      "tags": [
+        "photo",
+        "toning",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/toning/toning-03.jpg",
+      "kind": "photo",
+      "description": "Reference photo: toning.",
+      "source": "pdf p.32",
+      "tags": [
+        "photo",
+        "toning",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/toning/toning-04-blue-tint.jpg",
+      "kind": "photo",
+      "description": "Reference photo: toning. Blue tint made with scripts/tint_photo.py.",
+      "source": "derived (scripts/tint_photo.py)",
+      "tags": [
+        "photo",
+        "toning",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/photography/toning/toning-04.jpg",
+      "kind": "photo",
+      "description": "Reference photo: toning.",
+      "source": "pdf p.32",
+      "tags": [
+        "photo",
+        "toning",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing"
+    },
+    {
+      "path": "assets/fonts/work-sans/OFL.txt",
+      "kind": "license",
+      "description": "Work Sans licence (SIL OFL 1.1).",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/desktop/WorkSans-Italic[wght].ttf",
+      "kind": "font",
+      "description": "Work Sans WorkSans-Italic[wght].ttf",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/desktop/WorkSans[wght].ttf",
+      "kind": "font",
+      "description": "Work Sans WorkSans[wght].ttf",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/web/work-sans-latin-400-italic.woff2",
+      "kind": "font",
+      "description": "Work Sans work-sans-latin-400-italic.woff2",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/web/work-sans-latin-400-normal.woff2",
+      "kind": "font",
+      "description": "Work Sans work-sans-latin-400-normal.woff2",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/web/work-sans-latin-500-italic.woff2",
+      "kind": "font",
+      "description": "Work Sans work-sans-latin-500-italic.woff2",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/web/work-sans-latin-500-normal.woff2",
+      "kind": "font",
+      "description": "Work Sans work-sans-latin-500-normal.woff2",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/web/work-sans-latin-700-italic.woff2",
+      "kind": "font",
+      "description": "Work Sans work-sans-latin-700-italic.woff2",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/web/work-sans-latin-700-normal.woff2",
+      "kind": "font",
+      "description": "Work Sans work-sans-latin-700-normal.woff2",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/web/work-sans-latin-800-italic.woff2",
+      "kind": "font",
+      "description": "Work Sans work-sans-latin-800-italic.woff2",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/web/work-sans-latin-800-normal.woff2",
+      "kind": "font",
+      "description": "Work Sans work-sans-latin-800-normal.woff2",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/web/work-sans-latin-ext-wght-italic.woff2",
+      "kind": "font",
+      "description": "Work Sans work-sans-latin-ext-wght-italic.woff2",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/web/work-sans-latin-ext-wght-normal.woff2",
+      "kind": "font",
+      "description": "Work Sans work-sans-latin-ext-wght-normal.woff2",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/web/work-sans-latin-wght-italic.woff2",
+      "kind": "font",
+      "description": "Work Sans work-sans-latin-wght-italic.woff2",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/web/work-sans-latin-wght-normal.woff2",
+      "kind": "font",
+      "description": "Work Sans work-sans-latin-wght-normal.woff2",
+      "source": "pdf p.20 (typeface); files from Google Fonts / Fontsource",
+      "tags": [
+        "font",
+        "work-sans"
+      ]
+    },
+    {
+      "path": "assets/fonts/work-sans/work-sans.css",
+      "kind": "font",
+      "description": "@font-face rules for the bundled Work Sans WOFF2 files.",
+      "source": "derived",
+      "tags": [
+        "font",
+        "work-sans",
+        "css"
+      ]
+    },
+    {
+      "path": "assets/labels/svg/descriptor-lockup-outline-white.svg",
+      "kind": "lockup",
+      "description": "Descriptor + logo label, both white outline. For blue or black website footers.",
+      "source": "derived from pdf p.15 (colour swap), as shown on p.37",
+      "use_on": [
+        "blue",
+        "black"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum",
+        "footer"
+      ]
+    },
+    {
+      "path": "assets/labels/png/descriptor-lockup-outline-white.png",
+      "kind": "lockup",
+      "description": "Descriptor + logo label, both white outline. For blue or black website footers.",
+      "source": "derived from pdf p.15 (colour swap), as shown on p.37",
+      "use_on": [
+        "blue",
+        "black"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum",
+        "footer"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/arrow-right.svg",
+      "kind": "ui-glyph",
+      "description": "Arrow pointing right, stroke 2 round caps, currentColor. Inside the arrow-link circle and the 'next' carousel control.",
+      "source": "manage-and-more-website src/components/ArrowLink.tsx (adopted 2026-10-07)",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "arrow",
+        "cta",
+        "next"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/arrow-left.svg",
+      "kind": "ui-glyph",
+      "description": "Arrow pointing left, stroke 2 round caps, currentColor. 'Previous' carousel control.",
+      "source": "manage-and-more-website src/components/TourCarousel.tsx (adopted 2026-10-07)",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "arrow",
+        "previous",
+        "carousel"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/check.svg",
+      "kind": "ui-glyph",
+      "description": "Check mark, stroke 2 round caps, currentColor. Requirement and highlight lists.",
+      "source": "manage-and-more-website src/app/application/page.tsx (adopted 2026-10-07)",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "check",
+        "list"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/plus.svg",
+      "kind": "ui-glyph",
+      "description": "Plus, stroke 2 round caps, currentColor. FAQ disclosure toggle (rotates 45deg to a cross when open).",
+      "source": "manage-and-more-website src/app/application/page.tsx (drawn as a '+' character there) (adopted 2026-10-07)",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "plus",
+        "faq",
+        "disclosure"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/quote.svg",
+      "kind": "ui-glyph",
+      "description": "Solid double quotation mark, currentColor. Sits under testimonial quotes at ~75px wide.",
+      "source": "manage-and-more-website src/components/Testimonials.tsx (adopted 2026-10-07)",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "quote",
+        "testimonial"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/linkedin.svg",
+      "kind": "ui-glyph",
+      "description": "LinkedIn 'in' mark, solid, currentColor. Person and alumni cards. Third-party trademark: use only to link to LinkedIn.",
+      "source": "manage-and-more-website src/components/ScholarGrid.tsx (adopted 2026-10-07)",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "social",
+        "linkedin"
+      ]
+    },
+    {
+      "path": "assets/photography/website/cohort-group.webp",
+      "kind": "photo",
+      "description": "Whole cohort in black M&M hoodies cheering outdoors, shot from above. 1920x960. People-page hero. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "source": "manage-and-more-website public/images/people/hero.webp (Manage and More's own photo)",
+      "use_on": [
+        "any"
+      ],
+      "tags": [
+        "photo",
+        "website",
+        "people",
+        "group",
+        "hero",
+        "community"
+      ]
+    },
+    {
+      "path": "assets/photography/website/bootcamp-workshop.webp",
+      "kind": "photo",
+      "description": "Scholars at a table in a Business Design Bootcamp, whiteboard and sticky notes. 1920x960. Program-page hero. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "source": "manage-and-more-website public/images/program/curriculum-header.webp (Manage and More's own photo)",
+      "use_on": [
+        "any"
+      ],
+      "tags": [
+        "photo",
+        "website",
+        "workshop",
+        "program",
+        "hero"
+      ]
+    },
+    {
+      "path": "assets/photography/website/graduation.webp",
+      "kind": "photo",
+      "description": "Graduating generation celebrating on a stage. 1600x640. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "source": "manage-and-more-website public/images/program/graduation.webp (Manage and More's own photo)",
+      "use_on": [
+        "any"
+      ],
+      "tags": [
+        "photo",
+        "website",
+        "event",
+        "celebration",
+        "group"
+      ]
+    },
+    {
+      "path": "assets/photography/website/event-talk.webp",
+      "kind": "photo",
+      "description": "Audience in a modern hall facing a talk on a big screen. 800x800. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "source": "manage-and-more-website public/images/program/events.webp (Manage and More's own photo)",
+      "use_on": [
+        "any"
+      ],
+      "tags": [
+        "photo",
+        "website",
+        "event",
+        "talk",
+        "audience"
+      ]
+    },
+    {
+      "path": "assets/photography/website/scholars-group.webp",
+      "kind": "photo",
+      "description": "Close group of smiling scholars in M&M hoodies. 800x800. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "source": "manage-and-more-website public/images/program/workshops.webp (Manage and More's own photo)",
+      "use_on": [
+        "any"
+      ],
+      "tags": [
+        "photo",
+        "website",
+        "people",
+        "group",
+        "portrait"
+      ]
+    },
+    {
+      "path": "assets/photography/website/startup-tour-dinner.webp",
+      "kind": "photo",
+      "description": "Startup Tour group dinner in Istanbul, warm evening light. 800x600. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "source": "manage-and-more-website public/images/program/istanbul.webp (Manage and More's own photo)",
+      "use_on": [
+        "any"
+      ],
+      "tags": [
+        "photo",
+        "website",
+        "startup-tour",
+        "international",
+        "event"
+      ]
+    },
+    {
+      "path": "assets/photography/website/coaching.webp",
+      "kind": "photo",
+      "description": "One-to-one coaching conversation at a table, over-the-shoulder view. 800x800. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "source": "manage-and-more-website public/images/program/coaching-1.webp (Manage and More's own photo)",
+      "use_on": [
+        "any"
+      ],
+      "tags": [
+        "photo",
+        "website",
+        "coaching",
+        "people",
+        "interaction"
+      ]
+    },
+    {
+      "path": "assets/photography/website/alumni-group.webp",
+      "kind": "photo",
+      "description": "Alumni group sitting on concrete steps. 1600x640. Used on manageandmore.de; confirm consent of the people shown before reuse in other media.",
+      "source": "manage-and-more-website public/images/alumni/community-edited.webp (Manage and More's own photo)",
+      "use_on": [
+        "any"
+      ],
+      "tags": [
+        "photo",
+        "website",
+        "alumni",
+        "group",
+        "community"
+      ]
+    }
+  ]
+}

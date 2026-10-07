@@ -1,0 +1,25 @@
+# Manage and More Design System
+
+> Brand guidelines, design tokens and assets for Manage and More (endorsed brand of UnternehmerTUM). Sources: 2020 brand guideline PDF in source/ (print, identity) and the manageandmore.de codebase (screens, adopted 2026-10-07).
+
+## Start
+- [AGENTS.md](AGENTS.md): how agents use and extend this repo
+- [Skill](skills/manage-and-more-brand/SKILL.md): brand essentials and review checklist
+- [Asset catalogue](assets/catalog.json): every logo, label, icon, illustration, photo, font
+- [Tokens](tokens/build/tokens.flat.json): colours, type, spacing, radii, layout, motion
+- [Tailwind v4 theme](tokens/build/tailwind.theme.css)
+
+## Guidelines
+- [Logo](guidelines/02-logo.md)
+- [Endorsement labels](guidelines/03-endorsement-labels.md)
+- [Colour](guidelines/04-color.md)
+- [Typography](guidelines/05-typography.md)
+- [Iconography](guidelines/06-iconography.md)
+- [Illustration](guidelines/07-illustration.md)
+- [Infographics](guidelines/08-infographics.md)
+- [Photography](guidelines/09-photography.md)
+- [Layout](guidelines/10-layout.md)
+- [Applications](guidelines/11-applications.md)
+- [Voice and tone](guidelines/12-voice-and-tone.md)
+- [Web components](guidelines/13-web-components.md)
+- [Sources and discrepancies](guidelines/sources-and-discrepancies.md)

@@ -2,6 +2,17 @@
 
 ## Unreleased
 
+### Motion and live-site alignment
+
+The live manageandmore.de is now the reference for look and motion (the rebuild repo stays the reference for tokens and layout).
+
+- New `guidelines/14-motion.md`: hover (sticker scale, nav underline wipe, image zoom), scroll and loading (header shrink at 60px, image fade-in with pulse), opening and closing (FAQ height and sticker turn, dropdown clip, side panels, video poster), and a strict reduced-motion rule. Partner marquee not adopted.
+- Arrow link is now the live "sticker": a filled circle in the text colour with the glyph in the surface colour, scaling to 1.1 on hover. FAQ uses a plus/minus sticker.
+- UI glyphs replaced with the live `utum-icon` set (filled 2-unit paths, square ends); added arrow-up, arrow-down, chevron-down, minus, close, hamburger.
+- Tokens: `motion.*` rebuilt (7 durations, 4 easings, `scale-hover`, `scroll-threshold`); `size.sticker`, `size.sticker-glyph`; `layout.header.padding-desktop`; `opacity.placeholder-*`. Removed `motion.easing` and `opacity.header-scrolled` (the header becomes solid).
+- Updated web components, layout, iconography, discrepancies (A16-A18, F17-F21, decisions), skill, AGENTS.md, README, llms.txt, `examples/` and `index.html`.
+
+
 Aligned the design system with the live website (`manage-and-more-website`, commit 742e91f), which is now the standard for screens. Decisions by the brand owner are logged in `guidelines/sources-and-discrepancies.md`.
 
 **Breaking token changes**

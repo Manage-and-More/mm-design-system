@@ -22,4 +22,5 @@
 - [Applications](guidelines/11-applications.md)
 - [Voice and tone](guidelines/12-voice-and-tone.md)
 - [Web components](guidelines/13-web-components.md)
+- [Motion](guidelines/14-motion.md)
 - [Sources and discrepancies](guidelines/sources-and-discrepancies.md)

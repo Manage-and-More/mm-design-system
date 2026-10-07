@@ -18,7 +18,7 @@ The single source for the **Manage and More** brand (an endorsed brand of Untern
 - **Logo:** blue swirl symbol + "MANAGE / AND MORE" wordmark. Four versions: blue+black, blue+white, all black, all white. Never all-blue. → [assets/logo](assets/logo/svg/)
 - **Colours:** Blue `#00A2CD` · Yellow `#FFED00` · Black `#000000` · White `#FFFFFF` · Grey `#E3E3E3` · greys `#575756` `#878787` `#B2B2B2`. Text on blue is black; blue text on white uses `#007D9E`.
 - **Type:** Sharp Sans Medium 500 / Extrabold 800 (licensed; files in the website repo), Work Sans fallback (bundled). Big Extrabold headlines with the two-tone outline/solid heading, line-height 1.15 on screens (1.0 in print); body 15-20px Medium; left-aligned; no italic. Arial for e-mail and PowerPoint.
-- **Look on screens (manageandmore.de):** full-bleed photo/video hero with a black shade, alternating black and white sections, blue for emphasis, arrow-link CTAs, rounded photos and cards (0.75rem / 2rem), square colour blocks. → [web components](guidelines/13-web-components.md)
+- **Look on screens (manageandmore.de):** full-bleed photo/video hero with a black shade, alternating black and white sections, blue for emphasis, arrow-link CTAs with a filled "sticker" circle, rounded photos and cards (0.75rem / 2rem), square colour blocks. Motion is short and reactive: stickers scale, links underline, images zoom and fade in. → [web components](guidelines/13-web-components.md), [motion](guidelines/14-motion.md)
 - **Look in print:** flat, high-contrast colour blocks, monoline icons, line-art illustrations with a big blue circle or yellow ground, documentary photography.
 - **Endorsement:** BY UNTERNEHMERTUM label in the hero corner and print corners; ENTREPRENEURIAL EDUCATION descriptor + label in the website footer.
 
@@ -34,7 +34,7 @@ assets/catalog.json       machine-readable index of every asset
 assets/logo/              logo + symbol, SVG and PNG
 assets/labels/            BY UNTERNEHMERTUM label, descriptor lock-ups
 assets/icons/             16 monoline icons (SVG currentColor + PNG)
-assets/ui/                UI glyphs from the website (arrows, check, plus, quote, LinkedIn)
+assets/ui/                UI glyphs from the live website (arrows, chevron, check, plus/minus, close, menu, quote, LinkedIn)
 assets/illustrations/     line-art illustrations (SVG + PNG)
 assets/infographics/      chart style examples
 assets/photography/       reference photos by topic + tint examples; website/ = M&M's own photos

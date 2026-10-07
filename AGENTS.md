@@ -23,13 +23,14 @@ Use the skill: `[skills/manage-and-more-brand/SKILL.md](skills/manage-and-more-b
 | Photos                                              | [guidelines/09-photography.md](guidelines/09-photography.md)                       |
 | Grid, widths, spacing, radii                        | [guidelines/10-layout.md](guidelines/10-layout.md)                                 |
 | Web UI: header, hero, sections, CTAs, cards, footer | [guidelines/13-web-components.md](guidelines/13-web-components.md)                 |
+| Hover, scroll, loading, open/close animation        | [guidelines/14-motion.md](guidelines/14-motion.md)                                 |
 | Slides, letters, e-mail signature, merch            | [guidelines/11-applications.md](guidelines/11-applications.md)                     |
 | Writing copy                                        | [guidelines/12-voice-and-tone.md](guidelines/12-voice-and-tone.md)                 |
 | Conflicts, website differences, open website fixes  | [guidelines/sources-and-discrepancies.md](guidelines/sources-and-discrepancies.md) |
 
 
 1. **Copy assets into the target project**; don't hot-link raw GitHub URLs.
-2. **Reference implementation:** `[examples/landing-page.html](examples/landing-page.html)` with `[examples/mm-base.css](examples/mm-base.css)`. The production reference is the website repo `manage-and-more-website` (`src/styles/theme.css`, `src/components/`).
+2. **Reference implementation:** `[examples/landing-page.html](examples/landing-page.html)` with `[examples/mm-base.css](examples/mm-base.css)`. The production references are the live https://www.manageandmore.de (look and motion) and the website repo `manage-and-more-website` (`src/styles/theme.css` for tokens and layout).
 3. When the guidelines don't cover something, look at the page images in `[source/pages/](source/pages/)` (`page-NN.jpg`, 41 pages; full text in `[source/MM_CI.txt](source/MM_CI.txt)`), choose the option closest to the PDF, and tell the user it was your assumption.
 
 
@@ -41,6 +42,7 @@ Use the skill: `[skills/manage-and-more-brand/SKILL.md](skills/manage-and-more-b
 - Rounded corners only with the radius tokens (`card`, `feature`, `pill`) on photos, cards, chips and controls. Sections, colour blocks, logo and labels stay square.
 - No white text on blue (2.98:1): text on blue is black. No brand-blue text on white: use `#007D9E`.
 - Web type: Sharp Sans 500/800 where the project has the licensed files, Work Sans fallback. **Never commit Sharp Sans files to this repo** (it may be shared outside the team).
+- Motion is short and reactive only (no parallax, scroll-triggered entrances or marquees); every animation stops under `prefers-reduced-motion`.
 - Treat photos in `assets/photography/` as references; flag rights and consent before publishing.
 
 
@@ -65,7 +67,7 @@ Use the skill: `[skills/manage-and-more-brand/SKILL.md](skills/manage-and-more-b
 Follow `[CONTRIBUTING.md](CONTRIBUTING.md)`. In short:
 
 - The PDF is canonical for print and identity assets; the website repo `manage-and-more-website` is the adopted standard for screens. New knowledge goes into the matching guideline page with its source; conflicts go into `guidelines/sources-and-discrepancies.md`.
-- When the website changes its theme (`src/styles/theme.css`) or a component, update the tokens and `guidelines/13-web-components.md` to match, or log the difference.
+- When the website changes its theme (`src/styles/theme.css`) or a component, update the tokens and `guidelines/13-web-components.md` to match, or log the difference. For look and motion, the live site wins over the rebuild repo (`guidelines/14-motion.md`).
 - Edit tokens only in `tokens/tokens.json`, then run `python3 scripts/build_tokens.py`. Never edit `tokens/build/*` by hand.
 - Every new file in `assets/` needs an entry in `assets/catalog.json`.
 - Run `python3 scripts/validate.py` before committing; CI runs it too.

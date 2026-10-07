@@ -56,9 +56,11 @@ Accessibility: white on blue and blue on white are 2.98:1. **Text on blue is bla
 
 **Layout (web):** fixed transparent header over a full-bleed **hero** (photo or video, flat black shade 20-60%, two-tone h1 bottom-left, BY UNTERNEHMERTUM label bottom-right 40/80px) → **alternating black and white sections** (1px divider at 20% `currentColor`; one or two blue sections with black text) → black footer with the descriptor + label lock-up. Content width 1500px with gutters 20/30/50px; section padding 25 → 50 → 75 → 100px. Corners: `--mm-radius-card` 0.75rem (photos, cards), `--mm-radius-feature` 2rem (large media), `--mm-radius-pill` (chips, circular controls); sections, colour blocks, logo and labels square.
 
-**CTA:** the **arrow link** is primary: a 44px outlined circle with an arrow (`assets/ui/svg/arrow-right.svg`) + Extrabold label, inheriting the text colour; the circle nudges 4px right on hover. Rectangular black button (uppercase Extrabold, square) only for forms and product UI. Inline links: current colour, Extrabold, underline offset 4px.
+**CTA:** the **arrow link** is primary: a filled **sticker** circle (2em of the label size, ~40px) in the text colour with the arrow (`assets/ui/svg/arrow-right.svg`, inlined) in the section's background colour, then an Extrabold label; the sticker scales to 1.1 on hover (250ms ease-out). Rectangular black button (uppercase Extrabold, square) only for forms and product UI. Inline links: current colour, Extrabold, underline offset 4px.
 
-**Icons** (`assets/icons/svg/*.svg`, `currentColor`): monoline, square ends, one colour (black/white/blue). 16 icons: globe, signpost, map, rocket, health, money, network, education, calendar, tools, connected-car, robot-arm, team, building, technology, chat. Missing ones: Tabler/Lucide at stroke 2, square caps. **UI glyphs** (`assets/ui/svg/`: arrows, check, plus, quote, LinkedIn) have round caps and are only for controls.
+**Motion** (`guidelines/14-motion.md`, tokens `--mm-motion-*`): short and reactive only. Sticker scale 1.1 (250ms); nav underline wipe (150ms); linked-card image zoom 1.1 (500ms); colour fades 200ms; header solid and slimmer after 60px (500ms); images fade in over a pulsing placeholder; FAQ plus→minus sticker turns 180° while the answer expands (350ms). No parallax, scroll-triggered entrances or marquees. Under `prefers-reduced-motion` everything stops and background video shows its poster.
+
+**Icons** (`assets/icons/svg/*.svg`, `currentColor`): monoline, square ends, one colour (black/white/blue). 16 icons: globe, signpost, map, rocket, health, money, network, education, calendar, tools, connected-car, robot-arm, team, building, technology, chat. Missing ones: Tabler/Lucide at stroke 2, square caps. **UI glyphs** (`assets/ui/svg/`: arrows, chevron, check, plus/minus, close, menu, quote, LinkedIn) are thin filled paths with square ends, only for controls; paste them inline so they can take `currentColor`.
 
 **Illustration:** black line art + one big flat blue circle or full yellow ground, dot/hatch textures, white knock-outs, playful innovation motifs. **Infographics:** thin black lines + big flat shapes in blue/yellow/black/grey, big Extrabold numbers; on the web, a stat row (top rule, 30-50px Extrabold number, small label).
 
@@ -70,7 +72,7 @@ Accessibility: white on blue and blue on white are 2.98:1. **Text on blue is bla
 
 ## 3. Workflow by task
 
-- **Web / app UI:** copy `tokens/build/tokens.css` (or `tailwind.theme.css` for Tailwind v4, `tailwind.preset.js` for v3), the Sharp Sans files (if the project may have them) and the Work Sans fallback; copy the needed logo/label/icon/glyph SVGs instead of hot-linking. Build from the components in `guidelines/13-web-components.md`; layout numbers in `guidelines/10-layout.md`. Start from `examples/landing-page.html` + `examples/mm-base.css`. For pixel-exact detail, read the website repo (`src/styles/theme.css`, `src/components/`).
+- **Web / app UI:** copy `tokens/build/tokens.css` (or `tailwind.theme.css` for Tailwind v4, `tailwind.preset.js` for v3), the Sharp Sans files (if the project may have them) and the Work Sans fallback; copy the needed logo/label/icon/glyph SVGs instead of hot-linking. Build from the components in `guidelines/13-web-components.md`, motion from `guidelines/14-motion.md`; layout numbers in `guidelines/10-layout.md`. Start from `examples/landing-page.html` + `examples/mm-base.css`. For pixel-exact detail: the live https://www.manageandmore.de for look and motion, the website repo (`src/styles/theme.css`) for tokens and layout.
 - **Slides / documents:** `guidelines/11-applications.md` (presentations, letterhead) + logo PNGs. Arial in PowerPoint/Slides, Sharp Sans or Work Sans elsewhere; headline leading 1.0.
 - **E-mail signature:** template in `guidelines/11-applications.md`.
 - **Social / print graphic:** big Extrabold headline (two-tone outline/solid works well), flat blue/yellow/black blocks, logo with clear space, label in a corner.
@@ -83,10 +85,11 @@ Accessibility: white on blue and blue on white are 2.98:1. **Text on blue is bla
 - [ ] Only palette colours (+ `#007D9E` for blue text/focus); blue is the signature; no gradients or shadows
 - [ ] Text contrast ≥ 4.5:1: **black text on blue**, no brand-blue small text on white, muted text ≥ 70% on white
 - [ ] Sharp Sans 500/800 with Work Sans fallback (Arial only for office/e-mail); headlines 800, line-height 1.15 on screens; body 500; left-aligned; no italic
-- [ ] Web: hero + alternating black/white sections, two-tone headings, arrow-link CTAs
+- [ ] Web: hero + alternating black/white sections, two-tone headings, sticker arrow-link CTAs
 - [ ] Radii only from tokens (card, feature, pill); sections, colour blocks, logo and labels square
 - [ ] Icons monoline single-colour; UI glyphs only in controls; photos documentary, preferably M&M's own
 - [ ] Endorsement present: label in the hero/print corner, descriptor lock-up in the website footer
-- [ ] Focus visible (2px `#007D9E`, black on blue), controls ≥ 44px, `prefers-reduced-motion` respected
+- [ ] Motion only from `14-motion.md` (durations and easings from tokens); nothing moves on its own
+- [ ] Focus visible (2px `#007D9E`, black on blue), icon-only controls ≥ 44px, `prefers-reduced-motion` stops all non-essential motion
 
 If something is not covered, follow the website repo for screens or the PDF page images in `source/pages/` for print, and say that you made an assumption. Rule conflicts, adopted website patterns and open website fixes are listed in `guidelines/sources-and-discrepancies.md`.

@@ -63,8 +63,13 @@
   --mm-font-letter-spacing-eyebrow: 0.16em;
   --mm-opacity-text-secondary: 0.9;
   --mm-opacity-text-muted: 0.7;
+  --mm-opacity-text-card: 0.8;
   --mm-opacity-text-subtle: 0.5;
   --mm-opacity-divider: 0.2;
+  --mm-opacity-accent-rule: 0.3;
+  --mm-opacity-rule: 0.15;
+  --mm-opacity-hairline: 0.1;
+  --mm-opacity-placeholder-text: 0.4;
   --mm-opacity-shade-light: 0.2;
   --mm-opacity-shade: 0.4;
   --mm-opacity-shade-strong: 0.6;
@@ -134,9 +139,9 @@
   --mm-layout-header-height-desktop: 100px;
   --mm-layout-header-gutter-small: 30px;
   --mm-layout-header-gutter-large: 50px;
-  --mm-layout-header-logo-width-mobile: 98px;
-  --mm-layout-header-logo-width-desktop: 128px;
   --mm-layout-header-padding-desktop: 1em;
+  --mm-layout-header-logo-height-mobile: 32px;
+  --mm-layout-header-logo-height-desktop: 40px;
   --mm-breakpoint-sm: 576px;
   --mm-breakpoint-md: 768px;
   --mm-breakpoint-lg: 992px;

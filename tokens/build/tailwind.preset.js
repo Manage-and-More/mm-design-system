@@ -131,8 +131,13 @@ module.exports = { theme: { extend: {
   "opacity": {
     "mm-text-secondary": "0.9",
     "mm-text-muted": "0.7",
+    "mm-text-card": "0.8",
     "mm-text-subtle": "0.5",
     "mm-divider": "0.2",
+    "mm-accent-rule": "0.3",
+    "mm-rule": "0.15",
+    "mm-hairline": "0.1",
+    "mm-placeholder-text": "0.4",
     "mm-shade-light": "0.2",
     "mm-shade": "0.4",
     "mm-shade-strong": "0.6",

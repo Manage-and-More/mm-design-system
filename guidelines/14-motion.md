@@ -45,24 +45,26 @@ Tailwind v4: `duration-mm-*` is not generated (Tailwind has no duration namespac
 
 ### Sticker (arrow link, FAQ toggle)
 
-The filled circle scales up when its link or row is hovered.
+The filled circle scales up when its link or row is hovered. Use the individual `scale` and `rotate` properties (not `transform`) so the hover scale (250ms) and the FAQ turn (300ms) keep their own timings and can combine.
 
 ```css
-.mm-sticker { transition: transform var(--mm-motion-duration-medium) var(--mm-motion-easing-out); }
-.mm-arrow-link:hover .mm-sticker,
-.mm-arrow-link:focus-visible .mm-sticker { transform: scale(var(--mm-motion-scale-hover)); }
+.mm-sticker { transition: scale var(--mm-motion-duration-medium) var(--mm-motion-easing-out),
+                          rotate var(--mm-motion-duration-base) var(--mm-motion-easing-out); }
+.mm-arrow-link:hover .mm-sticker, .mm-arrow-link:focus-visible .mm-sticker,
+.mm-faq summary:hover .mm-sticker { scale: var(--mm-motion-scale-hover); }
+.mm-faq details[open] summary .mm-sticker { rotate: 180deg; }
 ```
 
 The label does not move or change colour. The whole link is the hover target, including the label.
 
 ### Navigation underline wipe
 
-From 992px, header links get a 2px underline in `currentColor` that grows from the left on hover and shrinks to the right on leave.
+Wherever the horizontal navigation is shown (from 768px; the live site shows it from 992px), header links get a 2px underline in `currentColor` that grows from the left on hover and shrinks to the right on leave.
 
 ```css
 .mm-nav-link { position: relative; }
 .mm-nav-link::after { content: ""; position: absolute; left: 0; bottom: -1px; width: 100%; height: 2px; background: currentColor;
-  transform: scaleX(0); transform-origin: 100% 100%; transition: transform var(--mm-motion-duration-quick); }
+  transform: scaleX(0); transform-origin: 100% 100%; transition: transform var(--mm-motion-duration-quick) var(--mm-motion-easing-out); }
 .mm-nav-link:hover::after, .mm-nav-link:focus-visible::after { transform: scaleX(1); transform-origin: 0 0; }
 ```
 
@@ -88,18 +90,21 @@ Pills, chips, footer links, table rows and form controls change colour, backgrou
 
 ### Header on scroll
 
-- Before scrolling: transparent over the hero. From 992px the navigation has `--mm-layout-header-padding-desktop` (1em) extra padding top and bottom.
+- Before scrolling: transparent over the hero. From 992px the header is `--mm-layout-header-height-desktop` (100px) **plus** `--mm-layout-header-padding-desktop` (1em) above and below.
 - After `--mm-motion-scroll-threshold` (60px): the background becomes **solid** in the header's surface colour (black over dark heroes) and the extra padding goes to 0, so the header gets slimmer. Both animate over `--mm-motion-duration-slow` with `--mm-motion-easing-standard`.
 - Back at the top (scrollY 0) it returns to transparent.
 - Listen to scroll passively and update in `requestAnimationFrame`.
 
 ```css
 .mm-header { transition: background-color var(--mm-motion-duration-slow) var(--mm-motion-easing-standard); }
-@media (min-width: 992px) {
-  .mm-header__inner { padding-block: var(--mm-layout-header-padding-desktop); transition: padding var(--mm-motion-duration-slow) var(--mm-motion-easing-standard); }
-  .mm-header.is-scrolled .mm-header__inner { padding-block: 0; }
-}
 .mm-header.is-scrolled { background: var(--mm-color-brand-black); }
+@media (min-width: 992px) {
+  /* the inner bar is border-box with a min-height, so grow the min-height by the padding, then remove both */
+  .mm-header__inner { padding-block: var(--mm-layout-header-padding-desktop);
+    min-height: calc(var(--mm-layout-header-height-desktop) + 2 * var(--mm-layout-header-padding-desktop));
+    transition: padding var(--mm-motion-duration-slow) var(--mm-motion-easing-standard), min-height var(--mm-motion-duration-slow) var(--mm-motion-easing-standard); }
+  .mm-header.is-scrolled .mm-header__inner { padding-block: 0; min-height: var(--mm-layout-header-height-desktop); }
+}
 ```
 
 ### Image loading
@@ -122,7 +127,7 @@ Set `is-loaded` from the image's `load` event (or `img.complete`). Hero images l
 | Element | Motion | Duration / easing |
 |---|---|---|
 | **FAQ answer** | height from 0 to auto | `expand` (350ms), `standard` |
-| **FAQ sticker** | glyph swaps plus → minus and turns 180° | `base` (300ms) |
+| **FAQ sticker** | glyph swaps plus → minus and turns 180° (`rotate`, separate from the hover `scale`) | `base` (300ms) |
 | **Dropdown** (navigation sub-menus, selects) | reveals top-down: `clip-path: inset(0 0 100% 0)` → `inset(0)`; reverse on close | `fast` (200ms) |
 | **Side panel** (tile details: person, startup) | slides in from the right (`translateX(100%)` → 0); backdrop fades in with `backdrop-filter: blur(5px) brightness(79%)` | `medium` (250ms), `in-out` |
 | **Mobile menu** | full-screen black overlay, shown instantly; colours change over `fast` | no slide |

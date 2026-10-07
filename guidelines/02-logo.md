@@ -81,7 +81,8 @@ The `alt` text is always "Manage and More". Keep the original aspect ratio (set 
 
 ### On the website *(adopted)*
 
-- The header shows the **primary logo on dark** (blue symbol, white wordmark) over the dark hero, **98px wide** on mobile and **128px** from 768px (about 37px and 48px tall, above the 32px minimum). Tokens `--mm-layout-header-logo-width-*`.
+- The header shows the **primary logo on dark** (blue symbol, white wordmark) over the dark hero, set by **height: 32px on mobile, 40px from 768px** (tokens `--mm-layout-header-logo-height-*`). Set the height, not the width: the logo files are cropped tight (viewBox 485×112), so a width-based size is easy to get wrong.
+- Why these sizes *(design decision 2026-10-07)*: at 32/40px the wordmark's capitals are about 13/17px, in balance with the 15px navigation, and the clear space (half the logo height) fits the 70/100px header exactly. The website currently renders the logo about 19/24px tall (98/128px wide including padding in its own SVG), which makes the two-line wordmark hard to read; this is listed as a website fix.
 - The website inlines the SVG (`src/components/Logo.tsx`): the wordmark uses `currentColor` (white in the header) and the symbol the brand blue. This is fine as long as the artwork is the original and the wordmark is only ever black or white. Never let `currentColor` turn the wordmark blue.
 - Favicon: the blue symbol (`src/app/icon.png`, 192px).
 - The website's symbol blue is `#00A2CC`/`#04A2CC` instead of `#00A2CD`. The difference is invisible; new work uses `#00A2CD` and the files in `assets/logo/`.

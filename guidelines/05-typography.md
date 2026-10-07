@@ -41,7 +41,11 @@ body { font-family: var(--mm-font-family-web); } /* "Sharp Sans", "Work Sans", A
 In Next.js the website uses `next/font/local` with both files and `variable: "--font-sharp-sans"` (`src/lib/fonts.ts`).
 
 - Use only weights 500 and 800 with Sharp Sans. Other weights (400, 700) would be synthesised by the browser. `--mm-font-weight-regular` and `-bold` are for Work Sans only.
-- Never commit the Sharp Sans files to a public repository.
+- Never commit the Sharp Sans files to a public repository. In a new project, put them in their own folder (e.g. `fonts/sharp-sans/`) and add that folder to `.gitignore` unless the repository is private to the Manage and More team.
+
+### Which Work Sans files to copy
+
+For the web fallback copy [`work-sans.css`](../assets/fonts/work-sans/work-sans.css) and the two upright variable files it references: `web/work-sans-latin-wght-normal.woff2` and `web/work-sans-latin-ext-wght-normal.woff2`. The brand uses no italic, so the italic files are optional; the browser only requests them if italic text appears. The static `400/500/700/800` files and `desktop/` TTFs are for tools that cannot use variable fonts.
 
 ## Style rules (PDF p.18, as applied on the website)
 

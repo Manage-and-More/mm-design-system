@@ -44,6 +44,7 @@ When sources disagree: for **screens**, the adopted website patterns apply, corr
 | A16 | Arrow link | rebuild: outlined 44px circle, nudge right | live: filled sticker (2em) in text colour, glyph in background colour, scale 1.1 on hover | [13-web-components](13-web-components.md#arrow-link-primary-call-to-action) |
 | A17 | Motion | rebuild: 4 hover transitions | live: hover scale, nav underline wipe, image zoom 1.1, header shrink at 60px, image fade-in with pulse, FAQ height + sticker turn, dropdown clip, side panels; reduced motion stricter than live | [14-motion](14-motion.md) |
 | A18 | UI glyphs | rebuild: stroked, round caps | live `utum-icon` set: filled 2-unit paths, square ends | [06-iconography](06-iconography.md#ui-glyphs-adopted-from-the-live-website) |
+| A19 | Web pictograms | 16 PDF icons only | 36 pictograms from the live icon set in `assets/icons/web/` | [06-iconography](06-iconography.md#web-pictograms-adopted-from-the-live-website) |
 
 ### Website fixes
 
@@ -72,6 +73,7 @@ These website details break a brand or accessibility rule. The design system doc
 | F19 | `Header.tsx` | Turns black 95% + blur at 20px over 300ms, no shrink; nav links fade opacity | Solid black at 60px, padding shrink from 992px, 500ms; underline wipe on links |
 | F20 | `StartupGrid.tsx`, `PhotoGrid.tsx` | Image zoom 1.05 / none; images appear without fade-in | Zoom 1.1 on linked cards (500ms); fade-in with pulsing placeholder |
 | F21 | Partner logos | Rebuild shows a static grid; live site uses a marquee | Keep the static grid (marquee not adopted) |
+| F22 | Header logo (live and rebuild) | Rendered about 19 / 24px tall, below the 32px minimum; the two-line wordmark is hard to read | Set the logo by height: 32px, 40px from 768px |
 
 ### Still different, by design
 
@@ -114,3 +116,4 @@ The PDF is from April 2020. UnternehmerTUM has since published "UnternehmerTUM i
 | 2026-10-07 | Arrow link: the live "sticker" (filled circle, scale on hover) replaces the rebuild's outlined circle | brand owner |
 | 2026-10-07 | Motion: document hover micro-interactions, scroll and loading, opening and closing. Partner logo marquee not adopted | brand owner |
 | 2026-10-07 | Reduced motion: disable all non-essential motion (stricter than the live site) | brand owner |
+| 2026-10-07 | Logo minimum: keep 32px on screens everywhere; the header logo is set by height (32px, 40px from 768px) for wordmark legibility and exact clear space. The website's smaller header logo is a website fix | design decision, delegated by the brand owner |

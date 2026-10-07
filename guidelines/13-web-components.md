@@ -91,9 +91,9 @@ The signature heading: an **outlined** line (transparent fill, stroke in `curren
 Source: `src/components/Header.tsx`, `src/components/Logo.tsx`; scroll behaviour from the live site.
 
 - `position: fixed`, full width, transparent, white text, sitting over the hero. Height 70px, 100px from 768px. Horizontal padding 30px, 50px from 1200px (`--mm-layout-header-*`). From 992px the navigation has 1em extra padding top and bottom (`--mm-layout-header-padding-desktop`).
-- **Logo** left: primary logo on dark (blue symbol, white wordmark), 98px wide, 128px from 768px. Link label "Manage and More — home".
-- **Navigation** right, from 768px: links in 0.95rem Medium, white, 32px apart. Items: Home, Program, Application, People, Startups, Alumni. Hover and focus: a 2px underline **wipes in from the left** (150ms, [14-motion.md](14-motion.md#navigation-underline-wipe)). **Website today** (rebuild): links at 90% opacity brightening on hover.
-- **After 60px of scrolling** (`--mm-motion-scroll-threshold`) the header background becomes **solid black** and, from 992px, the extra padding goes to 0, so the header gets slimmer. Both over 500ms `ease`. It turns transparent again at the very top. **Website today** (rebuild): switches at 20px to black at 95% with a backdrop blur, over 300ms, without shrinking.
+- **Logo** left: primary logo on dark (blue symbol, white wordmark), set by **height: 32px, 40px from 768px** (`--mm-layout-header-logo-height-*`; about 138 / 173px wide). Link label "Manage and More — home". **Website today:** about 19 / 24px tall (98 / 128px wide including built-in padding), below the 32px minimum, so the two-line wordmark gets hard to read.
+- **Navigation** right, from 768px: links in 0.95rem Medium, white, 32px apart. Items: Home, Program, Application, People, Startups, Alumni. Hover and focus: a 2px underline **wipes in from the left** wherever the navigation is shown (150ms, [14-motion.md](14-motion.md#navigation-underline-wipe)). **Website today** (rebuild): links at 90% opacity brightening on hover.
+- **After 60px of scrolling** (`--mm-motion-scroll-threshold`) the header background becomes **solid black** and, from 992px, the extra padding goes to 0, so the header gets slimmer (100px + 2em, about 134-140px → 100px). Both over 500ms `ease`. It turns transparent again at the very top. **Website today** (rebuild): switches at 20px to black at 95% with a backdrop blur, over 300ms, without shrinking.
 - **Mobile** (below 768px): a menu toggle with the [hamburger](../assets/ui/svg/hamburger.svg) glyph (changes to [close](../assets/ui/svg/close.svg) when open). It opens a full-screen black overlay with the nav items at 1.875rem Extrabold, 24px apart, shown instantly. Escape closes it, page scrolling is locked, and the toggle has `aria-expanded` and `aria-controls`.
 - **Pages without a dark hero** must start with a dark section, or give the header a solid black background from the start. **Website today:** Imprint and Privacy Policy start on white, so the white navigation is invisible until you scroll.
 
@@ -106,8 +106,13 @@ Source: `src/components/Hero.tsx`, `src/components/VimeoBackground.tsx`.
 - **Shade:** a flat black layer over the media at `--mm-opacity-shade` (40%) by default, `-light` (20%) for calm dark images, `-strong` (60%) for bright or busy ones. No gradients. Check contrast against the brightest area behind the text: at least 3:1 for the display heading and 4.5:1 for any smaller text.
 - **Heading:** a two-tone h1 at display size (`--mm-font-size-display-*`: 30, 50, 40 at 992, 50 at 1200, 75px at 1536), max-width 1200px. The inline variant suits short single-line titles.
 - **Sizes:** *home*, min-height 550px (710px from 768px) with bottom padding 52px (78px); *compact* (inner pages), padding-top 120px (175px) and bottom 45px (75px), so the content clears the fixed header.
-- **Endorsement:** the BY UNTERNEHMERTUM label in the bottom-right corner, 20px from the edges (50px from 768px), 40px square (80px from 768px). Use the label file [`by-unternehmertum-label-outline-white.svg`](../assets/labels/svg/by-unternehmertum-label-outline-white.svg) (solid white on busy images). **Website today:** the label is re-typeset in CSS (`UnternehmerTumBadge.tsx`); replace it with the file. Leave it out of a hero that holds other content in that corner (Startups shows a stat row instead).
-- Optional content under the heading, such as a [stat row](#stat-row).
+- **Endorsement:** the BY UNTERNEHMERTUM label in the bottom-right corner, 20px from the edges (50px from 768px), 40px square (80px from 768px). Use the outline file [`by-unternehmertum-label-outline-white.svg`](../assets/labels/svg/by-unternehmertum-label-outline-white.svg) on calm or shaded photos (as on the website), and the solid [`by-unternehmertum-label-white.svg`](../assets/labels/svg/by-unternehmertum-label-white.svg) on busy ones (PDF p.13). **Website today:** the label is re-typeset in CSS (`UnternehmerTumBadge.tsx`); replace it with the file. Leave it out of a hero that holds other content in that corner (Startups shows a stat row instead).
+- **Keep text clear of the label:** give the hero content right padding of label size + inset (60px on mobile, 130px from 768px), so the heading never runs under the label.
+- **Optional content under the heading**, 24-32px below it, in this order:
+  - a **meta line** for events (date · place): `--mm-font-size-lead-*`, Medium, white, items separated by " · ";
+  - one **arrow link** as the hero CTA ("Apply now"), 32px below the meta line or heading;
+  - or a [stat row](#stat-row) instead (Startups).
+  Never more than one CTA in the hero.
 - Respect `prefers-reduced-motion`: show the poster photo instead of the background video. **Website today:** the video always plays.
 
 ## Arrow link (primary call to action)
@@ -159,7 +164,7 @@ Source: `src/components/PhotoGrid.tsx`.
 
 - Grid with 32px gaps: 1 column, 2 from 640px, 3 or 4 from 1024px.
 - Image 4:3 (`--mm-aspect-photo`), `object-fit: cover`, `--mm-radius-card` (0.75rem).
-- 16px below: title (`--mm-font-size-title`, 20px, Extrabold), optional subtitle (small, Extrabold, **blue**), body text at 80% opacity, 8px below.
+- 16px below: title (`--mm-font-size-title`, 20px, Extrabold), optional subtitle (small, Extrabold, **blue**), body text at `--mm-opacity-text-card` (80%), 8px below.
 - If the card is a link, the image zooms to 1.1 on hover (500ms). Images fade in after loading over a pulsing placeholder ([14-motion.md](14-motion.md#image-loading)).
 - **Blue subtitle:** brand blue on black (7.05:1). On white use `--mm-color-accent-text` `#007D9E` (4.74:1). **Website today:** brand blue on white (2.98:1) in the light "Events with Partner Companies" section.
 
@@ -170,7 +175,8 @@ Source: `src/app/people/page.tsx`.
 - Portrait 4:5 (`--mm-aspect-portrait`), `--mm-radius-card`, cropped at `object-position: center 38%` so faces sit high.
 - Name: 20px Extrabold, `line-height: 1.25`, 16px below the image. Role: small, Extrabold, uppercase, `letter-spacing: 0.08em` (`--mm-font-letter-spacing-meta`), 8px below.
 - **Role colour:** black at 70% or more. **Website today:** 45% (3.4:1, fails AA).
-- Two columns from 640px, 20px gap. On the People page the intro column is sticky beside the grid from 1024px.
+- **Grid:** next to a sticky intro column (People page): 2 columns from 640px, 20px gap; the intro column is sticky from 1024px. **Full-width** (jury, mentors, speakers): 2 columns, 3 from 640px, 4 from 1024px, gaps 24px across and 40px down (as the scholar grid).
+- **Placeholder** (person not confirmed yet): the portrait frame in grey `#E3E3E3` with "TBA" or initials centred (Extrabold, 2-3rem, black at `--mm-opacity-placeholder-text`), name "[Name]", role "[Role, organisation]". Never use stock photos or silhouettes.
 
 ## Scholar card
 
@@ -183,10 +189,29 @@ Source: `src/components/ScholarGrid.tsx`.
 
 Source: `src/components/AlumniGrid.tsx`.
 
-- The whole card is a link. 1px border at black 10%, `--mm-radius-card`, 12px padding, 16px gap. Hover: blue border with a 5% blue tint (200ms).
+- The whole card is a link. 1px border at black `--mm-opacity-hairline` (10%), `--mm-radius-card`, 12px padding, 16px gap. Hover: blue border with a 5% blue tint (200ms).
 - 72px square avatar with `--mm-radius-card`, then the name (Extrabold) and the headline (small, two-line clamp, 70%), and a LinkedIn glyph top-right (decorative, `aria-hidden`).
 - Grid: 1, 2 (640px), 3 (1024px), 4 (1280px) columns, 16px gap.
 - **Website today:** card radius 1rem, avatar 0.75rem, headline at 65%. Use `--mm-radius-card` for both and 70% for the text.
+
+## Feature card (icon card)
+
+For tracks, challenges, benefits or programme elements that have no photo. Built from the stat-row rule and the brand icons.
+
+- Grid: 1 column, 2 from 640px, 4 from 1024px (or 3 for three items), gaps 32px across, 40px down.
+- Each card: 1px top rule in `currentColor`, 16px padding-top; a **48px brand icon** in `currentColor` (from [`assets/icons/web/`](../assets/icons/web/) or [`assets/icons/svg/`](../assets/icons/svg/), inlined); 16px below it the title (`--mm-font-size-title`, Extrabold); 8px below the text at `--mm-opacity-text-card`; optionally a meta line at the bottom (small, Extrabold, e.g. "Case partner: [Partner name]").
+- No background, border box or radius: the top rule carries the structure, as in the stat row.
+- If the whole card is a link, end it with an arrow link; do not zoom anything.
+
+## Placeholders
+
+While content is unconfirmed, placeholders must look deliberate and be impossible to mistake for real content.
+
+- **Text:** square brackets, e.g. "[Date TBA]", "[Partner name]", "[XX] hours". Keep the surrounding copy final.
+- **Portrait:** see [Person card](#person-card-team).
+- **Logo:** a box the size of a real logo cell (48px tall, 56px from 768px, about 3:1), 1px border in `currentColor` at `--mm-opacity-divider`, `--mm-radius-card`, centred small text "Partner logo" at `--mm-opacity-text-muted`.
+- **Links:** in drafts use `href="#"` with an HTML comment `<!-- TODO: link -->`. Before publishing, every placeholder link is either real or its CTA is removed.
+- Never use stock photos, fake logos or real company names as placeholders.
 
 ## Logo grid (partners)
 
@@ -201,7 +226,7 @@ Source: `src/components/StartupGrid.tsx`.
 
 - **Category navigation:** a row of [chips](#chips) linking to anchors, each with its company count, 56px above the first group.
 - **Category block:** eyebrow ("12 companies", small, Extrabold, uppercase, `letter-spacing: 0.16em`, blue), h2 (30px, 48px from 768px), a description at 70%, then the grid. Blocks are 80px apart, `scroll-margin-top: 7rem` so anchors clear the header.
-- **Grid:** 1, 2 (640px), 4 (1024px) columns of white tiles divided by 1px hairlines (black 10%), in a container with `--mm-radius-feature`.
+- **Grid:** 1, 2 (640px), 4 (1024px) columns of white tiles divided by 1px hairlines (black `--mm-opacity-hairline`), in a container with `--mm-radius-feature`.
 - **Tile:** the whole tile is a link, 20px padding, min-height 208px. An 80px logo tile (`--mm-radius-card`; transparent logos sit on a light grey, `object-fit: contain`, 12px padding), the name (20px Extrabold, `line-height: 1.15`), and at the bottom a link row: a 30px black circle with a white arrow, plus the link label (15px Extrabold).
 - Hover: the logo zooms to 1.1 over 500ms ease-out inside its tile ([14-motion.md](14-motion.md#image-zoom-on-linked-cards)). **Website today:** 1.05.
 - **Eyebrow colour on white:** `--mm-color-accent-text`. **Website today:** brand blue (2.98:1). **Website today:** grid radius 1.5rem and logo tile 1rem; normalise to `feature` and `card`. **Website today:** the light-grey logo backdrop is `#F3F5F6`, which is off-palette; use grey `#E3E3E3` or white.
@@ -219,7 +244,7 @@ Source: `src/app/program/page.tsx` (Areas), `src/components/StartupGrid.tsx`.
 Source: `src/components/Testimonials.tsx`. Used on People and Startups.
 
 - Two equal columns from 768px, inside a container with `--mm-radius-feature` and `overflow: hidden`.
-- **Left:** a square portrait. Without a photo, show a grey tile with the initials (60px Extrabold, black at 40%, decorative).
+- **Left:** a square portrait. Without a photo, show a grey tile with the initials (60px Extrabold, black at `--mm-opacity-placeholder-text`, decorative).
 - **Right** (padding equal to the section spacing): previous/next controls (white circles 30, 37, 45px with a black 1.5px arrow, 40-55px hit area), attribution (15px: **Name**, generation, role on the next line), the quote (20px, `line-height: 1.5`, `aria-live="polite"`), and the [quote mark](../assets/ui/svg/quote.svg) 75px wide.
 - Controls loop around. Keep one quote visible at a time.
 
@@ -245,9 +270,9 @@ Source: live manageandmore.de (`.collapse-list`), rebuild `Disclosure` in `src/a
 
 - **Check list** (requirements): a 20px [check](../assets/ui/svg/check.svg) glyph, 4px down from the first line, 16px gap, then the text, with key phrases in Extrabold. Items 20px apart.
 - **Highlight list** (Program "What will you do"): a `<dl>` with a ✓ in an 18px column, a title in Extrabold and the body under it. On the Alumni page the ✓ sits inline in blue: use brand blue on black, `--mm-color-accent-text` on white.
-- **Timeline:** phase in a 220px column (24px Extrabold, blue; `--mm-color-accent-text` on white), items to its right with a 2px left border at black 15%, 20px left padding, name in Extrabold, body at 70%. Stacks on mobile. **Website today:** phase labels are brand blue on white (2.98:1; 24px Extrabold counts as large text, but large text still needs 3:1).
-- **Process steps:** date in Extrabold in a 10rem column, then the step in a tinted box (white at 10% on black, `--mm-radius-card`, padding 16px 20px). **Website today:** box radius 0.5rem.
-- **Accent list:** a 2px left border at 30% `currentColor` with 24px padding (Application "after acceptance").
+- **Timeline:** phase in a 220px column (24px Extrabold, blue; `--mm-color-accent-text` on white), items to its right with a 2px left border at black `--mm-opacity-rule` (15%), 20px left padding, name in Extrabold, body at 70%. Stacks on mobile. **Website today:** phase labels are brand blue on white (2.98:1; 24px Extrabold counts as large text, but large text still needs 3:1).
+- **Process steps:** date in Extrabold in a 10rem column, then the step in a tinted box (white at `--mm-opacity-hairline` on black, `--mm-radius-card`, padding 16px 20px). **Website today:** box radius 0.5rem.
+- **Accent list:** a 2px left border at `--mm-opacity-accent-rule` (30%) `currentColor` with 24px padding (Application "after acceptance").
 
 ## Split feature
 
@@ -274,7 +299,7 @@ Source: `src/components/StartupInterview.tsx`.
 
 Source: `src/app/application/ApplicationCountdown.tsx`.
 
-- The only centred block. Title 35px Extrabold (`line-height: 1.05`). Numbers in Medium 500, 50px (90px from 768px), `font-variant-numeric: tabular-nums`, labels small at 80%. Units 24-56px apart. The exact deadline with time zone is written below at 20px.
+- The only centred block. Title 35px Extrabold (`line-height: 1.05`). Numbers in Medium 500, 50px (90px from 768px), `font-variant-numeric: tabular-nums`, labels small at `--mm-opacity-text-card`. Units 24-56px apart. The exact deadline with time zone is written below at 20px.
 
 ## Footer
 

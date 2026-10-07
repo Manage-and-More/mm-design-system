@@ -38,13 +38,22 @@ The names are descriptive names given in this repo; the PDF does not name the ic
 
 ## When an icon is missing *(derived)*
 
-The corporate set is small. When you need another icon, use an open-source monoline set that matches the style (square caps, geometric, even stroke), and keep the stroke weight visually equal to the brand icons. **[Tabler Icons](https://tabler.io/icons)** or **Lucide** with `stroke-width` ≈ 2 at 24px, `stroke-linecap="square"`, `stroke-linejoin="miter"` come closest. Don't mix filled and outline styles. Add new brand-approved icons to `assets/icons/svg/` and to `assets/catalog.json`.
+The corporate set is small; first check the [web pictograms](#web-pictograms-adopted-from-the-live-website). When you still need another icon, use an open-source monoline set that matches the style (square caps, geometric, even stroke), and keep the stroke weight visually equal to the brand icons. **[Tabler Icons](https://tabler.io/icons)** or **Lucide** with `stroke-width` ≈ 2 at 24px, `stroke-linecap="square"`, `stroke-linejoin="miter"` come closest. Round joins and arcs in Lucide/Tabler should be squared off (`stroke-linejoin="miter"`, `stroke-linecap="square"`) to match. Don't mix filled and outline styles. Add new brand-approved icons to `assets/icons/svg/` and to `assets/catalog.json`.
 
 ```html
 <span style="color: var(--mm-color-brand-blue)">
   <!-- inline the SVG so currentColor applies -->
 </span>
 ```
+
+## Web pictograms *(adopted from the live website)*
+
+[`assets/icons/web/`](../assets/icons/web/) holds 36 pictograms from the live site's icon set (`utum-icon`), the current UnternehmerTUM corporate icons: artificial-intelligence, digital, drone, education-skills, events, fast-track, flexible, goals, grant-equity-budget, healthcare, heart, human-centered, international, location-campus, location-hotspot, mentoring-coaching, mobility, network, pitch, rocket, schedule-appointment, smart-city, smart-industry, talents-news, team, technology, time, unicorn, workshop, plus info, mail, phone, search, download, play, zoom.
+
+- Same construction as the UI glyphs: 40×40 grid, thin filled outlines, square ends, `currentColor`. Use at 40-48px.
+- Use them for web pages; the 16 PDF icons above remain the set for print. Do not mix the two sets on one page.
+- Useful mappings: manufacturing / industry → `smart-industry` (robot arm), mobility and logistics → `mobility` (car), AI → `artificial-intelligence`, coaching → `mentoring-coaching`, money / prizes → `grant-equity-budget`. There is **no energy icon**: draw one from Lucide/Tabler as described above and flag it.
+- The UnternehmerTUM "U" and the re-typeset BY UNTERNEHMERTUM mark from that set are not included: use the label files.
 
 ## UI glyphs *(adopted from the live website)*
 
@@ -53,7 +62,7 @@ Small functional marks for controls are a separate set from the brand pictograms
 | Glyph | File | Used in |
 |---|---|---|
 | Arrows | [right](../assets/ui/svg/arrow-right.svg), [left](../assets/ui/svg/arrow-left.svg), [up](../assets/ui/svg/arrow-up.svg), [down](../assets/ui/svg/arrow-down.svg) | arrow-link sticker, carousel controls, "Back to top" |
-| Chevron down | [chevron-down](../assets/ui/svg/chevron-down.svg) | dropdowns |
+| Chevrons | [down](../assets/ui/svg/chevron-down.svg), [up](../assets/ui/svg/chevron-up.svg), [left](../assets/ui/svg/chevron-left.svg), [right](../assets/ui/svg/chevron-right.svg) | dropdowns, compact carousels |
 | Check | [check](../assets/ui/svg/check.svg) | requirement and highlight lists |
 | Plus / minus | [plus](../assets/ui/svg/plus.svg), [minus](../assets/ui/svg/minus.svg) | FAQ sticker (closed / open) |
 | Close, menu | [close](../assets/ui/svg/close.svg), [hamburger](../assets/ui/svg/hamburger.svg) | mobile menu, overlays |
@@ -64,4 +73,4 @@ Small functional marks for controls are a separate set from the brand pictograms
 - In the **sticker** (filled circle) the glyph is 1.333em and takes the section's background colour; see [13-web-components.md](13-web-components.md#arrow-link-primary-call-to-action).
 - **Inline the SVG** (paste the markup) whenever the glyph must follow `currentColor` or the background colour; an `<img>` cannot change colour, and CSS masks fail on pages opened from disk.
 - Decorative glyphs get `aria-hidden`; the control carries the `aria-label`.
-- The live icon set has about 60 more pictograms (e.g. smart-industry, drone, mobility, workshop). They are not in this repo yet.
+- The live icon set's pictograms are in [`assets/icons/web/`](../assets/icons/web/), see below.

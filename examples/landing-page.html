@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Manage and More · Example landing page</title>
-<!-- Reference implementation of the manageandmore.de components (guidelines/13-web-components.md). Copy what you need.
+<!-- Reference implementation of the manageandmore.de components (guidelines/13-web-components.md) and motion (guidelines/14-motion.md). Copy what you need.
      Sharp Sans is not bundled: without its @font-face rules this page renders in the Work Sans fallback. -->
 <link rel="icon" href="../assets/logo/svg/mm-symbol-blue.svg">
 <link rel="stylesheet" href="../tokens/build/tokens.css">
@@ -42,7 +42,7 @@
       <h2>Connect. Grow. Belong.</h2>
       <p class="mm-prose">Join Munich's most entrepreneurial ecosystem. From day one you are part of a tight-knit circle of active members and an influential Alumni Network.</p>
       <a class="mm-arrow-link" href="#">
-        <span class="mm-arrow-link__circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="mm-sticker" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21.707 4.293 37.5 20 21.707 35.707l-1.414-1.414L33.584 21H6v-2h27.585L20.293 5.707z"/></svg></span>
         Meet the Community
       </a>
     </div>
@@ -58,7 +58,7 @@
         <div><dt hidden>Founded startups</dt><dd><span class="mm-stat__value">260+</span><span class="mm-stat__label">founded startups</span></dd></div>
       </dl>
       <a class="mm-arrow-link" href="#" style="margin-top:3rem">
-        <span class="mm-arrow-link__circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="mm-sticker" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21.707 4.293 37.5 20 21.707 35.707l-1.414-1.414L33.584 21H6v-2h27.585L20.293 5.707z"/></svg></span>
         Feel the impact
       </a>
     </div>
@@ -68,9 +68,9 @@
     <div class="mm-container">
       <h2><span class="mm-outline">Where our culture is built:</span><span>Events</span></h2>
       <ul class="mm-grid mm-grid--3">
-        <li class="mm-photo-card"><img class="mm-photo" src="../assets/photography/website/bootcamp-workshop.webp" alt="Scholars in the Business Design Bootcamp"><p class="mm-title">Business Design Bootcamp</p><p class="mm-photo-card__subtitle">Intro week</p><p>Get to know design thinking through hands-on activities.</p></li>
-        <li class="mm-photo-card"><img class="mm-photo" src="../assets/photography/website/startup-tour-dinner.webp" alt="Startup Tour dinner in Istanbul"><p class="mm-title">Startup Tours</p><p class="mm-photo-card__subtitle">Every semester</p><p>Visit startups, accelerators and VCs across Europe and beyond.</p></li>
-        <li class="mm-photo-card"><img class="mm-photo" src="../assets/photography/website/coaching.webp" alt="One-to-one coaching session"><p class="mm-title">Coaching</p><p class="mm-photo-card__subtitle">Optional element</p><p>Experienced coaches right by your side.</p></li>
+        <li class="mm-photo-card"><a href="#" style="text-decoration:none"><div class="mm-frame"><img src="../assets/photography/website/bootcamp-workshop.webp" alt="Scholars in the Business Design Bootcamp" loading="lazy" onload="this.parentNode.classList.add('is-loaded')"></div><p class="mm-title">Business Design Bootcamp</p><p class="mm-photo-card__subtitle">Intro week</p><p>Get to know design thinking through hands-on activities.</p></a></li>
+        <li class="mm-photo-card"><a href="#" style="text-decoration:none"><div class="mm-frame"><img src="../assets/photography/website/startup-tour-dinner.webp" alt="Startup Tour dinner in Istanbul" loading="lazy" onload="this.parentNode.classList.add('is-loaded')"></div><p class="mm-title">Startup Tours</p><p class="mm-photo-card__subtitle">Every semester</p><p>Visit startups, accelerators and VCs across Europe and beyond.</p></a></li>
+        <li class="mm-photo-card"><a href="#" style="text-decoration:none"><div class="mm-frame"><img src="../assets/photography/website/coaching.webp" alt="One-to-one coaching session" loading="lazy" onload="this.parentNode.classList.add('is-loaded')"></div><p class="mm-title">Coaching</p><p class="mm-photo-card__subtitle">Optional element</p><p>Experienced coaches right by your side.</p></a></li>
       </ul>
     </div>
   </section>
@@ -81,7 +81,7 @@
       <h2>Application Deadlines for Upcoming Semesters</h2>
       <p class="mm-lead">Winter semester: June 7th · Summer semester: December 6th</p>
       <a class="mm-arrow-link" href="#">
-        <span class="mm-arrow-link__circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <span class="mm-sticker" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21.707 4.293 37.5 20 21.707 35.707l-1.414-1.414L33.584 21H6v-2h27.585L20.293 5.707z"/></svg></span>
         Connect with us!
       </a>
     </div>
@@ -91,8 +91,8 @@
     <div class="mm-container">
       <h2>Frequently asked questions</h2>
       <div class="mm-faq">
-        <details><summary>Do I need a startup idea to apply?</summary><div><p><strong>No idea? No problem.</strong> You will find co-founders and market gaps within the community.</p></div></details>
-        <details><summary>How much time does the program take?</summary><div><p>Roughly 20 hours per week on average over the whole year.</p></div></details>
+        <details><summary><span class="mm-sticker" aria-hidden="true"><svg class="mm-faq__plus" viewBox="0 0 40 40"><path d="M21 5v14h14v2H21v14h-2V21H5v-2h14V5h2Z"/></svg><svg class="mm-faq__minus" viewBox="0 0 40 40"><path d="M35 19v2H5v-2z"/></svg></span>Do I need a startup idea to apply?</summary><div><p><strong>No idea? No problem.</strong> You will find co-founders and market gaps within the community.</p></div></details>
+        <details><summary><span class="mm-sticker" aria-hidden="true"><svg class="mm-faq__plus" viewBox="0 0 40 40"><path d="M21 5v14h14v2H21v14h-2V21H5v-2h14V5h2Z"/></svg><svg class="mm-faq__minus" viewBox="0 0 40 40"><path d="M35 19v2H5v-2z"/></svg></span>How much time does the program take?</summary><div><p>Roughly 20 hours per week on average over the whole year.</p></div></details>
       </div>
     </div>
   </section>
@@ -103,7 +103,7 @@
         <h2><span class="mm-outline">Find your tribe.</span><span>Get to know us!</span></h2>
         <p class="mm-prose" style="margin-top:2rem">Meet like-minded innovators at our next open session.</p>
         <a class="mm-arrow-link" href="#">
-          <span class="mm-arrow-link__circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          <span class="mm-sticker" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21.707 4.293 37.5 20 21.707 35.707l-1.414-1.414L33.584 21H6v-2h27.585L20.293 5.707z"/></svg></span>
           Join an Open Event
         </a>
       </div>
@@ -120,15 +120,16 @@
     <div>
       <!-- Required by the guideline (p.37): descriptor + logo label in the footer -->
       <img class="mm-footer__lockup" src="../assets/labels/svg/descriptor-lockup-outline-white.svg" alt="Entrepreneurial Education, by UnternehmerTUM">
-      <p style="margin-top:1.5rem"><a href="#top">Back to top ↑</a></p>
+      <a class="mm-arrow-link mm-arrow-link--up" href="#top" style="margin-top:1.5rem"><span class="mm-sticker" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21.707 4.293 37.5 20 21.707 35.707l-1.414-1.414L33.584 21H6v-2h27.585L20.293 5.707z"/></svg></span>Back to top</a>
     </div>
   </div>
 </footer>
 <script>
-  // Header turns black after 20px of scrolling (website: src/components/Header.tsx)
-  const header = document.querySelector('.mm-header');
-  const update = () => header.classList.toggle('is-scrolled', window.scrollY > 20);
-  update(); window.addEventListener('scroll', update, { passive: true });
+    const header = document.querySelector('.mm-header');
+  // Header turns solid (and slimmer from 992px) after 60px; transparent again at the top (live manageandmore.de)
+  let ticking = false;
+  const update = () => { header.classList.toggle('is-scrolled', window.scrollY > 60); ticking = false; };
+  update(); window.addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
 </script>
 </body>
 </html>

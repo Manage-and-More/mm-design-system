@@ -1,0 +1,955 @@
+1
+Designelemente
+Manage and More guideline
+Guideline
+Brand 
+elements
+
+2
+Designelemente
+Manage and More guideline
+Inhalt
+3 
+Anwendungen  	
+	
+33
+3.1 Geschäftsausstattung 	 	
+34
+3.2 E-Mail Signatur 	 	
+36
+3.3 Website	
+37
+4 
+Nützliche Links 	
+38
+5 
+Merchandise  	 	
+39
+1 
+Markenarchitektur  		
+03
+1.1 Erklärung  	 	
+04
+1.2 Markenarchitektur  	 	
+05
+1.3 Submarken  	 	
+06
+1.4 Formate von Submarken 	
+07
+2 
+Design Elemente  		
+08
+2.1 Endorsed Brands  	
+	
+  	
+09
+2.2 Label	
+13
+2.3 Deskriptor Label 	
+ 15
+2.4 Farbe 	
+	
+16
+2.5 Schrift 	 	
+18
+2.6 Icons  	
+	
+22
+2.7 Grafische Elemente  	
+	
+23 
+2.8 Bildsprache  	 	
+27
+
+3
+Designelemente
+Manage and More guideline
+1. Marken-
+architektur
+Erklärung
+Markenarchitektur
+Submarken
+Formate von Submarken
+1.1
+1.2
+1.3
+1.4
+04
+05
+06
+07
+
+4
+Designelemente
+Manage and More guideline
+1.1 Erklärung
+Markenarchitektur
+Für eine ganzheitliche Markenentwicklung und –führung werden mithilfe von Markenarchitekturen alle Marken eines Un-
+ternehmens in eine logische Ordnung gebracht, um daraus die Markenpositionierung abzuleiten. Ziel ist es, zwischen den 
+Marken kommunikative Synergien zu erreichen und einheitliche Rahmenbedingungen für die Außenkommunikation für 
+alle Marken festzulegen. 
+Aligned Brand ( engl. to align = ausrichten, angleichen)
+Submarken die als Aligned Brands  (Überbegriff: Branded House) auftreten, kommunizieren im Markenportfolio unter der 
+Dachmarke. Dies spiegelt sich häufig in der Namensgebung und im Logo wider: Die Hauptmarke beginnt mit dem 
+Produkttitel/Logo und die Untermarke folgt diesem. Ein gutes Beispiel dafür, wo dies verwendet wird, ist Nivea und die 
+Nivea Men, Nivea Sun Produkte.
+Diese Strategie ist optimal, wenn ein begrenztes Marketingbudget zur Verfügung steht und die Bekanntheit der Submar-
+ke auf der Grundlage dessen, was bereits von der Dachmarke erstellt wurde, gessteigert werden soll.
+Endorsed Brand  ( engl. to endorse = fürsprechen, unterstützen)
+Submarken die als Endorsed Brands  (Überbegriff: House of Brands) auftreten, kommunizieren im Markenportfolio 
+eigenständiger und werden durch das Branding der Unternehmensmarke unterstützt. Die Dachmarke fungiert hier als 
+"Qualitätssiegel" und hilft der Endorsed Brand Bekanntheit und Vertrauen aufzubauen. 
+Diese Strategie ist optimal, wenn Zielgruppen sehr spezifisch über eine Marke angesprochen werden sollen, da eine dif-
+ferenzierte und flexible Marktbearbeitung ermöglicht wird (Beispiel: KitKat und Smarties etc. mit der Dachmarke Nestlé).
+
+5
+Designelemente
+Manage and More guideline
+1.2 Markenarchitektur
+1. Ring
+Kategorie:
+100% UnternehmerTUM Corporate Design
+100% eigenständige Kommunikation
+(optionale Anpassung ans UnternehmerTUM CD)
+Kommunikation:
+Umbrella Brand
+Aligned Brand
+Endorsed Brand
+Kooperationen
+2. Ring
+Logo: U+Wortmarke
+Farbigkeit: Eigenständig
+Typo: Corporate (Sharp Sans/Work Sans)
+Layout: Corporate
+Label: By UnternehmerTUM
+Kanäle: Teil der UnternehmerTUM 
+Website als CD-konforme Subdomain 
+(Ausnahme können Events sein), eigene 
+Social Media Kanäle
+Kanäle: Teil der UnternehmerTUM 
+Website und Social Media Kanäle 
+(Ausnahme können Events sein)
+Kanäle: Eigene Website, eigene 
+Social Media Kanäle
+3. Ring
+4. Ring
+Logo: Eigene Bildmarke+Wortmarke
+Farbigkeit: Eigenständig
+Typo: Corporate (Sharp Sans/Work Sans)
+Layout: Eigenständig/Corporate
+Label: By UnternehmerTUM
+
+6
+Designelemente
+Manage and More guideline
+1.3 Submarken
+Ziel ist es, eine klare Unterscheidung zwischen Submarken, 
+Formaten, Partnerschaften, Teams und übergeordneten 
+Fokusthemen innerhalb der UnternehmerTUM zu schaffen. 
+Trotzdem ist es wichtig mit ausgewählten, grafischen 
+Elementen Wiedererkennung und Zugehörigkeit zu 
+schaffen. 
+Innerhalb der UnternehmerTUM gibt es zwei Arten von 
+Submarken: Aligned Brands (2. Ring) und Endorsed 
+Brands (3. Ring). Aligned Brands sind visuell durch das 
+UnternehmerTUM "U" als Bildmarke noch enger mit der 
+Dachmarke verknüpft. 
+Submarken haben ein klar definiertes Angebot/Zielgruppe/
+Markt und sind verantwortet durch ein eigenständiges 
+Team. Mehrere Submarken dürfen nicht das gleiche 
+Angebot haben, damit sich die Angebote nicht gegenseitig 
+kannibalisieren. Eine Submarke muss als solche von der 
+GF in das Produktportfolio aufgenommen/freigegeben 
+werden.
+UnternehmerTUM Submarken:
+Ring 2 - Aligned Brand (exemplarisch)
+Ring 3 - Endorsed Brand (exemplarisch)
+BRAND
+NAME
+BRAND
+NAME
+*Achtung:
+*
+*
+Diese Farbe steht exemplarisch 
+für die frei wählbare Farbigkeit aller
+Submarken
+
+7
+Designelemente
+Manage and More guideline
+1.4 Formate von Submarken
+Alle unter Submarken angebotenen Formate/ Angebote 
+erhalten keine eigene Marke (eine Ausnahme können 
+Events darstellen), sondern werden von der Submarke 
+selbst kommuniziert. Formate können jedoch durch 
+unterschiedliche Farben gekennzeichnet werden (siehe 
+Beispiel). Formate/Angebote haben keine zusätzlichen 
+Online-Kanäle.
+Beispiel Flyer einer Submarke: 
+Falsch (Formate haben eigene Logos)
+Beispiel Flyer einer Submarke: 
+Richtig (Formate kommunizieren unterhalb der Submarken, 
+können eigene Farbigkeit nutzen)
+BRAND
+NAME
+BRAND
+NAME
+BRAND
+NAME
+NAME
+HIER 
+STEHT 
+EINE 
+HEADLINE
+HIER 
+STEHT 
+EINE 
+HEADLINE
+HIER 
+STEHT 
+EINE 
+HEADLINE
+Unsere weiteren Angebote:
+Unsere weiteren Angebote:
+Unsere weiteren Angebote:
+NAME
+Format Name
+Format Name
+Format Name 2
+Format Name 2
+
+8
+Designelemente
+Manage and More guideline
+2. Design Elemente
+Endorsed Brands: Logoaufbau
+Logo Label
+Deskriptor Label
+Farbe
+Schrift
+Icons
+Grafische Elemente
+Bildsprache
+2.1
+2.2
+2.3
+2.4
+2.5
+2.6
+2.7
+2.8
+09
+13
+15
+16
+18
+22
+23
+27
+
+9
+Designelemente
+Manage and More guideline
+Die Bildmarke von Endorsed Brands kann frei bestimmt 
+werden. Die Wortmarke kann entweder ein-, zwei- oder 
+dreizeilig angelegt werden. Einzeilige Wortmarken stehen 
+mittig zur Bildmarke und zweizeilige bzw. dreizeilige 
+Wortmarken schließen oben und unten bündig mit 
+der Bildmarke ab. Die Wortmarke bei zweizeiligen und 
+dreizeiligen Logos hat einen Zeilenabstand von 100%. Die 
+Wortmarke bei einzeiligen Logos verwendet die selbe 
+Schriftgröße, wie zweizeilige Logos.
+Der Abstand zwischen Wortmarke und Bildmarke ergibt 
+sich durch die Breite von "U", genauer: Der Abstand beträgt 
+1/3 der Breite des UnternehmerTUM "U"s.
+Der Abstand des Logos zum Rand eines Layouts beträgt 
+mindestens die Hälfte der Höhe von "U".
+Logoaufbau
+*Achtung:
+Die Höhe und die Breite des Unternehmer-
+TUM "U"s ist eine sehr wichtige Größe für 
+die Bestimmungen von Abständen. Die 
+Schutzzone eines Logos beträgt 0,5 U. Der 
+Abstand zwischen der Bildmarke und der 
+Wortmarke jedoch beträgt 1/3 der Breite 
+von U.
+0,5 U
+1/3 U
+Zweizeiliges Logo
+(Schutzzone 0,5 U):
+*
+
+10
+Designelemente
+Manage and More guideline
+
+11
+Designelemente
+Manage and More guideline
+Farboptionen
+Logos von Aligned Brands können auf unterschiedlichen 
+Hintergründen platziert werden. Damit die Lesbarkeit 
+garantiert werden kann, ist es wichtig das Logo mit 
+größtmöglichem Kontrast zu verwenden. Dafür kann 
+entweder eine der Farbversionen oder die Schwarz-  
+oder Weißversion ausgewählt werden.
+
+12
+Designelemente
+Manage and More guideline
+Bitte beachten
+Logo Verwendung:
+Logos von Endorsed Brands dürfen nur nach 
+den definierten Richtlinien verwendet wer-
+den. Änderungen und Abweichungen kön-
+nen dem Gesamteindruck, der Lesbarkeit 
+und der Wiedererkennung der Marke 
+schaden.
+Es darf keine andere Schrift für die 
+Wortmarke verwendet werden
+Das Logo darf in keiner anderen, als der 
+definierten Corporate Farbe verwendet 
+werden
+Der Kontrast von Logofarbe und 
+Hintergrundfarbe muss so stark sein, 
+dass die Lesbarkeit garantiert ist
+Es dürfen keine Elemente über das 
+Logo platziert werden
+Ist die Bildmarke Farbig, darf die 
+Wortmarke entweder schwarz oder 
+weiß sein
+Es dürfen keine Symbole zum Logo 
+hinzugefügt werden
+Die Anordnung der Elemente darf 
+nicht verändert werden
+Die Höhe von Wort und Bildmarke 
+muss immer gleich sein
+Es dürfen keine Rahmen um das Logo 
+gezogen werden
+Das Logo darf nicht gezerrt oder 
+manipuliert werden
+MANAGE  
+AND MORE
+
+13
+Designelemente
+Manage and More guideline
+2.2 Logo Label
+Das Logo Label verweist auf die Zugehörigkeit der Submar-
+ken zur Dachmarke und soll durch die quadratische Box die 
+Handhabung erleichtern, da sich diese einfach auf diversen 
+Layouts platzieren lässt und keine Schutzzone hat.
+Das UnternehmerTUM Logo Label ist entweder schwarz, 
+weiß oder in der definierten Corporate Farbe der Submar-
+ke. Das Logo Label wird nicht im UnternehmerTUM blau 
+verwendet. 
+Die Box kann sowohl als solid Form als auch als Outline dar-
+gestellt werden, sofern der Hintergrund sich dazu eignet. 
+Bei unruhigen Hintergründen sollte beispielsweise das solid 
+Label verwendet werden. 
+Logo Label:
+Logo Label (schwarz):
+Logo Label (weiß):
+Logo Label (Corporate 
+Farbe der Submarke):
+
+14
+Designelemente
+Manage and More guideline
+Platzierung
+Die Tabelle auf dieser Seite gilt als Richtlinie für die Größe 
+des Logo Labels auf den üblichen Formaten. Für weitere 
+Formate muss die Größe neu bestimmt werden. Hierfür 
+wird das Label vervielfacht und wie bei dem Konstruktions-
+beispiel auf der kurzen Seite des Formats aneinanderge-
+reiht. Je nach Breite kann man das Label einfach, zweifach 
+bis hin zu 10-fach (für optimale Lesbarkeit und Integration 
+in das jeweilige Layout) dupliziert werden. Bei den üblichen 
+DIN Formaten wird die 8-fache Vervielfachung verwendet.
+Das Label kann in allen vier Ecken eines Formats innerhalb 
+des Satzspiegels platziert werden.
+Konstruktion:
+Definition durch Vervielfachung 
+(8fach) des Logo Labels auf der
+kurzen Seite
+Platzierung:
+Platzierung an allen vier Ecken inner-
+halb des definierten Satzspiegels 
+(Hoch- und Querformat)
+Formate
+Mindestgröße
+Business Cards 
+DIN A6	
+DIN A5 	
+DIN A4	
+	
+DIN A3 	
+DIN A2 	
+DIN A1 	
+DINlang 	 
+16:9 Präsentation
+Roll-up
+Kein Label
+13,1 mm
+18,5 mm
+26,2 mm
+37,1 mm
+52,5 mm
+74,2 mm
+17,5 mm
+24,1 mm
+121,4 mm
+
+15
+Designelemente
+Manage and More guideline
+2.3 Deskriptor Label
+Das Deskriptor Label soll dabei helfen, Submarken inner-
+halb des Ökosystems der UnternehmerTUM einordnen zu 
+können. Das Logo Label kann alleine verwendet werden, das 
+Deskriptor Label jedoch nicht, sondern immer in Kombinati-
+on mit dem Logo Label. Es kann auf der Submarken Website 
+oder anderen Medien verwendet werden. Es wird immer 
+links des Logo Labels platziert.
+Das Deskriptor Label sollte sich farblich immer vom Logo 
+Label absetzen (siehe Farbbeispiele auf der rechten Seite).
+Weitere mögliche 
+Farbkombinationen:
+
+16
+Designelemente
+Manage and More guideline
+2.4 Farben
+40%
+Blau
+Gelb
+Weiß
+60%
+80%
+Schwarz
+
+17
+Designelemente
+Manage and More guideline
+Primärfarben
+Sekundärfarben
+Gelb 
+R255 G237 B0
+(C0 M0 Y100 B0)
+HEX: FFED00
+Blau
+R0 G162 B205
+(C76 M16 Y12 B0)
+HEX: 00A2CD
+Schwarz
+R0 G0 B0
+C0 M0 Y0 B100
+HEX: 000000
+80% Schwarz
+R87 G87 B87
+C0 M70 Y0 B80
+HEX: 575756
+Weiß
+R255 G255 B255
+C0 M70 Y0 B0
+HEX: ffffff
+60% Schwarz
+R135 G135 B135
+C0 M70 Y0 B60
+HEX: 878787
+Grau
+R227 G227 B227
+C0 M70 Y0 B15
+HEX: e3e3e3
+40% Schwarz
+R178 G178 B178
+C0 M0 Y0 B40
+HEX: b2b2b2
+Farbwerte
+
+18
+Designelemente
+Manage and More guideline
+ducimusda nonsedit es eos 
+volupis audam que voluptat
+musti am vendi ni rae res qu
+aut inus doluptia consedisit
+rum qui ad quat voluptate ve
+sandiore laboreh enditation 
+ABCDEFGHI
+JKLMNOPQR
+STUVWXYZ
+2.5 Typografie
+Typografie ist ein Schlüsselelement des UnternehmerTUM 
+Designs und trägt zur Wiedererkennung, visuellen 
+Einheitlichkeit und Stärke bei. Deshalb ist es wichtig, dass 
+alle UnternehmerTUM Marken mit denselben Schriften 
+umgehen. Die Hausschrift der UnternehmerTUM ist die 
+Sharp Sans. Da diese Schrift kostenpflichtig erworben 
+werden muss haben wir die Google Font Work Sans als 
+kostenfreie Alternative definiert.
+Stilistisch sollten die Verwendung ähnlich der Dachmarke 
+sein. Hier ein paar Richtlinien:
+•	 Text linksbündig setzen 
+•	 Outline Text für Headlines verwenden (optional)
+•	 Headlines bold und Fließtext medium (optional)
+•	 Headlines können in Großbuchstaben oder gemischt 
+gesetzt werden
+•	 Kontrastreiche Layouts (große Headlines)
+•	 Zeilenabstand bei Headlines 100%
+•	 Kein oder wenig Verwendung von kursiv Schrift
+
+19
+Designelemente
+Manage and More guideline
+Sharp Sans
+Hausschrift
+Die Sharp Sans (Medium/Extrabold) Schriftfamilie ist die 
+offizielle Hausschrift der UnternehmerTUM. Sie ist für Print 
+und Web optimiert und entspricht allen heutigen Anforde-
+rungen an eine Schrift.
+Die Schrift kann hier gekauft werden www.sharptype.co
+Jede Submarke muss die Kosten für diese Schrift selbst 
+übernehmen und kann sich daher frei entscheiden die 
+Hausschrift oder die kostenfreie Google Font zu benutzen.
+Formate:
+OpenType Fonts (otf)
+TrueType Fonts (ttf)
+Sharp Sans Medium 
+Aa Bb Cc Dd Ee Ff Gg 
+Hh Ii Jj Kk Ll Mm Nn Oo 
+Pp Qq Rr Ss Tt Uu Vv 
+Ww Xx Yy Zz
+Sharp Sans Extrabold 
+Aa Bb Cc Dd Ee Ff Gg 
+Hh Ii Jj Kk Ll Mm Nn Oo 
+Pp Qq Rr Ss Tt Uu Vv 
+Ww Xx Yy Zz
+Sharp Sans Medium Italic 
+Aa Bb Cc Dd Ee Ff Gg 
+Hh Ii Jj Kk Ll Mm Nn Oo 
+Pp Qq Rr Ss Tt Uu Vv 
+Ww Xx Yy Zz
+Sharp Sans Extrabold Italic 
+Aa Bb Cc Dd Ee Ff Gg 
+Hh Ii Jj Kk Ll Mm Nn Oo 
+Pp Qq Rr Ss Tt Uu Vv 
+Ww Xx Yy Zz
+
+20
+Designelemente
+Manage and More guideline
+Work Sans
+Google free font für Google-Anwendungen (außer für Google 
+Slides) oder als Alternative Schrift für Subbrands.
+Zu finden unter: fonts.google.com
+Formate:
+OpenType Fonts (otf)
+TrueType Fonts (ttf)
+Work Sans Regular 
+Aa Bb Cc Dd Ee Ff Gg 
+Hh Ii Jj Kk Ll Mm Nn Oo 
+Pp Qq Rr Ss Tt Uu Vv 
+Ww Xx Yy Zz
+Work Sans Bold 
+Aa Bb Cc Dd Ee Ff Gg 
+Hh Ii Jj Kk Ll Mm Nn Oo 
+Pp Qq Rr Ss Tt Uu Vv 
+Ww Xx Yy Zz
+Work Sans Italic 
+Aa Bb Cc Dd Ee Ff Gg 
+Hh Ii Jj Kk Ll Mm Nn Oo 
+Pp Qq Rr Ss Tt Uu Vv 
+Ww Xx Yy Zz
+Work Sans Bold Italic 
+Aa Bb Cc Dd Ee Ff Gg 
+Hh Ii Jj Kk Ll Mm Nn Oo 
+Pp Qq Rr Ss Tt Uu Vv 
+Ww Xx Yy Zz
+
+21
+Designelemente
+Manage and More guideline
+Arial
+Arial wird für externe Korrespondenz und für digitale Anwendungen 
+wie E-mail Signaturen und PPT Präsentationen genutzt.
+Formate:
+OpenType Fonts (otf)
+TrueType Fonts (ttf)
+Arial Regular
+Aa Bb Cc Dd Ee Ff Gg 
+Hh Ii Jj Kk Ll Mm Nn Oo 
+Pp Qq Rr Ss Tt Uu Vv 
+Ww Xx Yy Zz
+Arial Bold
+Aa Bb Cc Dd Ee Ff Gg 
+Hh Ii Jj Kk Ll Mm Nn Oo 
+Pp Qq Rr Ss Tt Uu Vv 
+Ww Xx Yy Zz
+Arial Regular Italic
+Aa Bb Cc Dd Ee Ff Gg 
+Hh Ii Jj Kk Ll Mm Nn Oo 
+Pp Qq Rr Ss Tt Uu Vv 
+Ww Xx Yy Zz
+Arial Bold Italic
+Aa Bb Cc Dd Ee Ff Gg 
+Hh Ii Jj Kk Ll Mm Nn Oo 
+Pp Qq Rr Ss Tt Uu Vv 
+Ww Xx Yy Zz
+
+22
+Designelemente
+Manage and More guideline
+2.6 Icons
+Genau wie die Schrift kann auch eine einheitliche 
+Verwendung von Icons und Infografiken Wiedererkennung 
+schaffen. Hierfür werden allen Submarken die Corporate 
+Icons in Schwarz, Weiß und der jeweiligen Corporate Farbe 
+zur Verfügung gestellt. Das Iconset wird stetig erweitert 
+und an allen Submarken weitergeleitet.
+Icon Raster:
+
+23
+Designelemente
+Manage and More guideline
+2.7 Grafische 
+Elemente
+Unser Illustrationsstil geht auf die einfachen Formen unse-
+res Logos zurück. Einfache Formen, klare Linien, begrenzte 
+Farben und eine erhöhte Realität geben unserer Illustration 
+ein markenbezogenes Gefühl und machen sie auf einen 
+Blick leicht verdaulich und verständlich.
+
+24
+Designelemente
+Manage and More guideline
+3000
+100
+100
+2000
+students 
+and talents
+industry
+partners
+startup and
+tech projects
+startups 
+in dealflows
+40
+20
+0
+2016
+2017
+2018
+Konux
+Lilium
+Flixbus
+Celonis
+100
+50
+0
+65%
+27%
+8%
+Exclusively 
+equity capital
+Equity capital and 
+external funding
+Exclusively 
+external funding
+Infografiken
+Alle Infografiken basieren auf einfachen Elementen.
+Kontrastreiche Linien in Verbindung mit großflächigen 
+Elementen. 
+
+25
+Designelemente
+Manage and More guideline
+Illustrationen
+Die Illustrationen werden unter Verwendung geometri-
+scher Grundformen und unserer Unternehmensfarben 
+konstruiert, wobei mit dem negativen Raum und 
+den Proportionen gespielt wird und kleine, grafische 
+Innovationsmikrokosmen entstehen.
+
+26
+Designelemente
+Manage and More guideline
+
+27
+Designelemente
+Manage and More guideline
+2.8 Bildsprache
+Unsere Fotografie inspiriert unser Publikum aus Studenten, 
+Unternehmen, Kunden und Partner. Die Bilder sollen Sze-
+nen und Momente aus dem Ökosystem der Unternehmer-
+TUM darstellen. 
+UnternehmerTUM-Bilder bedeuten: natürliche Posen, 
+Einfachheit, Interaktionen, natürliches Licht und wechseln-
+de Perspektiven. Versuchen Sie, eine offene/einladende 
+Komposition beizubehalten.
+Dokumentarischer Charakter 
+- Bilder, die Geschichten erzählen
+Licht - Natürliches, weiches Licht
+Besetzung 
+- Echte Menschen in natürlichen Posen
+Farbe - Hervorhebung von Farben
+Perspektive - Wir betrachten die Dinge gerne 
+aus verschiedenen Blickwinkeln
+Kontrast/Fokus - Spiel mit Kontrast und Fokus
+
+28
+Designelemente
+Manage and More guideline
+Bildsprache
+Menschen
+Unser Ziel ist es, echte Menschen zu zeigen. Wir verwenden 
+Bilder, die Menschen bei Interaktionen einfangen.
+Porträts sollten ungekünstelt und natürlich wirken.
+
+29
+Designelemente
+Manage and More guideline
+Bildsprache
+Veranstaltungen
+Das Festhalten von Anlässen und Interaktionen ist der 
+Schlüssel bei der Eventfotografie. Bitte vermeiden sie 
+Bildmotive auf denen zuviele Elemente im Hintergrund 
+vom Motiv ablenken. Ein ruhiger Bildaufbau ist essenziell 
+für ausdrucksstarke Eventfotos.
+
+30
+Designelemente
+Manage and More guideline
+Bildsprache
+Startups
+Optimal ist es, neben der Startup-Produkte selbst  
+auch den Herstellungsprozess zu dokumentieren. 
+Zusätzliche Gründerporträts (siehe Menschen) 
+sind immer willkommen.
+
+31
+Designelemente
+Manage and More guideline
+Bildsprache
+Tech
+Technische Bilder sind ein wichtiger Bestandteil 
+unseres Bildarchivs. Fokussieren sie sich auf Bilder 
+von digitalen Anwendungen mit verschiedenen 
+digitalen/technischen Werkzeugen und Bildschirmen. 
+Nahaufnahmen sind ein bewährtes Stilmittel und 
+helfen einen klaren Fokus zu behalten.
+
+32
+Designelemente
+Manage and More guideline
+Tech/Innovation
+Tönung
+Zusätzlich zur Verwendung von Farbfotos können  
+Schwarz-Weiss-Fotos und getönte (Markenfarbe) 
+Fotografie verwendet werden. 
+Es ist äußerst wichtig, ruhe Bilder mit wenigen Details zu 
+verwenden. Verwenden Sie diese Effekte nicht übermäßig. 
+Versuchen Sie, sie als Highlight-Elemente in Ihren Medien 
+einzusetzen.
+
+33
+Designelemente
+Manage and More guideline
+3. Anwendungen
+Geschäftsausstattung
+E-Mail Signatur
+Website 
+3.1
+3.2
+3.3
+34
+36
+37
+
+34
+Designelemente
+Manage and More guideline
+Visitenkarten (Aligned Brands)
+Über unser Web2Print System können für alle Marken der 
+UnternehmerTUM Visitenkarten bestellt werden.
+Jede Submarke bekommt einen einheitlichen Master. 
+Bevor das Web2Print System eingerichtet wird, kann sich 
+jedes Team für eine der zwei Optionen für die Vorderseite 
+entscheiden, die dann im System hinterlegt wird.
+Der Aufbau dieser Vorlagen ist für jedes Team gleich, nur 
+das Logo und die Farbigkeit ändern sich je nach Subbrand.
+Vorderseite:
+Rückseite:
+3.1 Geschäftsausstattung
+Name
+Titel
+Mobil oder Festnetznummer
+Email
+Pufferzeile 1
+Pufferzeile 2 (außer bei UVC)
+Prof. Dr. Helmut Schönenberger
+CEO
+P	
+       +49 89 189469-11111
+schoenenberger@unternehmertum.de
+GmbH
+Straße
+PLZ, Land
+URL
+UnternehmerTUM GmbH
+Lichtenbergstr. 6
+85748 Garching, Germany
+www.unternehmertum.de
+
+35
+Designelemente
+Manage and More guideline
+Briefpapier (Endorsed  Brands)
+Jede Submarke erhält eine Vorlage für den offiziellen 
+Geschäftsbrief und eine Google Docs Vorlage, die für den 
+internen Gebrauch gedacht ist.
+Der Aufbau dieser Vorlagen ist für jedes Team gleich, nur 
+das Logo und die Farbigkeit ändern sich je nach Subbrand.
+Geschäftsausstattung
+Geschäftsbrief (Aligned Brands)
+Google docs Vorlage (Aligned Brands)
+UnternehmerTUM GmbH
+Managing Directors: 
+Prof. Dr. Helmut Schönenberger, 
+Claudia Frey, Stefan Drüssler, 
+Dr. Andreas Liebl, Thomas Zeller, 
+Chairwoman of the supervisory 
+board: Susanne Klatten
+Lichtenbergstr. 6, 85748 Garching 
+P +49 89 189469 - 0
+F +49 89 189469-1199
+info@unternehmertum.de
+www.manageandmore.de
+www.unternehmertum.de
+Deutsche Bank AG 
+IBAN: DE63 7007 0010 0201 4702 00 
+BIC: DEUTDEMMXXX
+Register Court: 
+München, HRB 141703 
+Ust-ID-Nr.: DE 252 789 694
+UnternehmerTUM GmbH | Lichtenbergstr. 6 | 85748 Garching
+
+36
+Designelemente
+Manage and More guideline
+3.2 E-Mail Signatur
+Endorsed Brands
+Die E-Mail Signatur besteht aus folgenden Einheiten:
+Absender, Anschrift, Logos, Social Media und Unternehmen.
+Die Absender- und Anschrifteinheiten werden in 12pt und 
+die Social Media- und Unternehmenseinheiten werden in 
+9pt Schriftgröße angelegt.
+Wenn möglich werden E-Mail Adresse, URL und das Social 
+Media in die Corporate Farbe eingefärbt.
+Zwischen Absender und  Anschrift und zwischen Social 
+Media und der Unternehmenseinheit beträgt der Abstand 
+eine Leerzeile.  Oberhalb und unterhalb der Logos sollte 
+der Abstand in etwa der Höhe der Logos entsprechen (ca. 
+2 Leerzeilen).
+Zwischen dem Logo der Submarke und dem Logo Label 
+sollte der Abstand mindestens der Breite des Logo Labels 
+entsprechen.
+Alle Einheiten werden linksbündig angeordnet.
+Vorname Nachname
+Jobtitel
+Submarke
+P +49 89-189469-1111
+nachname@unternehmertum.de
+UnternehmerTUM GmbH
+Lichtenbergstr. 6
+85748 Garching, Germany
+www.unternehmertum.de
+www.submarke.de
+  
+Facebook | Twitter | LinkedIn | Instagram 
+Chief Executive Officer: 
+Registered Office: Garching, Trade Register xxxxx
+District Court Munich, VAT No DExxxxx
+Absender (12pt)
+Anschrift (12pt)
+Logos
+Social Media (9pt)
+Abstand: 1 Leerzeile
+Abstand: 1 Leerzeile
+Abstand: 2-3 Leerzeilen
+Abstand: 2-3 Leerzeilen
+Unternehmen (9pt)
+
+37
+Designelemente
+Manage and More guideline
+3.3 Website
+Die Kombination aus Deskriptor Label und Logo Label sollte 
+von Submarken auf deren Website platziert werden. Wie 
+auf dem Beispiel auf der rechten Seite können die Label gut 
+sichtbar im Footer platziert werden.
+Text
+Is et expliquianis sundit magniet es el 
+ipsus eossim alia doloreh endaero om-
+Contact	 	
+ LinkedIn	 	
+Press	
+	
+Newsletter	
+	
+Impressum	
+	
+Datenschutz
+Is et expliquianis sundit magniet es el 
+ipsus eossim alia doloreh endaero om-
+Is et expliquianis sundit magniet es el 
+ipsus eossim alia doloreh endaero om-
+
+38
+Designelemente
+Manage and More guideline
+4. Nützliche Links
+•	Guideline A: Brand Elements 
+(sites.google.com/unternehmertum.de/home/grundlagen/marketing-digital-products/ci-styleguides)
+•	Guideline A: Mini Logo Guideline
+(sites.google.com/unternehmertum.de/home/grundlagen/marketing-digital-products/ci-styleguides)
+•	Business Cards 
+(utum.onelogin.com/portal/)
+•	 Letterhead UnternehmerTUM/Projekt GmbH /Subbrands
+(sites.google.com/unternehmertum.de/home/grundlagen/marketing-digital-products/briefvorlagen)
+•	 PPT/google slides and Screensaver
+(sites.google.com/unternehmertum.de/home/grundlagen/standardpräsentationen-teambeschreibungen)
+
+39
+Designelemente
+Manage and More guideline
+5. Merchandise
+
+40
+Designelemente
+Manage and More guideline
+5. Merchandise
+Obwohl soziale Verantwortung und ethisches Marketing 
+nicht automatisch zu einem höheren Umsatz führen, ist 
+die UnternehmerTUM nach wie vor für ihr Handeln und 
+ihre Auswirkungen auf die Gesellschaft und den Planeten 
+verantwortlich. 
+Aus diesem Grund möchten wir unsere Marketing Teams 
+ermutigen, qualitativ hochwertiges Material und ethisch 
+einwandfreie Produkte zu bestellen.  
+Große Auswahl an konventionellen und ökologischen 
+Werbemitteln:
+www.giffits.de
+Textildruck:
+https://www.soulgoods-muenchen.de
+Vermeiden Sie es bitte, nutzloses Material von 
+fragwürdigen Anbietern zu kaufen. Dies kann Artikel 
+wie Fidget Spinner, Handyhüllen oder Schlüsselanhänger, 
+etc. umfassen.
+Vielen Dank!
+
+Do you have any more questions:
+Please don't hesitate to contact us 
+MDPM Team

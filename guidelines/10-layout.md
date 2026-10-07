@@ -79,7 +79,7 @@ Do not invent other radii. The website currently also uses 0.5rem, 1rem and 1.5r
 ### Depth and effects
 
 - No drop shadows, glows or gradients.
-- Allowed: a **flat black shade** over photos and video when text sits on them (20-70%, `--mm-opacity-shade-*`), and the **scrolled header** (black at 95% with a slight backdrop blur).
+- Allowed: a **flat black shade** over photos and video when text sits on them (20-70%, `--mm-opacity-shade-*`), and a blurred, darkened backdrop behind side panels.
 
 ## Components
 
@@ -89,15 +89,16 @@ Full specs, with sizes, states and accessibility fixes, are in **[13-web-compone
 |---|---|
 | Section | Full-bleed band: dark, light, grey or blue (black text). 1px divider at 20% `currentColor`. |
 | Two-tone heading | Outlined line above a solid line, Extrabold, 25-50px, line-height 1.15. |
-| Header | Fixed, transparent over the hero, white; black 95% after scrolling; full-screen mobile menu. |
+| Header | Fixed, transparent over the hero, white; solid black and slimmer after 60px; underline-wipe links; full-screen mobile menu. |
 | Hero | Full-bleed photo or video with a black shade, h1 bottom-left, BY UNTERNEHMERTUM label bottom-right. |
-| Arrow link | **Primary CTA:** 44px outlined circle with an arrow, then an Extrabold label; inherits colour. |
+| Arrow link | **Primary CTA:** filled "sticker" circle (2em) in the text colour with the arrow in the background colour, then an Extrabold label; sticker scales to 1.1 on hover. |
 | Button | Forms and product UI only: black, white Extrabold uppercase text, square. Hover blue with black text. |
 | Inline link | Current colour, Extrabold, underline offset 4px. |
 | Stat row | Three items with a top rule, a big Extrabold number and a small label. |
 | Cards | Photo cards (4:3), person cards (4:5), scholar cards (1:1), directory cards, startup tiles. |
 | Chips | Pills with a 20% `currentColor` border, small Extrabold text. |
 | Carousels | Testimonial (portrait + quote) and media (photo + quote) with circular arrow controls. |
-| Disclosure | FAQ rows with a circular plus that rotates into a cross. |
+| Disclosure | FAQ rows with a plus sticker that turns into minus; answer expands in height. |
 | Footer | Black, 4 columns, plus the required descriptor + label lock-up. |
 | Focus | 2px outline, 2px offset, `#007D9E` (black on blue). |
+| Motion | Short, eased-out reactions only; see [14-motion.md](14-motion.md). |

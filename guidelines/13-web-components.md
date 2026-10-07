@@ -1,14 +1,14 @@
 ---
 title: Web components
 summary: The building blocks of manageandmore.de (header, hero, sections, two-tone headings, arrow links, stat rows, cards, carousels, FAQ, footer) with exact specs, tokens and accessibility fixes.
-source: manage-and-more-website repo (Next.js 16 + Tailwind v4), src/components and src/app, commit 742e91f, read 2026-10-07
+source: manage-and-more-website repo (Next.js 16 + Tailwind v4), commit 742e91f, for structure and numbers; live manageandmore.de (styles.css, icons.js) for look and motion; both read 2026-10-07
 status: adopted (website patterns approved as the screen standard on 2026-10-07)
 tokens: tokens/tokens.json#layout, #radius, #opacity, #motion, #font.size
 ---
 
 # Web components
 
-These are the components of the live website, written down so that every new Manage and More page, app, landing page or campaign site looks like manageandmore.de. Each spec names the website file it comes from (paths are inside the `manage-and-more-website` repo).
+These are the components of the live website, written down so that every new Manage and More page, app, landing page or campaign site looks like manageandmore.de. Each spec names the website file it comes from (paths are inside the `manage-and-more-website` repo). Where the rebuild repo and the live site differ in **look or motion**, the live site is the reference (decision 2026-10-07); motion is specified in [14-motion.md](14-motion.md).
 
 Where the website fails WCAG 2.2 AA or a brand rule, the spec gives the **corrected** version and marks the website's current value with **Website today**. The full list of open website fixes is in [sources-and-discrepancies.md](sources-and-discrepancies.md#website-fixes).
 
@@ -88,13 +88,13 @@ The signature heading: an **outlined** line (transparent fill, stroke in `curren
 
 ## Header
 
-Source: `src/components/Header.tsx`, `src/components/Logo.tsx`.
+Source: `src/components/Header.tsx`, `src/components/Logo.tsx`; scroll behaviour from the live site.
 
-- `position: fixed`, full width, transparent, white text, sitting over the hero. Height 70px, 100px from 768px. Horizontal padding 30px, 50px from 1200px (`--mm-layout-header-*`).
+- `position: fixed`, full width, transparent, white text, sitting over the hero. Height 70px, 100px from 768px. Horizontal padding 30px, 50px from 1200px (`--mm-layout-header-*`). From 992px the navigation has 1em extra padding top and bottom (`--mm-layout-header-padding-desktop`).
 - **Logo** left: primary logo on dark (blue symbol, white wordmark), 98px wide, 128px from 768px. Link label "Manage and More — home".
-- **Navigation** right, from 768px: links in 0.95rem Medium, white at 90% opacity, full white on hover, 32px apart. Items: Home, Program, Application, People, Startups, Alumni.
-- **After 20px of scrolling** the header gets a black background at 95% (`--mm-opacity-header-scrolled`) with a small backdrop blur, transition 300ms. The blur only keeps the navigation legible; it is not a "glass" style for content.
-- **Mobile** (below 768px): a hamburger of three 2px bars, 28px wide, morphing into an X. It opens a full-screen black overlay with the nav items at 1.875rem Extrabold, 24px apart. Escape closes it, page scrolling is locked, and the toggle has `aria-expanded` and `aria-controls`.
+- **Navigation** right, from 768px: links in 0.95rem Medium, white, 32px apart. Items: Home, Program, Application, People, Startups, Alumni. Hover and focus: a 2px underline **wipes in from the left** (150ms, [14-motion.md](14-motion.md#navigation-underline-wipe)). **Website today** (rebuild): links at 90% opacity brightening on hover.
+- **After 60px of scrolling** (`--mm-motion-scroll-threshold`) the header background becomes **solid black** and, from 992px, the extra padding goes to 0, so the header gets slimmer. Both over 500ms `ease`. It turns transparent again at the very top. **Website today** (rebuild): switches at 20px to black at 95% with a backdrop blur, over 300ms, without shrinking.
+- **Mobile** (below 768px): a menu toggle with the [hamburger](../assets/ui/svg/hamburger.svg) glyph (changes to [close](../assets/ui/svg/close.svg) when open). It opens a full-screen black overlay with the nav items at 1.875rem Extrabold, 24px apart, shown instantly. Escape closes it, page scrolling is locked, and the toggle has `aria-expanded` and `aria-controls`.
 - **Pages without a dark hero** must start with a dark section, or give the header a solid black background from the start. **Website today:** Imprint and Privacy Policy start on white, so the white navigation is invisible until you scroll.
 
 ## Hero
@@ -112,18 +112,21 @@ Source: `src/components/Hero.tsx`, `src/components/VimeoBackground.tsx`.
 
 ## Arrow link (primary call to action)
 
-Source: `src/components/ArrowLink.tsx`. This is the **primary CTA** on web pages (decision 2026-10-07).
+Source: live manageandmore.de (`.btn` with `utum-icon.sticker`). This is the **primary CTA** on web pages (decision 2026-10-07).
 
 ```
-( → )  Explore the program
+(●→)  Explore the program
 ```
 
-- A 44px circle (`--mm-size-control`) with a 1px `currentColor` border and a 20px right arrow ([`arrow-right.svg`](../assets/ui/svg/arrow-right.svg), stroke 2, round caps), then the label in Extrabold, sentence or title case, 12px gap.
-- Inherits the text colour, so it works on every tone with no extra variants (black on white and blue, white on black and photos).
-- Hover: the circle moves 4px right (`translate-x`, 200ms). No underline.
-- Typical spacing: 40px above it (48px after a stat row).
-- Labels are short verbs ([12-voice-and-tone.md](12-voice-and-tone.md#calls-to-action)). External links open in a new tab with `rel="noopener noreferrer"`.
-- One arrow link per section. For a list of actions, use inline links.
+- A **sticker**: a filled circle in the text colour (`currentColor`), `--mm-size-sticker` (2em of the label size: about 40px with 20px body text, 30px with 15px), with the [arrow-right](../assets/ui/svg/arrow-right.svg) glyph inside in the **background colour** (`--mm-size-sticker-glyph`, 1.333em, centred). So: black circle with a white arrow on white, black circle with a blue arrow on blue (7.05:1), white circle with a black arrow on black. In CSS, give each section tone a `--mm-surface` variable and colour the glyph with it.
+- Then the label in Extrabold (the live site asks for 900, which renders as Sharp Sans Extrabold 800), sentence or title case, 0.625em after the sticker.
+- Inherits the text colour, so it works on every tone without variants.
+- **Hover and focus:** the sticker scales to 1.1 over 250ms ease-out ([14-motion.md](14-motion.md#sticker-arrow-link-faq-toggle)). The label does not move. No underline.
+- **Focus ring:** 2px `--mm-color-focus-ring` around the link with a pill radius (black on blue sections).
+- Inline the SVG so the glyph can take the background colour; an `<img>` cannot.
+- Typical spacing: 40px above it (48px after a stat row). One arrow link per section. Labels are short verbs ([12-voice-and-tone.md](12-voice-and-tone.md#calls-to-action)). External links open in a new tab with `rel="noopener noreferrer"`.
+- **"Back to top"** in the footer uses the same sticker with the arrow rotated -90°.
+- **Website today** (rebuild `ArrowLink.tsx`): an outlined 44px circle with a short round-capped arrow that nudges 4px right on hover. Replace it with the sticker.
 
 ## Button (forms and product UI)
 
@@ -157,6 +160,7 @@ Source: `src/components/PhotoGrid.tsx`.
 - Grid with 32px gaps: 1 column, 2 from 640px, 3 or 4 from 1024px.
 - Image 4:3 (`--mm-aspect-photo`), `object-fit: cover`, `--mm-radius-card` (0.75rem).
 - 16px below: title (`--mm-font-size-title`, 20px, Extrabold), optional subtitle (small, Extrabold, **blue**), body text at 80% opacity, 8px below.
+- If the card is a link, the image zooms to 1.1 on hover (500ms). Images fade in after loading over a pulsing placeholder ([14-motion.md](14-motion.md#image-loading)).
 - **Blue subtitle:** brand blue on black (7.05:1). On white use `--mm-color-accent-text` `#007D9E` (4.74:1). **Website today:** brand blue on white (2.98:1) in the light "Events with Partner Companies" section.
 
 ## Person card (team)
@@ -199,7 +203,7 @@ Source: `src/components/StartupGrid.tsx`.
 - **Category block:** eyebrow ("12 companies", small, Extrabold, uppercase, `letter-spacing: 0.16em`, blue), h2 (30px, 48px from 768px), a description at 70%, then the grid. Blocks are 80px apart, `scroll-margin-top: 7rem` so anchors clear the header.
 - **Grid:** 1, 2 (640px), 4 (1024px) columns of white tiles divided by 1px hairlines (black 10%), in a container with `--mm-radius-feature`.
 - **Tile:** the whole tile is a link, 20px padding, min-height 208px. An 80px logo tile (`--mm-radius-card`; transparent logos sit on a light grey, `object-fit: contain`, 12px padding), the name (20px Extrabold, `line-height: 1.15`), and at the bottom a link row: a 30px black circle with a white arrow, plus the link label (15px Extrabold).
-- Hover: the logo scales to 1.05 over 500ms.
+- Hover: the logo zooms to 1.1 over 500ms ease-out inside its tile ([14-motion.md](14-motion.md#image-zoom-on-linked-cards)). **Website today:** 1.05.
 - **Eyebrow colour on white:** `--mm-color-accent-text`. **Website today:** brand blue (2.98:1). **Website today:** grid radius 1.5rem and logo tile 1rem; normalise to `feature` and `card`. **Website today:** the light-grey logo backdrop is `#F3F5F6`, which is off-palette; use grey `#E3E3E3` or white.
 
 ## Chips
@@ -229,12 +233,13 @@ Source: `src/components/TourCarousel.tsx`.
 
 ## Disclosure (FAQ)
 
-Source: `Disclosure` in `src/app/application/page.tsx`.
+Source: live manageandmore.de (`.collapse-list`), rebuild `Disclosure` in `src/app/application/page.tsx`.
 
 - Native `<details>`/`<summary>` so it works without JavaScript. Hide the default marker.
 - Each row has a 1px top border at 20% `currentColor`; the list closes with a bottom border.
-- Summary: 20px padding top and bottom, Extrabold, with a 32px circle (1px border) holding a [plus](../assets/ui/svg/plus.svg) that rotates 45° to a cross when open (200ms).
-- Answer: indented 48px to align with the question, max about 48rem, 90% opacity, 24px bottom padding.
+- Summary: 20px padding top and bottom, Extrabold, starting with a **sticker** (filled circle, `--mm-size-sticker`) holding the [plus](../assets/ui/svg/plus.svg) glyph, 0.625em before the question. When open the glyph becomes [minus](../assets/ui/svg/minus.svg) and the sticker turns 180° (300ms). The answer expands in height over 350ms `ease` ([14-motion.md](14-motion.md#opening-and-closing)).
+- Answer: indented to align with the question, max about 48rem, 90% opacity, 24px bottom padding.
+- **Website today** (rebuild): an outlined 32px circle with a "+" character that rotates 45°, and the answer appears without height animation.
 
 ## Lists
 
@@ -285,20 +290,25 @@ Source: `src/components/Footer.tsx`.
 
 ## Interaction and motion
 
-Source: classes across `src/components`. Tokens `--mm-motion-*`.
+All motion (hover, scroll, loading, opening and closing, reduced motion) is specified in **[14-motion.md](14-motion.md)**. In short:
 
-| What | Duration | Effect |
-|---|---|---|
-| Link and control hover (colour, opacity, border) | 200ms | colour change |
-| Arrow-link hover | 200ms | circle moves 4px right |
-| FAQ toggle | 200ms | plus rotates 45° |
-| Header on scroll | 300ms | transparent to black 95% |
-| Portfolio tile hover | 500ms ease-out | logo scales to 1.05 |
+| What | Motion |
+|---|---|
+| Arrow link, FAQ sticker | sticker scales to 1.1, 250ms ease-out; FAQ sticker turns 180° and swaps plus/minus, 300ms |
+| Header links | 2px underline wipes in from the left, 150ms |
+| Linked card images | zoom to 1.1, 500ms ease-out |
+| Colour, opacity, border on hover | 200ms (pills 150ms) |
+| Header after 60px | solid black, padding shrinks from 992px, 500ms ease |
+| Images | pulsing placeholder (2s), fade in 500ms |
+| FAQ answer | height, 350ms ease |
+| Dropdowns | clip reveal top-down, 200ms |
+| Side panels | slide in from the right, 250ms, blurred backdrop |
+| Video poster | fades out, 1s |
 
-- No parallax, bounce or entrance animations.
-- Wrap motion in `@media (prefers-reduced-motion: no-preference)` and pause background video when reduced motion is requested. **Website today:** it does not check this preference.
+- No parallax, no scroll-triggered entrances, no marquee.
+- **Reduced motion:** everything above stops; background video shows its poster. **Website today:** the rebuild does not check `prefers-reduced-motion`; the live site only stops navigation motion.
 - **Focus:** a 2px outline with a 2px offset in `--mm-color-focus-ring` (`#007D9E`, at least 3:1 on white and black); black on blue sections. **Website today:** `#4443FE`, an off-palette violet.
-- **Text selection:** blue background (`::selection`).
+- **Text selection:** blue background with black text.
 
 ## Accessibility checklist for components
 
@@ -306,6 +316,6 @@ Source: classes across `src/components`. Tokens `--mm-motion-*`.
 - [ ] Text opacity on white is at least 70% for small text (50% is fine only for white on black).
 - [ ] Photo shades give at least 4.5:1 for body text and 3:1 for display headings.
 - [ ] Every icon-only control has an `aria-label`; carousels announce changes with `aria-live="polite"`.
-- [ ] Circular controls are at least 44px (or have a 44px hit area).
+- [ ] Icon-only controls are at least 44px (or have a 44px hit area); stickers sit inside a larger link with a text label.
 - [ ] Decorative media (background video, quote mark, initials tile) is `aria-hidden`.
-- [ ] Reduced motion respected; focus visible on every tone.
+- [ ] Reduced motion respected ([14-motion.md](14-motion.md#reduced-motion)); focus visible on every tone.

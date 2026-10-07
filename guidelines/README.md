@@ -17,8 +17,9 @@ Read in order the first time; afterwards jump straight to the topic. Every page 
 | 11 | [Applications](11-applications.md) | Business cards, letterhead, e-mail signature, website, slides, merch |
 | 12 | [Voice and tone](12-voice-and-tone.md) | How the brand sounds: headline patterns, CTAs, writing rules (from the website) |
 | 13 | [Web components](13-web-components.md) | Header, hero, sections, arrow link, cards, carousels, FAQ, footer; exact specs from manageandmore.de |
+| 14 | [Motion](14-motion.md) | Hover, scroll, loading, opening and closing; durations, easings, reduced motion |
 | — | [Sources and discrepancies](sources-and-discrepancies.md) | Website vs PDF, adopted patterns, open website fixes, PDF errors, decisions log |
 
 Status values: `canonical` (from the PDF), `adopted` (from the manageandmore.de codebase, approved as the screen standard), `derived` (added here, e.g. accessibility fixes), `observed` (seen in the wild, not approved).
 
-Print, slides and identity assets follow the PDF; screens follow the adopted website patterns, corrected for WCAG 2.2 AA.
+Print, slides and identity assets follow the PDF; screens follow the adopted website patterns, corrected for WCAG 2.2 AA. For screen look and motion the live manageandmore.de is the reference; the rebuild repo supplies tokens and layout numbers.

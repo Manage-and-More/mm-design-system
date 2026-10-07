@@ -9,7 +9,11 @@ status: living document
 ## Source hierarchy
 
 1. **Canonical:** `source/MM_CI.pdf`, "Manage and More guideline - Brand elements", InDesign export dated **16 April 2020**, 41 pages, author MDPM team (UnternehmerTUM). Full text in [`source/MM_CI.txt`](../source/MM_CI.txt), page images in [`source/pages/`](../source/pages/).
-2. **Adopted:** the live website https://www.manageandmore.de/ as implemented in the **`manage-and-more-website`** repo (Next.js 16, Tailwind v4; `src/styles/theme.css` is its single theme file). Read in full on 2026-10-07 at commit `742e91f`. The brand owner decided that the website is the **standard for screens** where the PDF is silent or out of date, subject to the decisions below.
+2. **Adopted:** the website, in two forms:
+   - the **live site** https://www.manageandmore.de/ (Craft CMS, shared UnternehmerTUM front-end; `styles.css`, `index.js`, `icons.js` read 2026-10-07): the **reference for look and motion** of components;
+   - the **rebuild** in the **`manage-and-more-website`** repo (Next.js 16, Tailwind v4; `src/styles/theme.css` is its single theme file; read at commit `742e91f`): the reference for **tokens and layout numbers**, which it extracted from the live site.
+
+   The brand owner decided that the website is the **standard for screens** where the PDF is silent or out of date, subject to the decisions below. Where the rebuild differs from the live site in look or motion, the live site wins and the difference is a website fix.
 3. **Derived:** values this repo adds (accessibility shades, print-to-screen conversions). Marked *(derived)* in the guidelines and `"source": "derived"` in tokens.
 
 When sources disagree: for **screens**, the adopted website patterns apply, corrected for WCAG 2.2 AA; for **print, slides and identity assets** (logo, labels, colours), the PDF wins. Record new decisions in the [decisions log](#decisions-log).
@@ -34,9 +38,12 @@ When sources disagree: for **screens**, the adopted website patterns apply, corr
 | A10 | Endorsement on screen | label 40-64px, footer only | label in the hero corner (40/80px) + lock-up in the footer | [03-endorsement-labels](03-endorsement-labels.md) |
 | A11 | Inline links | black text, 2px blue underline | current colour, Extrabold, underline offset 4px | [04-color](04-color.md#accessibility-wcag-22-contrast-ratios-computed) |
 | A12 | Components | button, link, card, hero, footer | header, hero, section, two-tone heading, arrow link, stat row, photo/person/scholar/directory cards, logo grid, portfolio, chips, testimonial and media carousels, FAQ, lists, countdown, video embed, footer | [13-web-components](13-web-components.md) |
-| A13 | UI glyphs, motion | none | arrow, check, plus, quote, LinkedIn glyphs; 200/300/500ms ease-out | [06-iconography](06-iconography.md#ui-glyphs-adopted-from-the-website), [13-web-components](13-web-components.md#interaction-and-motion) |
+| A13 | UI glyphs, motion | none | first version from the rebuild; superseded by A17 and A18 | [06-iconography](06-iconography.md#ui-glyphs-adopted-from-the-website), [13-web-components](13-web-components.md#interaction-and-motion) |
 | A14 | Photography | PDF example photos only | Manage and More's own photos added under `assets/photography/website/` | [09-photography](09-photography.md) |
 | A15 | Voice | observed from HTML | full copy from the repo: setup/payoff headlines, CTA list | [12-voice-and-tone](12-voice-and-tone.md) |
+| A16 | Arrow link | rebuild: outlined 44px circle, nudge right | live: filled sticker (2em) in text colour, glyph in background colour, scale 1.1 on hover | [13-web-components](13-web-components.md#arrow-link-primary-call-to-action) |
+| A17 | Motion | rebuild: 4 hover transitions | live: hover scale, nav underline wipe, image zoom 1.1, header shrink at 60px, image fade-in with pulse, FAQ height + sticker turn, dropdown clip, side panels; reduced motion stricter than live | [14-motion](14-motion.md) |
+| A18 | UI glyphs | rebuild: stroked, round caps | live `utum-icon` set: filled 2-unit paths, square ends | [06-iconography](06-iconography.md#ui-glyphs-adopted-from-the-live-website) |
 
 ### Website fixes
 
@@ -60,6 +67,11 @@ These website details break a brand or accessibility rule. The design system doc
 | F14 | `src/lib/fonts.ts` fallback | Falls back to system UI fonts, not Work Sans | Add Work Sans to the fallback stack |
 | F15 | Copy | "Manage & More" (Program), "Start-up Project" vs "Start-Up Project" | "Manage and More", "Start-Up Project" |
 | F16 | Startups hero | Night-sky image instead of documentary photography | Prefer a real M&M photo |
+| F17 | `ArrowLink.tsx` | Outlined circle, round-capped arrow, 4px nudge (differs from the live site) | Filled sticker, live arrow glyph, scale 1.1 over 250ms |
+| F18 | `Disclosure` (Application) | Outlined circle, "+" rotating 45°, no height animation | Plus/minus sticker turning 180° (300ms), height 350ms |
+| F19 | `Header.tsx` | Turns black 95% + blur at 20px over 300ms, no shrink; nav links fade opacity | Solid black at 60px, padding shrink from 992px, 500ms; underline wipe on links |
+| F20 | `StartupGrid.tsx`, `PhotoGrid.tsx` | Image zoom 1.05 / none; images appear without fade-in | Zoom 1.1 on linked cards (500ms); fade-in with pulsing placeholder |
+| F21 | Partner logos | Rebuild shows a static grid; live site uses a marquee | Keep the static grid (marquee not adopted) |
 
 ### Still different, by design
 
@@ -98,3 +110,7 @@ The PDF is from April 2020. UnternehmerTUM has since published "UnternehmerTUM i
 | 2026-10-07 | Type: adopt the website scale, stored in rem; headline line-height 1.15 on screens, 1.0 in print | brand owner |
 | 2026-10-07 | CTA: arrow link is the primary web CTA; the rectangular button stays for forms and product UI | brand owner |
 | 2026-10-07 | Typeface: Manage and More holds a Sharp Sans licence and uses it on the web; Work Sans is the fallback. The font files stay out of this repo | brand owner |
+| 2026-10-07 | Where the live site and the rebuild differ, the live site is the reference for look and motion; the rebuild stays the reference for tokens and layout numbers | brand owner |
+| 2026-10-07 | Arrow link: the live "sticker" (filled circle, scale on hover) replaces the rebuild's outlined circle | brand owner |
+| 2026-10-07 | Motion: document hover micro-interactions, scroll and loading, opening and closing. Partner logo marquee not adopted | brand owner |
+| 2026-10-07 | Reduced motion: disable all non-essential motion (stricter than the live site) | brand owner |

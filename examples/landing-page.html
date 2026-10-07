@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manage and More · Example landing page</title>
+<!-- Reference implementation of the manageandmore.de components (guidelines/13-web-components.md). Copy what you need.
+     Sharp Sans is not bundled: without its @font-face rules this page renders in the Work Sans fallback. -->
+<link rel="icon" href="../assets/logo/svg/mm-symbol-blue.svg">
+<link rel="stylesheet" href="../tokens/build/tokens.css">
+<link rel="stylesheet" href="../assets/fonts/work-sans/work-sans.css">
+<link rel="stylesheet" href="mm-base.css">
+</head>
+<body>
+<header class="mm-header" id="top">
+  <div class="mm-header__inner">
+    <a class="mm-header__logo" href="#top" aria-label="Manage and More — home"><img src="../assets/logo/svg/mm-logo-primary-on-dark.svg" alt="Manage and More"></a>
+    <nav aria-label="Main"><ul><li><a href="#">Program</a></li><li><a href="#">Application</a></li><li><a href="#">People</a></li><li><a href="#">Startups</a></li><li><a href="#">Alumni</a></li></ul></nav>
+  </div>
+</header>
+
+<main>
+  <section class="mm-hero mm-hero--home">
+    <div class="mm-hero__media"><img src="../assets/photography/website/cohort-group.webp" alt="" fetchpriority="high"></div>
+    <div class="mm-container mm-hero__content">
+      <h1><span class="mm-outline">ENABLING ENTREPRENEURIAL LEADERS OF TOMORROW</span><span>People who build and scale companies.</span></h1>
+    </div>
+    <img class="mm-hero__label" src="../assets/labels/svg/by-unternehmertum-label-outline-white.svg" alt="by UnternehmerTUM">
+  </section>
+
+  <section class="mm-section mm-surface-black" style="border-top:0">
+    <div class="mm-container">
+      <h2>What's it about?</h2>
+      <div class="mm-prose">
+        <p>Manage and More is the <strong>flagship entrepreneurship program</strong> for top talent in Munich. As a central part of Europe's #1 startup hub, UnternehmerTUM, we provide the ultimate ecosystem for students ready to move beyond theory.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mm-section mm-surface-white">
+    <div class="mm-container">
+      <h2>Connect. Grow. Belong.</h2>
+      <p class="mm-prose">Join Munich's most entrepreneurial ecosystem. From day one you are part of a tight-knit circle of active members and an influential Alumni Network.</p>
+      <a class="mm-arrow-link" href="#">
+        <span class="mm-arrow-link__circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        Meet the Community
+      </a>
+    </div>
+  </section>
+
+  <section class="mm-section mm-surface-black">
+    <div class="mm-container">
+      <h2>Build. Scale. Succeed.</h2>
+      <p class="mm-prose" style="margin-bottom:3rem">Discover the track record of Munich's most entrepreneurial talent.</p>
+      <dl class="mm-stats">
+        <div><dt hidden>Capital raised</dt><dd><span class="mm-stat__value">&gt; 2.3 B. $</span><span class="mm-stat__label">Capital raised</span></dd></div>
+        <div><dt hidden>Alumni-founded VC funds</dt><dd><span class="mm-stat__value">10+</span><span class="mm-stat__label">Alumni-founded VC funds</span></dd></div>
+        <div><dt hidden>Founded startups</dt><dd><span class="mm-stat__value">260+</span><span class="mm-stat__label">founded startups</span></dd></div>
+      </dl>
+      <a class="mm-arrow-link" href="#" style="margin-top:3rem">
+        <span class="mm-arrow-link__circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        Feel the impact
+      </a>
+    </div>
+  </section>
+
+  <section class="mm-section mm-surface-white">
+    <div class="mm-container">
+      <h2><span class="mm-outline">Where our culture is built:</span><span>Events</span></h2>
+      <ul class="mm-grid mm-grid--3">
+        <li class="mm-photo-card"><img class="mm-photo" src="../assets/photography/website/bootcamp-workshop.webp" alt="Scholars in the Business Design Bootcamp"><p class="mm-title">Business Design Bootcamp</p><p class="mm-photo-card__subtitle">Intro week</p><p>Get to know design thinking through hands-on activities.</p></li>
+        <li class="mm-photo-card"><img class="mm-photo" src="../assets/photography/website/startup-tour-dinner.webp" alt="Startup Tour dinner in Istanbul"><p class="mm-title">Startup Tours</p><p class="mm-photo-card__subtitle">Every semester</p><p>Visit startups, accelerators and VCs across Europe and beyond.</p></li>
+        <li class="mm-photo-card"><img class="mm-photo" src="../assets/photography/website/coaching.webp" alt="One-to-one coaching session"><p class="mm-title">Coaching</p><p class="mm-photo-card__subtitle">Optional element</p><p>Experienced coaches right by your side.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Blue emphasis section: black text (7.05:1), never white -->
+  <section class="mm-section mm-surface-blue">
+    <div class="mm-container">
+      <h2>Application Deadlines for Upcoming Semesters</h2>
+      <p class="mm-lead">Winter semester: June 7th · Summer semester: December 6th</p>
+      <a class="mm-arrow-link" href="#">
+        <span class="mm-arrow-link__circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        Connect with us!
+      </a>
+    </div>
+  </section>
+
+  <section class="mm-section mm-surface-black">
+    <div class="mm-container">
+      <h2>Frequently asked questions</h2>
+      <div class="mm-faq">
+        <details><summary>Do I need a startup idea to apply?</summary><div><p><strong>No idea? No problem.</strong> You will find co-founders and market gaps within the community.</p></div></details>
+        <details><summary>How much time does the program take?</summary><div><p>Roughly 20 hours per week on average over the whole year.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="mm-section mm-surface-white">
+    <div class="mm-container mm-split">
+      <div>
+        <h2><span class="mm-outline">Find your tribe.</span><span>Get to know us!</span></h2>
+        <p class="mm-prose" style="margin-top:2rem">Meet like-minded innovators at our next open session.</p>
+        <a class="mm-arrow-link" href="#">
+          <span class="mm-arrow-link__circle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          Join an Open Event
+        </a>
+      </div>
+      <img class="mm-photo mm-photo--feature mm-photo--square" src="../assets/photography/website/scholars-group.webp" alt="Smiling scholars in Manage and More hoodies">
+    </div>
+  </section>
+</main>
+
+<footer class="mm-footer">
+  <div class="mm-container mm-footer__grid">
+    <div><h2>UnternehmerTUM GmbH</h2><address>Lichtenbergstraße 6<br>D-85748 Garching<br>Germany</address></div>
+    <nav aria-label="Social media"><h2>Social Media</h2><ul><li><a href="#">LinkedIn</a></li><li><a href="#">Instagram</a></li></ul></nav>
+    <nav aria-label="Legal"><h2>Legal</h2><ul><li><a href="#">Imprint</a></li><li><a href="#">Privacy Policy</a></li></ul></nav>
+    <div>
+      <!-- Required by the guideline (p.37): descriptor + logo label in the footer -->
+      <img class="mm-footer__lockup" src="../assets/labels/svg/descriptor-lockup-outline-white.svg" alt="Entrepreneurial Education, by UnternehmerTUM">
+      <p style="margin-top:1.5rem"><a href="#top">Back to top ↑</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+  // Header turns black after 20px of scrolling (website: src/components/Header.tsx)
+  const header = document.querySelector('.mm-header');
+  const update = () => header.classList.toggle('is-scrolled', window.scrollY > 20);
+  update(); window.addEventListener('scroll', update, { passive: true });
+</script>
+</body>
+</html>

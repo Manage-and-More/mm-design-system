@@ -96,5 +96,8 @@
   --aspect-mm-square: 1 / 1;
   --aspect-mm-video: 16 / 9;
   --aspect-mm-banner: 2 / 1;
-  --ease-mm: cubic-bezier(0, 0, 0.2, 1);
+  --ease-mm-out: cubic-bezier(0, 0, 0.58, 1);
+  --ease-mm-standard: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-mm-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+  --ease-mm-pulse: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }

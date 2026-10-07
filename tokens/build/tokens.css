@@ -69,7 +69,8 @@
   --mm-opacity-shade: 0.4;
   --mm-opacity-shade-strong: 0.6;
   --mm-opacity-shade-solid: 0.7;
-  --mm-opacity-header-scrolled: 0.95;
+  --mm-opacity-placeholder-min: 0.05;
+  --mm-opacity-placeholder-max: 0.15;
   --mm-logo-min-height-screen: 32px;
   --mm-logo-min-height-print: 10mm;
   --mm-label-size-din-a6: 13.1mm;
@@ -112,6 +113,8 @@
   --mm-stroke-outline-text-desktop: 1.5px;
   --mm-size-control: 44px;
   --mm-size-control-small: 32px;
+  --mm-size-sticker: 2em;
+  --mm-size-sticker-glyph: 1.333em;
   --mm-aspect-photo: 4 / 3;
   --mm-aspect-portrait: 4 / 5;
   --mm-aspect-square: 1 / 1;
@@ -133,13 +136,24 @@
   --mm-layout-header-gutter-large: 50px;
   --mm-layout-header-logo-width-mobile: 98px;
   --mm-layout-header-logo-width-desktop: 128px;
+  --mm-layout-header-padding-desktop: 1em;
   --mm-breakpoint-sm: 576px;
   --mm-breakpoint-md: 768px;
   --mm-breakpoint-lg: 992px;
   --mm-breakpoint-xl: 1200px;
   --mm-breakpoint-2xl: 1536px;
+  --mm-motion-duration-quick: 150ms;
   --mm-motion-duration-fast: 200ms;
+  --mm-motion-duration-medium: 250ms;
   --mm-motion-duration-base: 300ms;
+  --mm-motion-duration-expand: 350ms;
   --mm-motion-duration-slow: 500ms;
-  --mm-motion-easing: cubic-bezier(0, 0, 0.2, 1);
+  --mm-motion-duration-slower: 1000ms;
+  --mm-motion-duration-pulse: 2000ms;
+  --mm-motion-easing-out: cubic-bezier(0, 0, 0.58, 1);
+  --mm-motion-easing-standard: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --mm-motion-easing-in-out: cubic-bezier(0.42, 0, 0.58, 1);
+  --mm-motion-easing-pulse: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  --mm-motion-scale-hover: 1.1;
+  --mm-motion-scroll-threshold: 60px;
 }

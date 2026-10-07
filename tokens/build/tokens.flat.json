@@ -85,7 +85,8 @@
   "opacity.shade": 0.4,
   "opacity.shade-strong": 0.6,
   "opacity.shade-solid": 0.7,
-  "opacity.header-scrolled": 0.95,
+  "opacity.placeholder-min": 0.05,
+  "opacity.placeholder-max": 0.15,
   "logo.clear-space": "0.5U",
   "logo.symbol-wordmark-gap": "1/3 U",
   "logo.min-height-screen": "32px",
@@ -130,6 +131,8 @@
   "stroke.outline-text.desktop": "1.5px",
   "size.control": "44px",
   "size.control-small": "32px",
+  "size.sticker": "2em",
+  "size.sticker-glyph": "1.333em",
   "aspect.photo": "4 / 3",
   "aspect.portrait": "4 / 5",
   "aspect.square": "1 / 1",
@@ -151,18 +154,44 @@
   "layout.header.gutter-large": "50px",
   "layout.header.logo-width-mobile": "98px",
   "layout.header.logo-width-desktop": "128px",
+  "layout.header.padding-desktop": "1em",
   "breakpoint.sm": "576px",
   "breakpoint.md": "768px",
   "breakpoint.lg": "992px",
   "breakpoint.xl": "1200px",
   "breakpoint.2xl": "1536px",
+  "motion.duration-quick": "150ms",
   "motion.duration-fast": "200ms",
+  "motion.duration-medium": "250ms",
   "motion.duration-base": "300ms",
+  "motion.duration-expand": "350ms",
   "motion.duration-slow": "500ms",
-  "motion.easing": [
+  "motion.duration-slower": "1000ms",
+  "motion.duration-pulse": "2000ms",
+  "motion.easing-out": [
     0,
     0,
-    0.2,
+    0.58,
     1
-  ]
+  ],
+  "motion.easing-standard": [
+    0.25,
+    0.1,
+    0.25,
+    1
+  ],
+  "motion.easing-in-out": [
+    0.42,
+    0,
+    0.58,
+    1
+  ],
+  "motion.easing-pulse": [
+    0.455,
+    0.03,
+    0.515,
+    0.955
+  ],
+  "motion.scale-hover": 1.1,
+  "motion.scroll-threshold": "60px"
 }

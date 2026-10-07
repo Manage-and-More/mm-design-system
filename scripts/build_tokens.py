@@ -89,7 +89,7 @@ def build():
         "opacity": {f"mm-{k}": v for k, v in group("opacity", as_var=False).items()},
         "aspectRatio": {f"mm-{k}": v for k, v in group("aspect").items()},
         "transitionDuration": {f"mm-{k.removeprefix('duration-')}": v for k, v in group("motion").items() if k.startswith("duration")},
-        "transitionTimingFunction": {"mm": "var(--mm-motion-easing)"},
+        "transitionTimingFunction": {f"mm-{k.removeprefix('easing-')}": v for k, v in group("motion").items() if k.startswith("easing")},
     }
     files["tailwind.preset.js"] = (
         f"// {HEADER}\n// Tailwind v3. Usage: presets: [require('<path>/tokens/build/tailwind.preset.js')] and import tokens.css once.\n"
@@ -114,7 +114,7 @@ def build():
         ("radius", lit("radius")),
         ("container", lit("layout.content")),
         ("aspect", lit("aspect")),
-        ("ease", {"": css_value(values["motion.easing"], "cubicBezier")}),
+        ("ease", {k.removeprefix("easing-"): v for k, v in lit("motion").items() if k.startswith("easing")}),
     ]
     for ns, entries in sections:
         for k, v in entries.items():

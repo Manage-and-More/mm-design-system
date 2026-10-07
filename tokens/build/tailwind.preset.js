@@ -137,7 +137,8 @@ module.exports = { theme: { extend: {
     "mm-shade": "0.4",
     "mm-shade-strong": "0.6",
     "mm-shade-solid": "0.7",
-    "mm-header-scrolled": "0.95"
+    "mm-placeholder-min": "0.05",
+    "mm-placeholder-max": "0.15"
   },
   "aspectRatio": {
     "mm-photo": "var(--mm-aspect-photo)",
@@ -147,11 +148,19 @@ module.exports = { theme: { extend: {
     "mm-banner": "var(--mm-aspect-banner)"
   },
   "transitionDuration": {
+    "mm-quick": "var(--mm-motion-duration-quick)",
     "mm-fast": "var(--mm-motion-duration-fast)",
+    "mm-medium": "var(--mm-motion-duration-medium)",
     "mm-base": "var(--mm-motion-duration-base)",
-    "mm-slow": "var(--mm-motion-duration-slow)"
+    "mm-expand": "var(--mm-motion-duration-expand)",
+    "mm-slow": "var(--mm-motion-duration-slow)",
+    "mm-slower": "var(--mm-motion-duration-slower)",
+    "mm-pulse": "var(--mm-motion-duration-pulse)"
   },
   "transitionTimingFunction": {
-    "mm": "var(--mm-motion-easing)"
+    "mm-out": "var(--mm-motion-easing-out)",
+    "mm-standard": "var(--mm-motion-easing-standard)",
+    "mm-in-out": "var(--mm-motion-easing-in-out)",
+    "mm-pulse": "var(--mm-motion-easing-pulse)"
   }
 } } };

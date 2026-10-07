@@ -1,5 +1,5 @@
 {
-  "$description": "Machine-readable index of every file in assets/. Keep it complete: scripts/validate.py fails if a file is missing here or an entry points nowhere. kind: logo|symbol|label|lockup|icon|ui-glyph|illustration|infographic|photo|font|license. ui-glyph = small functional UI marks (arrows, check, plus, quote, social), distinct from the brand pictogram icons. use_on: backgrounds the asset is approved for.",
+  "$description": "Machine-readable index of every file in assets/. Keep it complete: scripts/validate.py fails if a file is missing here or an entry points nowhere. kind: logo|symbol|label|lockup|icon|ui-glyph|illustration|infographic|photo|font|license. ui-glyph = small functional UI marks (arrows, chevron, check, plus/minus, close, menu, quote, social) from the live site's icon set, distinct from the brand pictogram icons. use_on: backgrounds the asset is approved for.",
   "assets": [
     {
       "path": "assets/logo/svg/mm-logo-primary.svg",
@@ -1821,8 +1821,8 @@
     {
       "path": "assets/ui/svg/arrow-right.svg",
       "kind": "ui-glyph",
-      "description": "Arrow pointing right, stroke 2 round caps, currentColor. Inside the arrow-link circle and the 'next' carousel control.",
-      "source": "manage-and-more-website src/components/ArrowLink.tsx (adopted 2026-10-07)",
+      "description": "Arrow right, 2-unit line on a 40 grid, square ends, filled path in currentColor. The arrow inside the sticker (arrow-link CTA, 'Back to top' rotated -90deg).",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
       "use_on": [
         "white",
         "black",
@@ -1832,16 +1832,14 @@
       ],
       "tags": [
         "ui",
-        "arrow",
-        "cta",
-        "next"
+        "arrow"
       ]
     },
     {
       "path": "assets/ui/svg/arrow-left.svg",
       "kind": "ui-glyph",
-      "description": "Arrow pointing left, stroke 2 round caps, currentColor. 'Previous' carousel control.",
-      "source": "manage-and-more-website src/components/TourCarousel.tsx (adopted 2026-10-07)",
+      "description": "Arrow left, same construction. 'Previous' controls.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
       "use_on": [
         "white",
         "black",
@@ -1851,16 +1849,14 @@
       ],
       "tags": [
         "ui",
-        "arrow",
-        "previous",
-        "carousel"
+        "arrow"
       ]
     },
     {
       "path": "assets/ui/svg/check.svg",
       "kind": "ui-glyph",
-      "description": "Check mark, stroke 2 round caps, currentColor. Requirement and highlight lists.",
-      "source": "manage-and-more-website src/app/application/page.tsx (adopted 2026-10-07)",
+      "description": "Check mark, same construction. Requirement and highlight lists.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
       "use_on": [
         "white",
         "black",
@@ -1870,15 +1866,14 @@
       ],
       "tags": [
         "ui",
-        "check",
-        "list"
+        "check"
       ]
     },
     {
       "path": "assets/ui/svg/plus.svg",
       "kind": "ui-glyph",
-      "description": "Plus, stroke 2 round caps, currentColor. FAQ disclosure toggle (rotates 45deg to a cross when open).",
-      "source": "manage-and-more-website src/app/application/page.tsx (drawn as a '+' character there) (adopted 2026-10-07)",
+      "description": "Plus, same construction. Closed state of the FAQ sticker (swaps to minus with a 180deg turn).",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
       "use_on": [
         "white",
         "black",
@@ -1888,9 +1883,7 @@
       ],
       "tags": [
         "ui",
-        "plus",
-        "faq",
-        "disclosure"
+        "plus"
       ]
     },
     {
@@ -2056,6 +2049,108 @@
         "alumni",
         "group",
         "community"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/arrow-up.svg",
+      "kind": "ui-glyph",
+      "description": "Arrow up, same construction.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "arrow"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/arrow-down.svg",
+      "kind": "ui-glyph",
+      "description": "Arrow down, same construction.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "arrow"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/chevron-down.svg",
+      "kind": "ui-glyph",
+      "description": "Chevron down, same construction. Dropdowns and expandable navigation.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "chevron"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/minus.svg",
+      "kind": "ui-glyph",
+      "description": "Minus, same construction. Open state of the FAQ sticker.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "minus"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/close.svg",
+      "kind": "ui-glyph",
+      "description": "Close (X), same construction. Overlays, side panels, mobile menu.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "close"
+      ]
+    },
+    {
+      "path": "assets/ui/svg/hamburger.svg",
+      "kind": "ui-glyph",
+      "description": "Three bars, same construction. Mobile menu toggle.",
+      "source": "live manageandmore.de /assets/icons.js (utum-icon set), read 2026-10-07",
+      "use_on": [
+        "white",
+        "black",
+        "grey",
+        "blue",
+        "photo"
+      ],
+      "tags": [
+        "ui",
+        "hamburger"
       ]
     }
   ]

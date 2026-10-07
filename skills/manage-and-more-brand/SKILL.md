@@ -9,11 +9,11 @@ Use this skill whenever you create or review anything that carries the Manage an
 
 ## 1. Locate the design system repo
 
-All paths below are relative to the root of the `mm-design-system` repo. Find it in this order and remember the path as `$MM`:
+All paths below are relative to the root of the `mm-design-system` repo. Find it in this order and remember the **absolute** path as `$MM`. The snippet is bash; in fish or zsh-only setups run it with `bash -c '…'`.
 
 ```bash
 for d in "$MM_DESIGN_SYSTEM" "$(git rev-parse --show-toplevel 2>/dev/null)" ./mm-design-system ../mm-design-system ~/mm-design-system ~/.cache/mm-design-system; do
-  [ -n "$d" ] && [ -f "$d/assets/catalog.json" ] && [ -d "$d/guidelines" ] && MM="$d" && break
+  [ -n "$d" ] && [ -f "$d/assets/catalog.json" ] && [ -d "$d/guidelines" ] && MM="$(cd "$d" && pwd)" && break
 done
 [ -z "$MM" ] && git clone --depth 1 https://github.com/Manage-and-More/mm-design-system ~/.cache/mm-design-system && MM=~/.cache/mm-design-system
 echo "$MM"
@@ -34,7 +34,7 @@ jq -r '.assets[] | select(.kind=="logo" and (.use_on|index("black"))) | .path' "
 **Brand:** Manage and More, an *endorsed brand* of UnternehmerTUM. Own logo and colour; shows its endorsement with the square **BY UNTERNEHMERTUM** label. Write the name "Manage and More".
 
 **Logo** (`assets/logo/svg/`): symbol (blue swirl) + two-line wordmark "MANAGE / AND MORE".
-- `mm-logo-primary.svg` on white/light · `mm-logo-primary-on-dark.svg` on black and dark heroes (website header, 98px wide, 128px from 768px) · `mm-logo-white.svg` on blue or photos · `mm-logo-black.svg` one-colour · `mm-symbol-*.svg` for favicons/avatars.
+- `mm-logo-primary.svg` on white/light · `mm-logo-primary-on-dark.svg` on black and dark heroes (website header: set by height, 32px, 40px from 768px) · `mm-logo-white.svg` on blue or photos · `mm-logo-black.svg` one-colour · `mm-symbol-*.svg` for favicons/avatars.
 - Clear space ≥ half the logo height. Min 32px tall on screen, else symbol only.
 - Never: all-blue logo, other colours, recolouring parts, rearranging, stretching, frames, shadows, anything on top, added symbols. `alt="Manage and More"`.
 
@@ -58,9 +58,9 @@ Accessibility: white on blue and blue on white are 2.98:1. **Text on blue is bla
 
 **CTA:** the **arrow link** is primary: a filled **sticker** circle (2em of the label size, ~40px) in the text colour with the arrow (`assets/ui/svg/arrow-right.svg`, inlined) in the section's background colour, then an Extrabold label; the sticker scales to 1.1 on hover (250ms ease-out). Rectangular black button (uppercase Extrabold, square) only for forms and product UI. Inline links: current colour, Extrabold, underline offset 4px.
 
-**Motion** (`guidelines/14-motion.md`, tokens `--mm-motion-*`): short and reactive only. Sticker scale 1.1 (250ms); nav underline wipe (150ms); linked-card image zoom 1.1 (500ms); colour fades 200ms; header solid and slimmer after 60px (500ms); images fade in over a pulsing placeholder; FAQ plus→minus sticker turns 180° while the answer expands (350ms). No parallax, scroll-triggered entrances or marquees. Under `prefers-reduced-motion` everything stops and background video shows its poster.
+**Motion** (`guidelines/14-motion.md`, tokens `--mm-motion-*`): short and reactive only. Sticker scale 1.1 (250ms); nav underline wipe (150ms); linked-card image zoom 1.1 (500ms); colour fades 200ms; header solid and slimmer after 60px (500ms); images fade in over a pulsing placeholder; FAQ sticker swaps plus→minus and turns 180° (300ms) while the answer's height expands (350ms). No parallax, scroll-triggered entrances or marquees. Under `prefers-reduced-motion` everything stops and background video shows its poster.
 
-**Icons** (`assets/icons/svg/*.svg`, `currentColor`): monoline, square ends, one colour (black/white/blue). 16 icons: globe, signpost, map, rocket, health, money, network, education, calendar, tools, connected-car, robot-arm, team, building, technology, chat. Missing ones: Tabler/Lucide at stroke 2, square caps. **UI glyphs** (`assets/ui/svg/`: arrows, chevron, check, plus/minus, close, menu, quote, LinkedIn) are thin filled paths with square ends, only for controls; paste them inline so they can take `currentColor`.
+**Icons:** for web pages use the 36 live-site pictograms in `assets/icons/web/` (e.g. smart-industry, mobility, artificial-intelligence, mentoring-coaching; no energy icon). For print, the 16 PDF icons in `assets/icons/svg/*.svg` (`currentColor`): monoline, square ends, one colour (black/white/blue): globe, signpost, map, rocket, health, money, network, education, calendar, tools, connected-car, robot-arm, team, building, technology, chat. Missing ones: Tabler/Lucide at stroke 2 with square caps and mitred joins. **UI glyphs** (`assets/ui/svg/`: arrows, chevron, check, plus/minus, close, menu, quote, LinkedIn) are thin filled paths with square ends, only for controls; paste them inline so they can take `currentColor`.
 
 **Illustration:** black line art + one big flat blue circle or full yellow ground, dot/hatch textures, white knock-outs, playful innovation motifs. **Infographics:** thin black lines + big flat shapes in blue/yellow/black/grey, big Extrabold numbers; on the web, a stat row (top rule, 30-50px Extrabold number, small label).
 
@@ -72,7 +72,7 @@ Accessibility: white on blue and blue on white are 2.98:1. **Text on blue is bla
 
 ## 3. Workflow by task
 
-- **Web / app UI:** copy `tokens/build/tokens.css` (or `tailwind.theme.css` for Tailwind v4, `tailwind.preset.js` for v3), the Sharp Sans files (if the project may have them) and the Work Sans fallback; copy the needed logo/label/icon/glyph SVGs instead of hot-linking. Build from the components in `guidelines/13-web-components.md`, motion from `guidelines/14-motion.md`; layout numbers in `guidelines/10-layout.md`. Start from `examples/landing-page.html` + `examples/mm-base.css`. For pixel-exact detail: the live https://www.manageandmore.de for look and motion, the website repo (`src/styles/theme.css`) for tokens and layout.
+- **Web / app UI:** copy `tokens/build/tokens.css` (or `tailwind.theme.css` for Tailwind v4, `tailwind.preset.js` for v3), the Sharp Sans files (if the project may have them) and the Work Sans fallback; copy the needed logo/label/icon/glyph SVGs instead of hot-linking. Build from the components in `guidelines/13-web-components.md`, motion from `guidelines/14-motion.md`; layout numbers in `guidelines/10-layout.md`. Start from `examples/landing-page.html` + `examples/mm-base.css`. Put licensed Sharp Sans in `fonts/sharp-sans/` and git-ignore it unless the repo is private to the team. For unconfirmed content follow `guidelines/13-web-components.md#placeholders`. For pixel-exact detail: the live https://www.manageandmore.de for look and motion, the website repo (`src/styles/theme.css`) for tokens and layout.
 - **Slides / documents:** `guidelines/11-applications.md` (presentations, letterhead) + logo PNGs. Arial in PowerPoint/Slides, Sharp Sans or Work Sans elsewhere; headline leading 1.0.
 - **E-mail signature:** template in `guidelines/11-applications.md`.
 - **Social / print graphic:** big Extrabold headline (two-tone outline/solid works well), flat blue/yellow/black blocks, logo with clear space, label in a corner.

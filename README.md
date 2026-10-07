@@ -33,7 +33,7 @@ tokens/build/             generated: tokens.css, tokens.scss, tokens.flat.json, 
 assets/catalog.json       machine-readable index of every asset
 assets/logo/              logo + symbol, SVG and PNG
 assets/labels/            BY UNTERNEHMERTUM label, descriptor lock-ups
-assets/icons/             16 monoline icons (SVG currentColor + PNG)
+assets/icons/             16 monoline icons from the PDF (SVG currentColor + PNG); web/ = 36 live-site pictograms
 assets/ui/                UI glyphs from the live website (arrows, chevron, check, plus/minus, close, menu, quote, LinkedIn)
 assets/illustrations/     line-art illustrations (SVG + PNG)
 assets/infographics/      chart style examples

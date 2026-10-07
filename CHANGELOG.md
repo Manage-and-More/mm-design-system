@@ -2,7 +2,17 @@
 
 ## Unreleased
 
-### Motion and live-site alignment
+### Fixes from the V2 skill test
+
+- Header logo set by height (32px, 40px from 768px) instead of width; tokens `layout.header.logo-height-*` replace `logo-width-*`. The website's smaller logo is logged as fix F22.
+- Header slimming bug fixed in `14-motion.md` and `mm-base.css` (min-height grows with the padding). Underline wipe applies wherever the nav is shown and uses the easing token.
+- Sticker uses separate `scale` (250ms) and `rotate` (300ms) properties; skill FAQ timing clarified.
+- New opacity tokens: `text-card`, `accent-rule`, `rule`, `hairline`, `placeholder-text`; specs reference them.
+- 36 web pictograms from the live icon set in `assets/icons/web/` (smart-industry, mobility, AI, …) plus chevron-left/right/up.
+- Catalogue: no `use_on: null` left; `rights` on the website photos; outline-white label approved on calm or shaded photos.
+- New specs: feature (icon) card, hero meta line and CTA, hero padding for the label, full-width person grid, placeholders.
+- Example: mobile menu, feature cards; Work Sans copy list and `.gitignore` advice for Sharp Sans; skill locate step resolves an absolute path.
+
 
 The live manageandmore.de is now the reference for look and motion (the rebuild repo stays the reference for tokens and layout).
 

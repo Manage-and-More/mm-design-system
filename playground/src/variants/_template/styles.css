@@ -1,0 +1,31 @@
+/* Each variant is its own Tailwind entry, scanned only from this folder. */
+@import 'tailwindcss' source(none);
+@source './';
+
+/* Core custom properties (--mm-*), then this variant's overrides from tokens.json. */
+@import '@ds/tokens/build/tokens.css';
+@import './generated/tokens.css';
+@import '@ds/assets/fonts/work-sans/work-sans.css';
+
+/* Dark mode follows the playground toolbar (data-mode on <html>). */
+@custom-variant dark (&:where([data-mode='dark'], [data-mode='dark'] *));
+
+/* Semantic utilities for this variant: bg-surface, text-fg, rounded-control, … */
+@theme inline {
+  --color-surface: var(--mm-color-semantic-background);
+  --color-fg: var(--mm-color-semantic-text);
+  --color-fg-muted: var(--mm-color-semantic-text-muted);
+  --color-accent: var(--mm-color-semantic-accent);
+  --color-line: var(--mm-color-semantic-border);
+  --font-sans: var(--mm-font-family-web);
+}
+
+@layer base {
+  body {
+    margin: 0;
+    background: var(--color-surface);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}

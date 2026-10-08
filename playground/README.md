@@ -84,3 +84,17 @@ pnpm typecheck
 pnpm test         # DTCG pipeline tests, incl. parity with the Python token build
 pnpm new:variant <id> [--name] [--summary] [--based-on]
 ```
+
+## Deploy
+
+The playground runs at https://mm-design-system.fly.dev behind basic auth and is hidden from search engines. Every push to `main` that touches `playground/`, `tokens/`, `assets/` or `examples/` runs typecheck and tests, then deploys (`.github/workflows/playground.yml`). The image (`Dockerfile`, built from the repo root) is the static build served by Caddy (`Caddyfile`); `fly.toml` keeps one machine that suspends when idle.
+
+Rotate the password (run in your own terminal so it never lands in a log):
+
+```bash
+PW=$(openssl rand -base64 24) && echo "New password: $PW"
+fly secrets set -a mm-design-system BASIC_AUTH_USER=mm \
+  BASIC_AUTH_HASH="$(docker run --rm caddy:2.11-alpine caddy hash-password --plaintext "$PW")"
+```
+
+Manual deploy from the repo root: `fly deploy --ha=false`. Only files allowed by `.dockerignore` are uploaded, so licensed fonts in `fonts-local/` never ship.

@@ -1,0 +1,57 @@
+name: Playground
+
+on:
+  push:
+    branches: [main]
+    paths: &paths
+      - "playground/**"
+      - "tokens/**"
+      - "assets/**"
+      - "examples/**"
+      - "Dockerfile"
+      - ".dockerignore"
+      - "fly.toml"
+      - ".github/workflows/playground.yml"
+  pull_request:
+    paths: *paths
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: playground
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+        with:
+          package_json_file: playground/package.json
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: playground/.nvmrc
+          cache: pnpm
+          cache-dependency-path: playground/pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm test
+
+  deploy:
+    needs: check
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    # one deploy at a time; a newer push waits instead of cancelling a running deploy
+    concurrency:
+      group: deploy-mm-design-system
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v7
+      # pinned commit: the 1.5 tag still runs on the deprecated node20 runtime
+      - uses: superfly/flyctl-actions/setup-flyctl@ed8efb33836e8b2096c7fd3ba1c8afe303ebbff1
+      - run: flyctl deploy --remote-only --ha=false
+        env:
+          # app-scoped deploy token: fly tokens create deploy -a mm-design-system
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}

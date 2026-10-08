@@ -1,0 +1,11 @@
+/* Brand v1: the current system exactly as shipped. Core tokens, the Tailwind v4 theme
+   and examples/mm-base.css are read in place from the design-system repo. */
+@import 'tailwindcss' source(none);
+@source './';
+
+@import '@ds/tokens/build/tokens.css';
+@import './generated/tokens.css';
+@import '@ds/tokens/build/tailwind.theme.css';
+@import '@ds/assets/fonts/work-sans/work-sans.css';
+/* Layered so Tailwind utilities can still adjust mm-* components in pages. */
+@import '@ds/examples/mm-base.css' layer(components);

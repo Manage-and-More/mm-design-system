@@ -1,0 +1,243 @@
+/* Docs chrome inside the canvas. Plain, unlayered CSS with .pg-doc-* names only:
+   it wins over layered variant CSS for its own elements and never touches variant markup.
+   Colours derive from currentColor so docs read on any variant background and in dark mode. */
+
+:root[data-mode='dark'] { color-scheme: dark; }
+
+/* Page-scroll canvases: the shell sizes the iframe to the content, so the playground has one scroll.
+   flow-root keeps child margins inside #root, which is what gets measured. */
+:root[data-scroll='page'] { overflow: hidden; }
+:root[data-scroll='page'] #root { display: flow-root; }
+
+/* Reset only docs elements, so variant markup inside specimens keeps its own spacing. */
+[class*='pg-doc-'] { margin: 0; }
+
+.pg-doc {
+  --pg-muted: color-mix(in srgb, currentColor 62%, transparent);
+  --pg-faint: color-mix(in srgb, currentColor 40%, transparent);
+  --pg-line: color-mix(in srgb, currentColor 13%, transparent);
+  --pg-fill: color-mix(in srgb, currentColor 5%, transparent);
+  --pg-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace;
+  --pg-ease: cubic-bezier(0.32, 0.72, 0, 1);
+  padding: clamp(24px, 4vw, 64px) clamp(20px, 4vw, 64px) 96px;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.pg-doc-header { margin-bottom: clamp(32px, 5vw, 56px); max-width: 52rem; }
+.pg-doc-eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pg-muted); }
+.pg-doc-title { margin-top: 0.5rem; font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.01em; }
+.pg-doc-summary { margin-top: 0.75rem; font-size: 1.125rem; line-height: 1.5; color: var(--pg-muted); }
+
+.pg-doc-section { padding-block: 40px; border-top: 1px solid var(--pg-line); }
+.pg-doc-section-head { display: grid; gap: 4px; margin-bottom: 24px; max-width: 52rem; }
+.pg-doc-section-title { font-size: 1.125rem; font-weight: 700; }
+.pg-doc-section-desc { font-size: 0.9375rem; line-height: 1.5; color: var(--pg-muted); }
+
+/* text helpers */
+.pg-doc-mono { font-family: var(--pg-mono); font-size: 0.75rem; letter-spacing: 0; }
+.pg-doc-muted { color: var(--pg-muted); }
+.pg-doc-label { font-size: 0.8125rem; font-weight: 600; }
+.pg-doc-empty, .pg-doc-error { padding: 32px; font: 500 0.9375rem/1.5 system-ui, sans-serif; }
+.pg-doc-error { color: #c4271b; white-space: pre-wrap; }
+
+/* copy button: value + icon; the icon becomes a check after copying */
+.pg-doc-copy {
+  all: unset; box-sizing: border-box; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; max-width: 100%;
+  justify-self: start; padding: 3px 6px 3px 8px; border-radius: 6px; border: 1px solid var(--pg-line);
+  font-family: var(--pg-mono); font-size: 0.75rem; line-height: 1.35; color: inherit;
+  transition: background-color 150ms, border-color 150ms;
+}
+.pg-doc-copy-text {
+  flex: 1 1 auto; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  direction: rtl; text-align: left; opacity: 0.78; transition: opacity 150ms;
+}
+.pg-doc-copy--block { width: 100%; justify-self: stretch; }
+/* Single-line text in cards takes the card's width instead of setting it (width 0 + grow), so a long
+   path never widens a card's intrinsic size and, through the grid's equal rows, every card's height. */
+.pg-doc-copy--block .pg-doc-copy-text, .pg-doc-swatch-name > span:first-child, .pg-doc-card-meta { width: 0; flex: 1 1 0; }
+.pg-doc-copy-icon { display: grid; flex-shrink: 0; width: 13px; height: 13px; opacity: 0.5; transition: opacity 150ms, color 150ms; }
+.pg-doc-copy-icon svg { width: 100%; height: 100%; }
+.pg-doc-copy:hover { background: var(--pg-fill); border-color: var(--pg-faint); }
+.pg-doc-copy:hover .pg-doc-copy-text, .pg-doc-copy:hover .pg-doc-copy-icon { opacity: 1; }
+.pg-doc-copy.is-copied .pg-doc-copy-icon { opacity: 1; color: #1f9d55; }
+.pg-doc-copy:focus-visible { outline: 2px solid currentColor; outline-offset: 1px; }
+.pg-doc-copy--bare { border-color: transparent; padding-inline: 6px; margin-inline: -6px; }
+.pg-doc-copy--bare .pg-doc-copy-text { opacity: 1; }
+.pg-doc-copy--bare:hover { border-color: transparent; background: color-mix(in srgb, currentColor 14%, transparent); }
+
+/* folded notes (design rationale, usage) */
+.pg-doc-notes { margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--pg-line); }
+.pg-doc-notes--inline { margin-top: 6px; padding-top: 0; border-top: 0; }
+.pg-doc-notes summary {
+  display: inline-flex; align-items: center; gap: 4px; cursor: pointer; list-style: none; border-radius: 4px;
+  font: 600 0.75rem/1.4 system-ui, sans-serif; opacity: 0.6; transition: opacity 150ms;
+}
+.pg-doc-notes summary::-webkit-details-marker { display: none; }
+.pg-doc-notes summary:hover, .pg-doc-notes[open] summary { opacity: 1; }
+.pg-doc-notes summary:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.pg-doc-notes summary svg { width: 12px; height: 12px; transition: rotate 200ms var(--pg-ease); }
+.pg-doc-notes[open] summary svg { rotate: 90deg; }
+.pg-doc-notes-body > * { margin: 0; }
+.pg-doc-notes-body { padding-top: 8px; font-size: 0.8125rem; line-height: 1.55; color: var(--pg-muted); display: grid; gap: 6px; }
+@supports (interpolate-size: allow-keywords) {
+  .pg-doc-notes { interpolate-size: allow-keywords; }
+  .pg-doc-notes::details-content {
+    height: 0; overflow: clip;
+    transition: height 250ms var(--pg-ease), content-visibility 250ms allow-discrete;
+  }
+  .pg-doc-notes[open]::details-content { height: auto; }
+}
+
+/* origin badge */
+.pg-doc-badge {
+  display: inline-block; padding: 1px 6px; border-radius: 999px; font: 600 0.625rem/1.4 var(--pg-mono);
+  letter-spacing: 0.04em; text-transform: uppercase; vertical-align: middle;
+}
+.pg-doc-badge--core { background: var(--pg-fill); color: var(--pg-muted); }
+.pg-doc-badge--override { background: #ffd60a; color: #000; }
+.pg-doc-badge--added { background: #30d158; color: #000; }
+
+/* grids */
+.pg-doc-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--pg-col, 220px)), 1fr)); }
+.pg-doc-rows { display: grid; }
+.pg-doc-row {
+  display: grid; grid-template-columns: minmax(140px, 220px) 1fr auto; align-items: center; gap: 16px;
+  padding-block: 14px; border-bottom: 1px solid var(--pg-line);
+}
+.pg-doc-row:first-child { border-top: 1px solid var(--pg-line); }
+.pg-doc-row-meta { display: grid; gap: 6px; min-width: 0; }
+.pg-doc-row-value { text-align: right; }
+@media (max-width: 600px) {
+  .pg-doc-row { grid-template-columns: 1fr; gap: 8px; }
+  .pg-doc-row-value { text-align: left; }
+}
+
+/* colour swatches */
+/* Cards: identical structure (media, body, footer) and equal row heights in every grid. */
+.pg-doc-grid--cards { grid-auto-rows: 1fr; }
+.pg-doc-swatch { position: relative; display: grid; grid-template-rows: auto 1fr auto; border-radius: 14px; overflow: hidden; border: 1px solid var(--pg-line); }
+.pg-doc-swatch-chip { display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 4px; height: 116px; padding: 12px; font: 600 0.6875rem/1 var(--pg-mono); }
+.pg-doc-swatch-chip--split { display: grid; grid-template-columns: 1fr 1fr; padding: 0; }
+.pg-doc-swatch-chip--split > span { display: flex; align-items: flex-end; padding: 12px; }
+.pg-doc-swatch-ref { opacity: 0.75; font-weight: 500; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pg-doc-swatch-body { display: grid; align-content: start; gap: 10px; padding: 14px; min-width: 0; }
+.pg-doc-swatch-name { display: flex; align-items: center; gap: 6px; min-width: 0; font-size: 0.875rem; font-weight: 700; }
+.pg-doc-swatch-name > span:first-child { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* 4:3 via percentage padding, not aspect-ratio: grid row sizing measures cards at their natural content
+   width (long unwrapped paths), which would inflate an aspect-ratio box and every row with it. */
+.pg-doc-asset-preview { position: relative; height: 0; padding-bottom: 75%; overflow: hidden; }
+.pg-doc-asset-media { position: absolute; inset: 0; display: grid; place-items: center; }
+.pg-doc-asset-media img { width: 100%; height: 100%; min-height: 0; }
+
+/* card footer + notes panel that slides over the card */
+.pg-doc-card-footer {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 40px; padding: 0 8px 0 14px;
+  border-top: 1px solid var(--pg-line); font-size: 0.75rem;
+}
+.pg-doc-card-meta { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-family: var(--pg-mono); color: var(--pg-muted); }
+.pg-doc-card-meta--warn { color: #b35c00; font-family: system-ui, sans-serif; font-weight: 600; }
+.pg-doc-card-notes-btn {
+  all: unset; cursor: pointer; flex-shrink: 0; display: inline-flex; align-items: center; gap: 4px; padding: 4px 8px; border-radius: 999px;
+  font: 600 0.75rem/1 system-ui, sans-serif; opacity: 0.7; transition: opacity 150ms, background-color 150ms;
+}
+.pg-doc-card-notes-btn svg { width: 13px; height: 13px; }
+.pg-doc-card-notes-btn:hover { opacity: 1; background: var(--pg-fill); }
+.pg-doc-card-notes-btn:focus-visible { outline: 2px solid currentColor; outline-offset: 1px; opacity: 1; }
+.pg-doc-card-notes {
+  position: absolute; inset: 0; z-index: 1; display: grid; grid-template-rows: auto 1fr;
+  background: var(--mm-color-semantic-background, Canvas); color: inherit;
+  translate: 0 100%; visibility: hidden;
+  transition: translate 280ms var(--pg-ease), visibility 0s linear 280ms;
+}
+.pg-doc-card-notes[data-open] { translate: 0 0; visibility: visible; transition: translate 280ms var(--pg-ease), visibility 0s; }
+.pg-doc-card-notes-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 8px 8px 14px;
+  border-bottom: 1px solid var(--pg-line); font-size: 0.875rem; font-weight: 700;
+}
+.pg-doc-card-notes-head span { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pg-doc-card-notes-head button { all: unset; cursor: pointer; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 999px; transition: background-color 150ms; }
+.pg-doc-card-notes-head button svg { width: 14px; height: 14px; }
+.pg-doc-card-notes-head button:hover { background: var(--pg-fill); }
+.pg-doc-card-notes-head button:focus-visible { outline: 2px solid currentColor; outline-offset: 1px; }
+.pg-doc-card-notes-body { overflow-y: auto; padding: 12px 14px; display: grid; align-content: start; gap: 8px; font-size: 0.8125rem; line-height: 1.55; color: var(--pg-muted); }
+.pg-doc-card-notes-body > * { margin: 0; }
+
+.pg-doc-matrix { overflow-x: auto; }
+.pg-doc-matrix table { border-collapse: separate; border-spacing: 4px; font: 600 0.6875rem/1 var(--pg-mono); }
+.pg-doc-matrix th { font-weight: 500; color: var(--pg-muted); text-align: left; padding: 4px; white-space: nowrap; }
+.pg-doc-matrix td { width: 64px; height: 44px; border-radius: 8px; text-align: center; border: 1px solid var(--pg-line); }
+.pg-doc-matrix td[data-fail] { opacity: 0.35; }
+
+/* typography */
+.pg-doc-type-row { display: grid; grid-template-columns: 200px 1fr; gap: 24px; align-items: baseline; padding-block: 18px; border-bottom: 1px solid var(--pg-line); }
+.pg-doc-type-sample { overflow-wrap: anywhere; line-height: 1.15; }
+@media (max-width: 700px) { .pg-doc-type-row { grid-template-columns: 1fr; gap: 8px; } }
+.pg-doc-family { display: grid; align-content: start; gap: 12px; padding: 24px; border: 1px solid var(--pg-line); border-radius: 14px; }
+.pg-doc-family-aa { font-size: 5rem; line-height: 1; font-weight: 800; }
+
+/* measures */
+.pg-doc-bar { height: 12px; min-width: 1px; border-radius: 3px; background: currentColor; opacity: 0.85; }
+.pg-doc-track { position: relative; height: 12px; border-radius: 6px; background: var(--pg-fill); overflow: hidden; }
+.pg-doc-ruler { position: relative; height: 56px; border-bottom: 1px solid var(--pg-line); }
+.pg-doc-ruler-mark { position: absolute; bottom: 0; display: grid; gap: 4px; transform: translateX(-1px); padding-left: 6px; border-left: 1px solid currentColor; height: 100%; align-content: start; }
+
+/* shape */
+.pg-doc-shape { display: grid; place-items: center; aspect-ratio: 4 / 3; background: var(--pg-fill); border: 1px solid var(--pg-line); }
+.pg-doc-tile { display: grid; gap: 10px; }
+
+/* motion */
+.pg-doc-motion-track { position: relative; height: 32px; border-radius: 999px; background: var(--pg-fill); container-type: inline-size; }
+.pg-doc-motion-dot {
+  position: absolute; top: 4px; left: 4px; width: 24px; height: 24px; border-radius: 999px; background: currentColor;
+  transition-property: translate; translate: 0 0;
+}
+.pg-doc-motion-track[data-on] .pg-doc-motion-dot { translate: calc(100cqw - 32px) 0; }
+.pg-doc-curve { width: 100%; height: auto; overflow: visible; }
+.pg-doc-curve path { fill: none; stroke: currentColor; stroke-width: 2; vector-effect: non-scaling-stroke; }
+.pg-doc-curve line { stroke: var(--pg-line); stroke-width: 1; vector-effect: non-scaling-stroke; }
+
+.pg-doc-button {
+  all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px;
+  font: 600 0.8125rem/1.2 system-ui, sans-serif; border: 1px solid var(--pg-line); transition: background-color 150ms;
+}
+.pg-doc-button:hover { background: var(--pg-fill); }
+.pg-doc-button:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+
+/* specimen */
+.pg-doc-specimen { margin: 0 0 40px; }
+.pg-doc-specimen-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; margin-bottom: 12px; }
+.pg-doc-specimen-title { font-size: 0.9375rem; font-weight: 700; }
+.pg-doc-specimen-desc { font-size: 0.875rem; color: var(--pg-muted); }
+.pg-doc-specimen-preview { padding: clamp(20px, 4vw, 40px); border: 1px solid var(--pg-line); border-radius: 14px; overflow: hidden; }
+.pg-doc-specimen-preview--bleed { padding: 0; }
+.pg-doc-code { margin-top: 8px; }
+.pg-doc-code summary { cursor: pointer; width: fit-content; font: 600 0.75rem/1 system-ui, sans-serif; color: var(--pg-muted); padding: 6px 0; list-style: none; }
+.pg-doc-code summary::-webkit-details-marker { display: none; }
+.pg-doc-code summary::before { content: '‹/› '; }
+.pg-doc-code { position: relative; }
+.pg-doc-code > .pg-doc-copy { position: absolute; top: 36px; right: 10px; font-family: system-ui, sans-serif; }
+.pg-doc-code pre { margin: 8px 0 0; padding: 16px; border-radius: 10px; background: var(--pg-fill); overflow-x: auto; font: 0.75rem/1.6 var(--pg-mono); white-space: pre; }
+
+/* tables + inputs */
+.pg-doc-table { width: 100%; border-collapse: collapse; font-size: 0.8125rem; }
+.pg-doc-table th { text-align: left; font-weight: 600; color: var(--pg-muted); padding: 8px 12px 8px 0; border-bottom: 1px solid var(--pg-line); position: sticky; top: 0; background: Canvas; }
+.pg-doc-table td { padding: 10px 12px 10px 0; border-bottom: 1px solid var(--pg-line); vertical-align: top; }
+.pg-doc-input {
+  all: unset; box-sizing: border-box; width: min(100%, 320px); padding: 8px 12px; border-radius: 8px; border: 1px solid var(--pg-line);
+  font: 500 0.875rem/1.2 system-ui, sans-serif;
+}
+.pg-doc-input:focus-visible { outline: 2px solid currentColor; outline-offset: 1px; }
+.pg-doc-toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 20px; }
+.pg-doc-chip {
+  all: unset; cursor: pointer; padding: 5px 11px; border-radius: 999px; border: 1px solid var(--pg-line);
+  font: 600 0.75rem/1.2 system-ui, sans-serif; transition: background-color 150ms, color 150ms;
+}
+.pg-doc-chip[aria-pressed='true'] { background: currentColor; }
+.pg-doc-chip[aria-pressed='true'] > span { color: Canvas; }
+.pg-doc-chip:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .pg-doc *, .pg-doc *::before, .pg-doc *::after { transition-duration: 0.01ms !important; animation: none !important; }
+}

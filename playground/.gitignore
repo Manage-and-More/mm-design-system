@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+# generated from each variant's tokens.json by plugins/vite-plugin-mm-tokens.ts
+src/variants/*/generated/
+# licensed fonts (Sharp Sans) must never be committed, see fonts-local/README.md
+fonts-local/*.woff2
+fonts-local/*.woff
+fonts-local/*.ttf
+fonts-local/*.otf

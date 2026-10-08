@@ -1,0 +1,56 @@
+# Serves the built playground on Fly.io. Fly terminates TLS and forwards to :8080.
+# BASIC_AUTH_USER and BASIC_AUTH_HASH (bcrypt, from `caddy hash-password`) are Fly
+# secrets; the image's CMD refuses to start without them, so the site never runs unprotected.
+{
+	admin off
+	auto_https off
+	persist_config off
+}
+
+:8080 {
+	root * /srv
+	encode zstd gzip
+
+	header {
+		X-Robots-Tag "noindex, nofollow"
+		# the shell renders pages in a same-origin iframe (canvas.html)
+		X-Frame-Options SAMEORIGIN
+		Content-Security-Policy "frame-ancestors 'self'"
+		X-Content-Type-Options nosniff
+		Referrer-Policy same-origin
+		Strict-Transport-Security "max-age=31536000"
+		-Server
+	}
+
+	# Fly health checks and crawlers get through without credentials
+	handle /healthz {
+		respond "ok" 200
+	}
+	handle /robots.txt {
+		respond "User-agent: *
+Disallow: /
+" 200
+	}
+
+	handle {
+		basic_auth {
+			{$BASIC_AUTH_USER} {$BASIC_AUTH_HASH}
+		}
+
+		# hashed build output never changes; HTML must always revalidate
+		@immutable path /assets/*
+		@mutable not path /assets/*
+		header @immutable Cache-Control "public, max-age=31536000, immutable"
+		header @mutable Cache-Control "no-cache"
+
+		# client-side routes (/brand/colors) get the shell, like the dev server's spaFallback;
+		# missing files with an extension stay 404 instead of returning HTML
+		@spa {
+			not file
+			not path_regexp \.[A-Za-z0-9]+$
+		}
+		rewrite @spa /index.html
+
+		file_server
+	}
+}

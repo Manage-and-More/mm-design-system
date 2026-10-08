@@ -1,0 +1,30 @@
+# Design-system playground: static Vite build served by Caddy (see Dockerfile).
+# One small machine is plenty; it suspends when idle and wakes on the next request.
+# Deploys run from .github/workflows/playground.yml after typecheck and tests pass.
+app = "mm-design-system"
+primary_region = "fra"
+
+[build]
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "suspend"
+  auto_start_machines = true
+  min_machines_running = 0
+
+  [http_service.concurrency]
+    type = "requests"
+    soft_limit = 200
+    hard_limit = 250
+
+  [[http_service.checks]]
+    method = "GET"
+    path = "/healthz"
+    grace_period = "5s"
+    interval = "30s"
+    timeout = "2s"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"

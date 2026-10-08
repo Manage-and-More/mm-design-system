@@ -1,0 +1,15 @@
+# Allowlist: only what the playground build reads. Keeps source/, docs and
+# .git out of the context, so doc-only edits don't invalidate the image.
+*
+!tokens/
+!assets/
+!examples/
+!playground/
+
+playground/node_modules
+playground/dist
+playground/src/variants/*/generated
+# licensed fonts (Sharp Sans) would be bundled into dist/ and served publicly
+playground/fonts-local/*
+!playground/fonts-local/README.md
+**/.DS_Store

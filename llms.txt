@@ -8,6 +8,7 @@
 - [Asset catalogue](assets/catalog.json): every logo, label, icon, illustration, photo, font
 - [Tokens](tokens/build/tokens.flat.json): colours, type, spacing, radii, layout, motion
 - [Tailwind v4 theme](tokens/build/tailwind.theme.css)
+- [Playground](playground/README.md): Vite + React app with token-driven Foundations pages and design-language variants layered over core tokens
 
 ## Guidelines
 - [Logo](guidelines/02-logo.md)

@@ -31,7 +31,8 @@ Use the skill: `[skills/manage-and-more-brand/SKILL.md](skills/manage-and-more-b
 
 1. **Copy assets into the target project**; don't hot-link raw GitHub URLs.
 2. **Reference implementation:** `[examples/landing-page.html](examples/landing-page.html)` with `[examples/mm-base.css](examples/mm-base.css)`. The production references are the live https://www.manageandmore.de (look and motion) and the website repo `manage-and-more-website` (`src/styles/theme.css` for tokens and layout).
-3. When the guidelines don't cover something, look at the page images in `[source/pages/](source/pages/)` (`page-NN.jpg`, 41 pages; full text in `[source/MM_CI.txt](source/MM_CI.txt)`), choose the option closest to the PDF, and tell the user it was your assumption.
+3. **See it live:** `[playground/](playground/README.md)` (`cd playground && pnpm install && pnpm dev`) renders every token, component, pattern and asset, and design-language variants side by side.
+4. When the guidelines don't cover something, look at the page images in `[source/pages/](source/pages/)` (`page-NN.jpg`, 41 pages; full text in `[source/MM_CI.txt](source/MM_CI.txt)`), choose the option closest to the PDF, and tell the user it was your assumption.
 
 
 
@@ -69,6 +70,8 @@ Follow `[CONTRIBUTING.md](CONTRIBUTING.md)`. In short:
 - The PDF is canonical for print and identity assets; the website repo `manage-and-more-website` is the adopted standard for screens. New knowledge goes into the matching guideline page with its source; conflicts go into `guidelines/sources-and-discrepancies.md`.
 - When the website changes its theme (`src/styles/theme.css`) or a component, update the tokens and `guidelines/13-web-components.md` to match, or log the difference. For look and motion, the live site wins over the rebuild repo (`guidelines/14-motion.md`).
 - Edit tokens only in `tokens/tokens.json`, then run `python3 scripts/build_tokens.py`. Never edit `tokens/build/*` by hand.
+- New design languages (SaaS/product UI, Landing v2, …) start as playground variants: `cd playground && pnpm new:variant <id>`. A variant's `tokens.json` uses the core format and paths; merge it into `tokens/tokens.json` only once the brand owner adopts it. The playground reads tokens, assets and `examples/mm-base.css` in place; never copy them into it, and keep Sharp Sans in the gitignored `playground/fonts-local/`.
+- If you changed `playground/`, run `pnpm typecheck && pnpm test && pnpm build` there.
 - Every new file in `assets/` needs an entry in `assets/catalog.json`.
 - Run `python3 scripts/validate.py` before committing; CI runs it too.
 - Add a line to `CHANGELOG.md`.

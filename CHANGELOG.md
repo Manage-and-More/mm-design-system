@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+### Playground
+
+- New `playground/` (Vite 8, React 19, Tailwind 4): browses the system in isolated iframe canvases with viewport presets, light/dark and side-by-side Compare. Foundations pages are generated from tokens; Brand v1 renders `examples/` components and the landing page through the unchanged `mm-base.css`. Variants (`pnpm new:variant`) layer their own DTCG `tokens.json` over core. Nothing existing is copied or modified; Sharp Sans loads only from a gitignored `playground/fonts-local/`.
+- Playground UX: one window scroll for docs pages (templates keep their own frame scroll), foldable sidebar sections with page search and `⌘K` / `[` `]` shortcuts, copy chips with an icon on every token, hex, path and code snippet, uniform cards whose notes slide over the card.
+- AGENTS.md, CONTRIBUTING.md and the brand skill point to the playground for exploring and starting new design languages.
+
 ### Fixes from the V2 skill test
 
 - Header logo set by height (32px, 40px from 768px) instead of width; tokens `layout.header.logo-height-*` replace `logo-width-*`. The website's smaller logo is logged as fix F22.

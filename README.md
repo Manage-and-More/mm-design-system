@@ -10,6 +10,7 @@ The single source for the **Manage and More** brand (an endorsed brand of Untern
 |---|---|
 | A designer or marketer | [`guidelines/`](guidelines/README.md), or open [`index.html`](index.html) for the visual overview |
 | A developer | [`tokens/`](tokens/README.md) (CSS, SCSS, JSON, Tailwind), [`examples/`](examples/landing-page.html), [`assets/`](assets/README.md) |
+| Exploring or designing a new variant | [`playground/`](playground/README.md): live Foundations, components and side-by-side variants |
 | An AI agent | [`AGENTS.md`](AGENTS.md) and the skill in [`skills/manage-and-more-brand/`](skills/manage-and-more-brand/SKILL.md) |
 | Adding new brand knowledge | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
 
@@ -40,6 +41,7 @@ assets/infographics/      chart style examples
 assets/photography/       reference photos by topic + tint examples; website/ = M&M's own photos
 assets/fonts/work-sans/   Work Sans (OFL), web + desktop
 examples/                 base CSS + a reference landing page
+playground/               Vite + React app to browse the system and its variants (pnpm dev)
 skills/manage-and-more-brand/  agent skill (also linked in .claude/skills/)
 source/                   canonical PDF, its full text and page images
 scripts/                  build tokens, validate, re-extract from PDF, tint photos, install skill
@@ -54,6 +56,15 @@ cp -r mm-design-system/assets/fonts/work-sans your-app/public/fonts/    # fallba
 # Claude Code / agent skill, available in every project on this machine
 ./mm-design-system/scripts/install-skill.sh
 ```
+
+## Playground
+
+```bash
+cd playground && pnpm install && pnpm dev     # browse tokens, components and variants side by side
+pnpm new:variant saas --name "SaaS"           # start a new design language on top of the core tokens
+```
+
+Variants (Brand v1 today; SaaS, Landing v2 and others later) live in `playground/src/variants/` with their own DTCG `tokens.json` layered over `tokens/tokens.json`. See [playground/README.md](playground/README.md).
 
 ## Commands
 

@@ -8,3 +8,7 @@ fonts-local/*.woff2
 fonts-local/*.woff
 fonts-local/*.ttf
 fonts-local/*.otf
+# figure pages and look sheets built by the hairline-create skill
+hairline/out/
+# screenshots from pnpm shot
+shots/

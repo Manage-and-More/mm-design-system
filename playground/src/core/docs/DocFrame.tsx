@@ -6,7 +6,7 @@ export function DocFrame({ page, variant, children }: { page: PageDefinition; va
   return (
     <div className="pg-doc">
       <header className="pg-doc-header">
-        <p className="pg-doc-eyebrow">
+        <p className="pg-doc-crumb">
           {variant.name} · {page.group}
         </p>
         <p className="pg-doc-title">{page.title}</p>

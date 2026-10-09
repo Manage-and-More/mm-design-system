@@ -7,17 +7,24 @@ import { contrast, rating, readableOn } from '../contrast';
 import { cols, groupByParent, live, title } from '../blocks';
 import type { ResolvedToken } from '../../tokens';
 
+/** A translucent value is shown composited on white (light) or black (dark), so its label stays readable. */
+const translucent = (v: string) => /\//.test(v) || /rgba|hsla/.test(v) || /^#[0-9a-f]{8}$/i.test(v);
+const half = (v: string, base: '#fff' | '#000') =>
+  translucent(v) ? { background: `linear-gradient(${v}, ${v}), ${base}`, color: base === '#fff' ? '#000' : '#fff' } : { background: v, color: readableOn(v) };
+
 function Swatch({ token }: { token: ResolvedToken }) {
   const dark = token.modes.dark?.value;
   return (
     <div className="pg-doc-swatch">
       {dark ? (
         <div className="pg-doc-swatch-chip pg-doc-swatch-chip--split">
-          <span style={{ background: token.value, color: readableOn(token.value) }}>
-            <CopyText text={token.value} label={`light ${token.value}`} variant="bare" />
+          <span style={half(token.value, '#fff')}>
+            <small>light</small>
+            <CopyText text={token.value} variant="bare" />
           </span>
-          <span style={{ background: dark, color: readableOn(dark) }}>
-            <CopyText text={dark} label={`dark ${dark}`} variant="bare" />
+          <span style={half(dark, '#000')}>
+            <small>dark</small>
+            <CopyText text={dark} variant="bare" />
           </span>
         </div>
       ) : (

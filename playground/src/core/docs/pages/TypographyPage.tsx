@@ -80,9 +80,12 @@ export default function TypographyPage() {
           <div className="pg-doc-rows">
             {trackings.map((t) => (
               <TokenRow key={t.path} token={t} name={shortName(t.path, 'font.letter-spacing')}>
-                <span style={{ letterSpacing: live(t), textTransform: 'uppercase', fontWeight: 800, fontSize: '0.875rem' }}>
-                  Entrepreneurial education
-                </span>
+                {/* negative tracking belongs to display sizes, positive to small capitals: sample each where it is used */}
+                {String(t.value).trim().startsWith('-') ? (
+                  <span style={{ letterSpacing: live(t), fontWeight: 800, fontSize: '2.25rem', lineHeight: 1.05, display: 'block' }}>Entrepreneurial education</span>
+                ) : (
+                  <span style={{ letterSpacing: live(t), textTransform: 'uppercase', fontWeight: 800, fontSize: '0.875rem' }}>Entrepreneurial education</span>
+                )}
               </TokenRow>
             ))}
           </div>

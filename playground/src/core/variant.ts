@@ -38,6 +38,11 @@ export interface VariantDefinition {
   pages: PageDefinition[];
   /** Opt out of auto-generated Foundations pages by slug. */
   hideFoundations?: string[];
+  /**
+   * Core tokens this variant retires, by path or path prefix (e.g. 'color.brand.yellow'). They stay in the
+   * CSS (core tokens.css is imported whole) but disappear from the Foundations pages and the contrast matrix.
+   */
+  hideTokens?: string[];
 }
 
 export const scrollModeOf = (page: PageDefinition) => page.scroll ?? (page.layout === 'fullscreen' ? 'frame' : 'page');

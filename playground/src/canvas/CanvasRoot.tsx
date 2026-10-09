@@ -1,7 +1,7 @@
 import { Suspense, lazy, useEffect, useMemo, useState, type ComponentType } from 'react';
 import { registerLocalFonts } from '@/core/fonts';
 import { getPage, getVariant } from '@/core/registry';
-import { loadTokens, type ResolvedToken } from '@/core/tokens';
+import { loadTokens, withoutHidden, type ResolvedToken } from '@/core/tokens';
 import { TokensContext } from '@/core/docs/TokensContext';
 import { DocFrame } from '@/core/docs/DocFrame';
 import { scrollModeOf, type Mode } from '@/core/variant';
@@ -23,7 +23,7 @@ const setMode = (mode: Mode) => {
 
 /** Everything a variant needs before first paint: its CSS, local fonts and resolved tokens. */
 const ready: Promise<ResolvedToken[]> | null = variant
-  ? Promise.all([variant.styles(), registerLocalFonts(), loadTokens(variant.id)]).then(([, , tokens]) => tokens)
+  ? Promise.all([variant.styles(), registerLocalFonts(), loadTokens(variant.id)]).then(([, , tokens]) => withoutHidden(tokens, variant.hideTokens))
   : null;
 
 export function CanvasRoot() {

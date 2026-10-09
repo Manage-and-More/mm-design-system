@@ -11,6 +11,10 @@ export async function loadTokens(variantId: string): Promise<ResolvedToken[]> {
   return load();
 }
 
+/** Drops the tokens a variant retires (`hideTokens`: exact paths or prefixes). */
+export const withoutHidden = (tokens: ResolvedToken[], hidden: string[] = []) =>
+  hidden.length ? tokens.filter((t) => !hidden.some((h) => t.path === h || t.path.startsWith(h + '.'))) : tokens;
+
 export const byPrefix = (tokens: ResolvedToken[], prefix: string) =>
   tokens.filter((t) => t.path === prefix || t.path.startsWith(prefix + '.'));
 

@@ -25,7 +25,8 @@
 }
 
 .pg-doc-header { margin-bottom: clamp(32px, 5vw, 56px); max-width: 52rem; }
-.pg-doc-eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--pg-muted); }
+/* breadcrumb: sentence case, no tracking; the playground follows the no-kicker rule too */
+.pg-doc-crumb { font-size: 0.8125rem; font-weight: 500; color: var(--pg-muted); }
 .pg-doc-title { margin-top: 0.5rem; font-size: clamp(2rem, 4vw, 3rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.01em; }
 .pg-doc-summary { margin-top: 0.75rem; font-size: 1.125rem; line-height: 1.5; color: var(--pg-muted); }
 
@@ -118,8 +119,10 @@
 .pg-doc-grid--cards { grid-auto-rows: 1fr; }
 .pg-doc-swatch { position: relative; display: grid; grid-template-rows: auto 1fr auto; border-radius: 14px; overflow: hidden; border: 1px solid var(--pg-line); }
 .pg-doc-swatch-chip { display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 4px; height: 116px; padding: 12px; font: 600 0.6875rem/1 var(--pg-mono); }
-.pg-doc-swatch-chip--split { display: grid; grid-template-columns: 1fr 1fr; padding: 0; }
-.pg-doc-swatch-chip--split > span { display: flex; align-items: flex-end; padding: 12px; }
+/* a token with a dark value: light over dark, each half labelled, never truncated */
+.pg-doc-swatch-chip--split { display: grid; grid-template-rows: 1fr 1fr; grid-template-columns: 1fr; padding: 0; }
+.pg-doc-swatch-chip--split > span { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 12px; min-width: 0; }
+.pg-doc-swatch-chip--split > span > small { font-size: 0.625rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; opacity: 0.75; }
 .pg-doc-swatch-ref { opacity: 0.75; font-weight: 500; max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .pg-doc-swatch-body { display: grid; align-content: start; gap: 10px; padding: 14px; min-width: 0; }
 .pg-doc-swatch-name { display: flex; align-items: center; gap: 6px; min-width: 0; font-size: 0.875rem; font-weight: 700; }

@@ -14,7 +14,8 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "new:variant": "node scripts/new-variant.ts"
+    "new:variant": "node scripts/new-variant.ts",
+    "shot": "node scripts/shot.mjs"
   },
   "dependencies": {
     "@lucasmarkes/hairline": "^0.5.0",
@@ -30,6 +31,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "playwright-core": "^1.64.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^7.0.2",
     "vite": "^8.3.4",

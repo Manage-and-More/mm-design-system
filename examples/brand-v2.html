@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hackathon platform · Manage and More (Brand v2 example)</title>
+<!-- Reference page of the Brand v2 language (guidelines/15-brand-v2.md): core tokens, the variant's tokens, then
+     brand-v2.css. Figures: the three custom ones come from hairline-figures.js (built by scripts/build_figures.mjs);
+     Terminal, Lockers, Riffle and Elevator load from the @lucasmarkes/hairline package on esm.sh (needs a network
+     connection; without one those four plates stay empty). Sharp Sans is not bundled: this renders in Work Sans. -->
+<link rel="icon" href="../assets/v2/logo/svg/mm-symbol-blue.svg">
+<link rel="stylesheet" href="../tokens/build/tokens.css">
+<link rel="stylesheet" href="../tokens/build/variants/brand-v2.css">
+<link rel="stylesheet" href="../assets/fonts/work-sans/work-sans.css">
+<link rel="stylesheet" href="brand-v2.css">
+<style>
+  /* light/dark asset pairs: the page follows the system; add data-mode="dark" on <html> to force it */
+  .only-dark { display: none; }
+  :root[data-mode="dark"] .only-dark { display: block; }
+  :root[data-mode="dark"] .only-light { display: none; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-mode="light"]) .only-dark { display: block; }
+    :root:not([data-mode="light"]) .only-light { display: none; }
+  }
+</style>
+<script>
+  /* follow the system theme so the variant's :root[data-mode="dark"] tokens apply (the playground sets this itself) */
+  if (!document.documentElement.dataset.mode && matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.dataset.mode = 'dark';
+</script>
+</head>
+<body>
+<header class="v2-header" id="top">
+  <div class="v2-container v2-header__inner">
+    <a class="v2-header__logo" href="#top" aria-label="Manage and More — home">
+      <img class="only-light" src="../assets/v2/logo/svg/mm-logo-primary.svg" alt="Manage and More">
+      <img class="only-dark" src="../assets/v2/logo/svg/mm-logo-primary-on-dark.svg" alt="Manage and More">
+    </a>
+    <nav aria-label="Main"><ul>
+      <li><a href="#" aria-current="page">Product</a></li><li><a href="#judges">For judges</a></li><li><a href="#organisers">For organisers</a></li><li><a href="#">Pricing</a></li><li><a href="#">Docs</a></li>
+    </ul></nav>
+    <a class="v2-button v2-button--primary v2-button--small v2-header__cta" href="#">Sign in</a>
+    <button class="v2-menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M35 27v2H5v-2h30Zm0-8v2H5v-2h30Zm0-8v2H5v-2h30Z"/></svg>
+    </button>
+  </div>
+</header>
+<nav id="menu" class="v2-menu" aria-label="Main" hidden>
+  <a href="#">Product</a><a href="#judges">For judges</a><a href="#organisers">For organisers</a><a href="#">Pricing</a><a href="#">Docs</a>
+  <a class="v2-button v2-button--primary" href="#">Sign in</a>
+</nav>
+
+<main>
+  <section class="v2-hero">
+    <div class="v2-container v2-split">
+      <div class="v2-hero__content">
+        <h1 class="v2-display"><span class="v2-outline">Build in 48 hours.</span><span>Run it in one.</span></h1>
+        <p class="v2-lead">One platform for teams, judges and organisers: applications, team formation, submissions, scoring and the follow-up, <strong>built by people who run hackathons</strong>.</p>
+        <div class="v2-hero__actions">
+          <a class="v2-button v2-button--primary" href="#">Start an event</a>
+          <a class="v2-button v2-button--action" href="#">Watch the 2-minute tour</a>
+        </div>
+      </div>
+      <div class="v2-hero__figure">
+        <div class="v2-figure v2-figure--plate"><div data-figure="bench" data-play data-intensity="0.6"></div><span class="v2-figure__read" aria-hidden="true">rest</span></div>
+      </div>
+    </div>
+    <div class="v2-hero__label">
+      <img class="only-light" src="../assets/v2/labels/svg/by-unternehmertum-label-outline-black.svg" alt="by UnternehmerTUM">
+      <img class="only-dark" src="../assets/v2/labels/svg/by-unternehmertum-label-outline-white.svg" alt="by UnternehmerTUM">
+    </div>
+  </section>
+
+  <section class="v2-section" id="audiences">
+    <div class="v2-container">
+      <div class="v2-section__head">
+        <h2 class="v2-heading">One event, <span class="v2-act">three seats</span> at the table.</h2>
+        <p class="v2-lead">Participants build, judges decide, organisers keep it running. Each gets a view that shows only what matters to them.</p>
+      </div>
+      <div class="v2-tabs" role="tablist" aria-label="Who it is for">
+        <button role="tab" id="tab-participants" aria-selected="true" aria-controls="panel-participants">Participants</button>
+        <button role="tab" id="tab-judges" aria-selected="false" aria-controls="panel-judges" tabindex="-1">Judges</button>
+        <button role="tab" id="tab-organisers" aria-selected="false" aria-controls="panel-organisers" tabindex="-1">Organisers</button>
+      </div>
+      <div class="v2-tabpanel" role="tabpanel" id="panel-participants" aria-labelledby="tab-participants">
+        <div>
+          <h3 class="v2-subheading">Forty-eight hours, one place for all of it.</h3>
+          <p class="v2-prose v2-muted" style="margin-top:.75rem">Form a team, pick a challenge, submit a repo and a demo. Everything you need to hand in is one page, and the clock is always visible.</p>
+          <ul class="v2-checklist"><li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M16.5 28.2 7.3 19l1.4-1.4 7.8 7.8L31.3 10.6l1.4 1.4z"/></svg><span>Team formation with open roles</span></li><li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M16.5 28.2 7.3 19l1.4-1.4 7.8 7.8L31.3 10.6l1.4 1.4z"/></svg><span>Submissions with repo, deck and video links</span></li><li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M16.5 28.2 7.3 19l1.4-1.4 7.8 7.8L31.3 10.6l1.4 1.4z"/></svg><span>Schedule, mentors and rooms in one view</span></li></ul>
+          <a class="v2-arrow-link" href="#" style="margin-top:2rem"><span class="v2-arrow-link__ring" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21.707 4.293 37.5 20 21.707 35.707l-1.414-1.414L33.584 21H6v-2h27.585L20.293 5.707z"/></svg></span>See a sample team page</a>
+        </div>
+        <div class="v2-figure v2-figure--framed"><div data-figure="hours" data-intensity="0.6"></div><span class="v2-figure__read" aria-hidden="true">rest</span></div>
+      </div>
+      <div class="v2-tabpanel" role="tabpanel" id="panel-judges" aria-labelledby="tab-judges" hidden>
+        <div>
+          <h3 class="v2-subheading" id="judges">Score what you saw, while you still remember it.</h3>
+          <p class="v2-prose v2-muted" style="margin-top:.75rem">A judging queue per track, one submission at a time, with the rubric next to the demo. Scores sync live; the ranking builds itself.</p>
+          <ul class="v2-checklist"><li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M16.5 28.2 7.3 19l1.4-1.4 7.8 7.8L31.3 10.6l1.4 1.4z"/></svg><span>Rubrics with weighted criteria</span></li><li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M16.5 28.2 7.3 19l1.4-1.4 7.8 7.8L31.3 10.6l1.4 1.4z"/></svg><span>Conflict-of-interest flags</span></li><li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M16.5 28.2 7.3 19l1.4-1.4 7.8 7.8L31.3 10.6l1.4 1.4z"/></svg><span>Live leaderboard for organisers only</span></li></ul>
+          <a class="v2-arrow-link" href="#" style="margin-top:2rem"><span class="v2-arrow-link__ring" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21.707 4.293 37.5 20 21.707 35.707l-1.414-1.414L33.584 21H6v-2h27.585L20.293 5.707z"/></svg></span>How scoring works</a>
+        </div>
+        <div class="v2-figure v2-figure--framed"><div data-figure="podium" data-intensity="0.6"></div><span class="v2-figure__read" aria-hidden="true">rest</span></div>
+      </div>
+      <div class="v2-tabpanel" role="tabpanel" id="panel-organisers" aria-labelledby="tab-organisers" hidden>
+        <div>
+          <h3 class="v2-subheading" id="organisers">Run the event from one console.</h3>
+          <p class="v2-prose v2-muted" style="margin-top:.75rem">Applications, check-in, tracks, sponsors and the CRM behind them. Export everything, automate the rest, keep your weekend.</p>
+          <ul class="v2-checklist"><li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M16.5 28.2 7.3 19l1.4-1.4 7.8 7.8L31.3 10.6l1.4 1.4z"/></svg><span>Applications and check-in with QR codes</span></li><li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M16.5 28.2 7.3 19l1.4-1.4 7.8 7.8L31.3 10.6l1.4 1.4z"/></svg><span>Sponsor challenges and prize tracks</span></li><li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M16.5 28.2 7.3 19l1.4-1.4 7.8 7.8L31.3 10.6l1.4 1.4z"/></svg><span>Connected to the Manage and More CRM</span></li></ul>
+          <a class="v2-arrow-link" href="#" style="margin-top:2rem"><span class="v2-arrow-link__ring" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21.707 4.293 37.5 20 21.707 35.707l-1.414-1.414L33.584 21H6v-2h27.585L20.293 5.707z"/></svg></span>Start an event</a>
+        </div>
+        <div class="v2-figure v2-figure--framed"><div data-library="terminal" data-intensity="0.6"></div><span class="v2-figure__read" aria-hidden="true">rest</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="v2-section">
+    <div class="v2-container">
+      <div class="v2-section__head">
+        <h2 class="v2-heading">Everything a hackathon needs. Nothing it doesn't.</h2>
+        <p class="v2-lead">Opinionated defaults, so an event is set up in an afternoon, with the escape hatches an experienced team wants.</p>
+      </div>
+      <div class="v2-grid v2-grid--3">
+        <a class="v2-card v2-card--link" href="#"><div class="v2-card__figure"><div class="v2-figure v2-figure--raised"><div data-library="lockers"></div></div></div><h3 class="v2-card__title">Applications &amp; check-in</h3><p class="v2-card__text">Review applications in one queue, accept in batches, check people in with a QR code at the door.</p><div class="v2-card__foot"><span>Updated live</span><span class="v2-link">View</span></div></a>
+        <a class="v2-card v2-card--link" href="#"><div class="v2-card__figure"><div class="v2-figure v2-figure--raised"><div data-library="riffle"></div></div></div><h3 class="v2-card__title">Submissions</h3><p class="v2-card__text">One page per team: repo, demo, deck and a short write-up. Locked at the deadline, to the second.</p><div class="v2-card__foot"><span>Locks at the deadline</span><span class="v2-link">View</span></div></a>
+        <a class="v2-card v2-card--link" href="#"><div class="v2-card__figure"><div class="v2-figure v2-figure--raised"><div data-library="elevator"></div></div></div><h3 class="v2-card__title">Tracks &amp; stages</h3><p class="v2-card__text">Sponsor challenges, prize tracks and pitch slots. Teams move through stages; nobody waits in the wrong room.</p><div class="v2-card__foot"><span>Per track</span><span class="v2-link">View</span></div></a>
+        <div class="v2-card"><svg class="v2-pictogram" viewBox="0 0 40 40" aria-hidden="true"><path fill-rule="nonzero" d="m35.84 30.964-13-13.001 1.588-1.589 5.642.094 5.198-10.795.084-.085-.028-.028-.786-.786-.784-.783-.028-.028-.086.084-10.793 5.195.091 5.647-1.588 1.586-5.114-5.114a5.986 5.986 0 0 0-.301-3.508 6.007 6.007 0 0 0-3.303-3.299 6.021 6.021 0 0 0-4.503 0l-1.462.592L9.825 8.31l-.197 1.027-1.027.199-3.158-3.158-.599 1.471a5.981 5.981 0 0 0 6.807 8.098l3.612 3.612 1.49-1.488-3.015-3.015a5.934 5.934 0 0 0 1.607-1.61l4.517 4.518-3.106 3.108-1.498-1.497-11.2 11.2a2.384 2.384 0 0 0 0 3.364l1.119 1.116a2.377 2.377 0 0 0 3.363 0l11.2-11.198-1.494-1.497 3.106-3.106 12.931 12.93-1.607 1.61-11.432-11.432-1.49 1.488 11.5 11.507c.371.373.877.582 1.403.582h.035a2.05 2.05 0 0 0 1.42-.606l1.699-1.696c.378-.376.595-.886.603-1.42a1.984 1.984 0 0 0-.573-1.452ZM13.133 12.84a3.862 3.862 0 0 1-1.284.851 3.906 3.906 0 0 1-2.917 0 3.885 3.885 0 0 1-2.136-2.133 3.942 3.942 0 0 1-.269-1.12l1.376 1.375 3.523-.678.678-3.526-1.373-1.373c.908.08 1.758.476 2.402 1.12a3.857 3.857 0 0 1 1.137 2.742 3.883 3.883 0 0 1-1.134 2.742h-.003ZM7.05 33.766a.271.271 0 0 1-.386 0L5.55 32.65a.274.274 0 0 1 0-.388l9.71-9.71 1.504 1.504-9.713 9.71ZM32.28 7.041l-3.508 7.3-3.743-.072-.06-3.722 7.312-3.506Z"/></svg><h3 class="v2-card__title">Mentors &amp; schedule</h3><p class="v2-card__text">A schedule that updates live, mentor office hours teams can book, and rooms that know who is in them.</p></div>
+        <div class="v2-card"><svg class="v2-pictogram" viewBox="0 0 40 40" aria-hidden="true"><path fill-rule="nonzero" d="m30.56 19.181-10.677 6.117-4.802-2.753v-3.911l4.802 2.437 16.21-8.245-16.21-9.205-16.199 9.244 3.432 1.739v5.805l5.848 3.355v4.325a3.56 3.56 0 1 0 2.105 0V24.97l4.814 2.753 12.774-7.315v-2.905h-2.105l.007 1.677ZM14.034 32.943a1.455 1.455 0 1 1 0-2.91 1.455 1.455 0 0 1 0 2.91Zm5.848-26.9 11.761 6.68-11.761 5.99-11.757-5.96 11.757-6.71ZM9.221 19.18v-3.508l3.743 1.901v3.764L9.22 19.181Z"/></svg><h3 class="v2-card__title">Judging &amp; scoring</h3><p class="v2-card__text">Weighted rubrics, per-track queues, conflict flags, and a ranking that builds itself as scores arrive.</p></div>
+        <div class="v2-card"><svg class="v2-pictogram" viewBox="0 0 40 40" aria-hidden="true"><path fill-rule="nonzero" d="m13.977 29.495 1.485 1.49-3.808 3.808a1.053 1.053 0 0 1-1.49-1.488l.903-.903 2.91-2.907Zm-4.639-1.839 1.49 1.49-.753.753-3.057 3.058a1.054 1.054 0 1 1-1.493-1.488l3.813-3.813Zm3.888-13.45 1.49 1.49-1.35 1.347 1.37 1.371-1.487 1.483-1.62 1.623 5.325 5.331 1.556-1.557 1.488 1.49-1.708 1.707c-.351.35-.826.546-1.322.545h-.049a1.935 1.935 0 0 1-1.33-.573l-5.573-5.572a1.953 1.953 0 0 1-.575-1.33 1.85 1.85 0 0 1 .545-1.372l1.775-1.777-1.368-1.369 2.833-2.837ZM7.502 23.02l1.49 1.488-2.91 2.91-.903.902a1.053 1.053 0 1 1-1.488-1.487l3.058-3.06.753-.753ZM22.274 5.104c.428-.449 3.656-3.44 11.008-.61l.437.168.169.437c2.743 7.103.04 10.354-.548 10.95l-.053.052-2.314 2.425.019 2.807-5.808 5.809-1.29-1.285-2.411 2.412-1.488-1.488 3.897-3.897 1.29 1.282 3.7-3.7-.019-2.765 2.98-3.128c.084-.091 2.375-2.33.234-8.278-5.613-2.02-7.928-.087-8.247.219l-.036.036-.054.054-3.04 2.93-2.77-.018-4.695 4.695-1.488-1.488 5.329-5.317 2.781.019Zm4.935 4.416a1.754 1.754 0 1 1 0 3.51 1.754 1.754 0 0 1 0-3.51Z"/></svg><h3 class="v2-card__title">Afterwards</h3><p class="v2-card__text">Winners, certificates and the contacts, pushed into the CRM so the follow-up with teams and sponsors actually happens.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="v2-section v2-tile v2-tile--parchment">
+    <div class="v2-container">
+      <div class="v2-section__head">
+        <h2 class="v2-heading">Built on events we actually ran.</h2>
+        <p class="v2-lead">The numbers from the last two seasons, straight from the platform.</p>
+      </div>
+      <div class="v2-grid v2-grid--3">
+        <div class="v2-card"><div><span class="v2-chip v2-chip--live">Live</span></div><h3 class="v2-card__title">Check-in rate</h3><p class="v2-card__text">Participants who checked in at the door against those accepted.</p><p class="v2-number">94<small> %</small></p><div class="v2-card__foot"><span>Updated 2 min ago</span><a class="v2-link" href="#">View</a></div></div>
+        <div class="v2-card"><div><span class="v2-chip">Last season</span></div><h3 class="v2-card__title">Judging time</h3><p class="v2-card__text">Judges score five times faster than with the spreadsheet we used before.</p><p class="v2-number">5<small> x</small></p><div class="v2-card__foot"><span>Per submission</span><a class="v2-link" href="#">View</a></div></div>
+        <div class="v2-card"><h3 class="v2-card__title">Quiet by default, <span class="v2-act">blue when it acts</span></h3><p class="v2-card__text">Every number has a place to go. Open the full analytics for any event you organise.</p><div><a class="v2-button v2-button--action" href="#">View analytics</a></div></div>
+      </div>
+      <dl class="v2-stats">
+        <div><dt hidden>hackathons run on it</dt><dd><span class="v2-stat__value">12</span><span class="v2-stat__label">hackathons run on it</span></dd></div>
+        <div><dt hidden>participants checked in</dt><dd><span class="v2-stat__value">2,400<small> +</small></span><span class="v2-stat__label">participants checked in</span></dd></div>
+        <div><dt hidden>from submission to judging queue</dt><dd><span class="v2-stat__value">&lt; 1<small> min</small></span><span class="v2-stat__label">from submission to judging queue</span></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="v2-band">
+    <div class="v2-container" style="display:grid;gap:1rem;justify-items:start">
+      <h2 class="v2-heading">Applications for the Munich Hackathon close on 14 November.</h2>
+      <p class="v2-lead">Two days, six sponsor challenges, two hundred builders. Judges and mentors can sign up through the same page.</p>
+      <a class="v2-button v2-button--primary" href="#">Apply as a participant</a>
+    </div>
+  </section>
+
+  <section class="v2-section v2-tile v2-tile--dark">
+    <div class="v2-container">
+      <div class="v2-section__head">
+        <h2 class="v2-heading">Before you ask.</h2>
+        <p class="v2-lead">Short answers. For the long ones, <a class="v2-link" href="#">read the docs</a></p>
+      </div>
+      <div class="v2-faq">
+        <details><summary><span class="v2-faq__glyph" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21 5v14h14v2H21v14h-2V21H5v-2h14V5h2Z"/></svg></span>Can we use it for our own hackathon?</summary><div class="v2-faq__body"><p>Yes. Organisers create an event, set tracks and rubrics, and invite their team. Pricing is per event, free for student-run events.</p></div></details>
+        <details><summary><span class="v2-faq__glyph" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21 5v14h14v2H21v14h-2V21H5v-2h14V5h2Z"/></svg></span>Does it work without the Manage and More CRM?</summary><div class="v2-faq__body"><p>It does. The CRM connection is optional and adds the follow-up: contacts, sponsors and teams land in your pipeline after the event.</p></div></details>
+        <details><summary><span class="v2-faq__glyph" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21 5v14h14v2H21v14h-2V21H5v-2h14V5h2Z"/></svg></span>What do judges need to install?</summary><div class="v2-faq__body"><p>Nothing. Judges get a link, sign in with their e-mail and score on any device.</p></div></details>
+        <details><summary><span class="v2-faq__glyph" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21 5v14h14v2H21v14h-2V21H5v-2h14V5h2Z"/></svg></span>Where is the data hosted?</summary><div class="v2-faq__body"><p>In the EU, on infrastructure operated by UnternehmerTUM. Events can be exported and deleted at any time.</p></div></details>
+      </div>
+      <a class="v2-arrow-link" href="#" style="margin-top:2.5rem"><span class="v2-arrow-link__ring" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21.707 4.293 37.5 20 21.707 35.707l-1.414-1.414L33.584 21H6v-2h27.585L20.293 5.707z"/></svg></span>Talk to the team</a>
+    </div>
+  </section>
+</main>
+
+<footer class="v2-footer">
+  <div class="v2-container">
+    <div class="v2-footer__grid">
+      <div>
+        <img class="v2-footer__lockup only-light" src="../assets/v2/labels/svg/descriptor-lockup-outline-black.svg" alt="Entrepreneurial Education, by UnternehmerTUM">
+        <img class="v2-footer__lockup only-dark" src="../assets/v2/labels/svg/descriptor-lockup-outline-white.svg" alt="Entrepreneurial Education, by UnternehmerTUM">
+        <p class="v2-muted" style="margin-top:1rem;max-width:28ch">UnternehmerTUM GmbH · Lichtenbergstraße 6 · D-85748 Garching</p>
+      </div>
+      <nav aria-label="Product"><h2>Product</h2><ul><li><a href="#">Hackathon platform</a></li><li><a href="#">CRM</a></li><li><a href="#">Changelog</a></li></ul></nav>
+      <nav aria-label="Company"><h2>Company</h2><ul><li><a href="https://www.manageandmore.de">Manage and More</a></li><li><a href="#">LinkedIn</a></li><li><a href="#">Instagram</a></li></ul></nav>
+      <nav aria-label="Legal"><h2>Legal</h2><ul><li><a href="#">Imprint</a></li><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms</a></li></ul></nav>
+    </div>
+    <div class="v2-footer__bottom">
+      <span style="display:inline-flex;align-items:center;gap:.75rem"><img src="../assets/v2/logo/svg/mm-symbol-blue.svg" alt="" class="v2-footer__symbol">© 2026 Manage and More</span>
+      <a class="v2-arrow-link v2-arrow-link--up" href="#top"><span class="v2-arrow-link__ring" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M21.707 4.293 37.5 20 21.707 35.707l-1.414-1.414L33.584 21H6v-2h27.585L20.293 5.707z"/></svg></span>Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<script src="hairline-figures.js"></script>
+<script>
+  /* custom figures (bench, podium, hours), from the classic bundle */
+  const readOf = (el) => el.closest('.v2-figure')?.querySelector('.v2-figure__read');
+  for (const el of document.querySelectorAll('[data-figure]')) {
+    const read = readOf(el);
+    window.HairlineFigures.mount(el, el.dataset.figure, { intensity: Number(el.dataset.intensity ?? 0.5), play: 'play' in el.dataset, onRead: (t) => read && (read.textContent = t) });
+  }
+  /* header, menu, tabs */
+  const header = document.querySelector('.v2-header');
+  addEventListener('scroll', () => header.classList.toggle('is-scrolled', scrollY > 8), { passive: true });
+  const toggle = document.querySelector('.v2-menu-toggle'), menu = document.getElementById('menu');
+  toggle.addEventListener('click', () => { const open = menu.hidden; menu.hidden = !open; toggle.setAttribute('aria-expanded', String(open)); document.body.style.overflow = open ? 'hidden' : ''; });
+  menu.addEventListener('click', (e) => e.target.closest('a') && toggle.click());
+  const tabs = [...document.querySelectorAll('[role=tab]')];
+  const select = (tab) => { for (const t of tabs) { const on = t === tab; t.setAttribute('aria-selected', String(on)); t.tabIndex = on ? 0 : -1; document.getElementById(t.getAttribute('aria-controls')).hidden = !on; } };
+  tabs.forEach((t, i) => { t.addEventListener('click', () => select(t)); t.addEventListener('keydown', (e) => { const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (d) { const n = tabs[(i + d + tabs.length) % tabs.length]; select(n); n.focus(); } }); });
+</script>
+<script type="module">
+  /* library figures from the npm package (MIT), pinned; swap for a local copy in production */
+  try {
+    const lib = await import('https://esm.sh/@lucasmarkes/hairline@0.5.0');
+    for (const el of document.querySelectorAll('[data-library]')) {
+      const read = readOf(el);
+      lib[el.dataset.library](el, { intensity: Number(el.dataset.intensity ?? 0.5), theme: 'auto', onRead: (t) => read && (read.textContent = t) });
+    }
+  } catch (e) { console.warn('hairline library figures not loaded (offline?)', e); }
+</script>
+</body>
+</html>

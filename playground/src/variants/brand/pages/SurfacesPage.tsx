@@ -16,7 +16,6 @@ export default function SurfacesPage() {
         <Specimen key={name} title={`.mm-surface-${name}`} description={note} surface={`mm-surface-${name}`} bleed>
           <section className="mm-section" style={{ borderTop: 0 }}>
             <div className="mm-container">
-              <p className="mm-eyebrow">Eyebrow</p>
               <h2>Learn. Lead. Launch.</h2>
               <p className="mm-prose" style={{ marginTop: '1rem' }}>
                 Text, rules and stickers inherit the surface colour through currentColor.

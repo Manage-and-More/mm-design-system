@@ -8,7 +8,7 @@ export default defineVariant({
   modes: ['light'],
   styles: () => import('./styles.css'),
   pages: [
-    { slug: 'type', title: 'Type in use', group: 'Components', summary: 'Display, two-tone headings, lead, eyebrow and prose.', load: () => import('./pages/TypePage') },
+    { slug: 'type', title: 'Type in use', group: 'Components', summary: 'Display, two-tone headings, lead and prose.', load: () => import('./pages/TypePage') },
     { slug: 'ctas', title: 'Calls to action', group: 'Components', summary: 'Arrow link with sticker (primary) and the form button.', load: () => import('./pages/CtasPage') },
     { slug: 'cards', title: 'Cards', group: 'Components', summary: 'Photo, feature, person and plain cards.', load: () => import('./pages/CardsPage') },
     { slug: 'stats', title: 'Stats & chips', group: 'Components', summary: 'Stat row, chips and UI glyphs.', load: () => import('./pages/StatsPage') },

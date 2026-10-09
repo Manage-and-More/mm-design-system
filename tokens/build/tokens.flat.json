@@ -76,7 +76,7 @@
   "font.letter-spacing.headline": "0em",
   "font.letter-spacing.label": "0.025em",
   "font.letter-spacing.meta": "0.08em",
-  "font.letter-spacing.eyebrow": "0.16em",
+  "font.letter-spacing.chip": "0.16em",
   "opacity.text-secondary": 0.9,
   "opacity.text-muted": 0.7,
   "opacity.text-card": 0.8,

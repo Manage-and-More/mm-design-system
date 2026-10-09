@@ -44,9 +44,6 @@ h3, .mm-subheading { font-size: var(--mm-font-size-subheading); }
 @media (min-width: 768px) { .mm-lead { font-size: var(--mm-font-size-lead-desktop); } }
 .mm-small { font-size: var(--mm-font-size-small); }
 .mm-caps { text-transform: uppercase; }
-.mm-eyebrow { font-size: var(--mm-font-size-small); font-weight: var(--mm-font-weight-headline); text-transform: uppercase;
-  letter-spacing: var(--mm-font-letter-spacing-eyebrow); color: var(--mm-color-semantic-accent-text); margin: 0 0 0.5rem; }
-.mm-surface-black .mm-eyebrow { color: var(--mm-color-brand-blue); }
 .mm-muted { opacity: var(--mm-opacity-text-muted); }
 .mm-prose { max-width: 48rem; }
 .mm-prose > * + :is(h2, h3) { margin-top: 2rem; }

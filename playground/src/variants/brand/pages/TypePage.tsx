@@ -20,7 +20,6 @@ export default function TypePage() {
         </h1>
       </Specimen>
       <Specimen title="Section heading, lead and prose" surface="mm-surface-white">
-        <p className="mm-eyebrow">Design system</p>
         <h2>Connect. Grow. Belong.</h2>
         <p className="mm-lead" style={{ marginTop: '1.5rem' }}>
           Join Munich's most entrepreneurial ecosystem.

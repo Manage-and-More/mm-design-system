@@ -81,7 +81,7 @@ Notes:
 
 - The display size dips from 50px to 40px between 992 and 1199px; this mirrors the website exactly.
 - Body text is set once on `<body>`. Paragraphs inherit it, so a "large text" utility is not needed. The website deliberately neutralises Tailwind's `text-lg`.
-- Uppercase small labels get letter-spacing: 0.025em (footer column headings), 0.08em (roles under names), 0.16em (eyebrow counts).
+- Uppercase small labels get letter-spacing: 0.025em (footer column headings), 0.08em (roles under names), 0.16em (`--mm-font-letter-spacing-chip`, counts inside chips; the eyebrow above headings is retired, see [13-web-components.md](13-web-components.md#startup-portfolio)).
 - The website writes most sizes in px; this repo stores them in rem so that they scale with the user's browser font size.
 
 ## Two-tone heading

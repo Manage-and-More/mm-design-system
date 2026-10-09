@@ -225,11 +225,11 @@ Source: `src/components/PartnerLogos.tsx`.
 Source: `src/components/StartupGrid.tsx`.
 
 - **Category navigation:** a row of [chips](#chips) linking to anchors, each with its company count, 56px above the first group.
-- **Category block:** eyebrow ("12 companies", small, Extrabold, uppercase, `letter-spacing: 0.16em`, blue), h2 (30px, 48px from 768px), a description at 70%, then the grid. Blocks are 80px apart, `scroll-margin-top: 7rem` so anchors clear the header.
+- **Category block:** h2 (30px, 48px from 768px) with the company count in a [chip](#chips) next to it or in the description. **Retired (decision 2026-10-09):** the uppercase blue eyebrow ("12 companies") above the heading; no kicker labels anywhere. **Website today:** still shows the eyebrow., a description at 70%, then the grid. Blocks are 80px apart, `scroll-margin-top: 7rem` so anchors clear the header.
 - **Grid:** 1, 2 (640px), 4 (1024px) columns of white tiles divided by 1px hairlines (black `--mm-opacity-hairline`), in a container with `--mm-radius-feature`.
 - **Tile:** the whole tile is a link, 20px padding, min-height 208px. An 80px logo tile (`--mm-radius-card`; transparent logos sit on a light grey, `object-fit: contain`, 12px padding), the name (20px Extrabold, `line-height: 1.15`), and at the bottom a link row: a 30px black circle with a white arrow, plus the link label (15px Extrabold).
 - Hover: the logo zooms to 1.1 over 500ms ease-out inside its tile ([14-motion.md](14-motion.md#image-zoom-on-linked-cards)). **Website today:** 1.05.
-- **Eyebrow colour on white:** `--mm-color-accent-text`. **Website today:** brand blue (2.98:1). **Website today:** grid radius 1.5rem and logo tile 1rem; normalise to `feature` and `card`. **Website today:** the light-grey logo backdrop is `#F3F5F6`, which is off-palette; use grey `#E3E3E3` or white.
+- **Website today:** grid radius 1.5rem and logo tile 1rem; normalise to `feature` and `card`. **Website today:** the light-grey logo backdrop is `#F3F5F6`, which is off-palette; use grey `#E3E3E3` or white.
 
 ## Chips
 

@@ -91,7 +91,7 @@ module.exports = { theme: { extend: {
     "mm-headline": "var(--mm-font-letter-spacing-headline)",
     "mm-label": "var(--mm-font-letter-spacing-label)",
     "mm-meta": "var(--mm-font-letter-spacing-meta)",
-    "mm-eyebrow": "var(--mm-font-letter-spacing-eyebrow)"
+    "mm-chip": "var(--mm-font-letter-spacing-chip)"
   },
   "spacing": {
     "mm-1": "var(--mm-space-1)",

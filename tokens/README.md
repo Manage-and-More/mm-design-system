@@ -10,6 +10,7 @@ Generated files in [`build/`](build/) (run `python3 scripts/build_tokens.py`, ne
 | [`tokens.scss`](build/tokens.scss) | `$mm-color-brand-blue` etc. |
 | [`tokens.flat.json`](build/tokens.flat.json) | `{"color.brand.blue": "#00A2CD"}`; easiest for scripts and agents |
 | [`tailwind.preset.js`](build/tailwind.preset.js) | Tailwind v3: `presets: [require('./tailwind.preset.js')]`, then `bg-mm-blue`, `text-mm-text`, `font-mm-web`, `text-mm-heading-desktop`, `rounded-mm-card`; import `tokens.css` too |
+| [`variants/brand-v2.css`](build/variants/brand-v2.css) | Brand v2: `@import` after `tokens.css`; overrides (`--mm-color-brand-blue` → `#0071E3`) and additions (fluid type, radius grammar, shadows, action colour), dark values under `:root[data-mode="dark"]`. One file per playground variant, from `playground/src/variants/<id>/tokens.json` |
 | [`tailwind.theme.css`](build/tailwind.theme.css) | Tailwind v4: `@import "tailwindcss"; @import "./tailwind.theme.css";`, then the same `mm-` utilities. Standalone (literal values). |
 
 Naming: `color.brand.*` (the five primaries), `color.neutral.*` (80/60/40% black), `color.accessible.*` (AA-only shades: `blue-text`), `color.semantic.*` (roles such as text, text-on-brand, accent-text, focus-ring), `font.*` (family, weight, responsive `size.*`, line-height, letter-spacing), `opacity.*`, `space.*` (incl. `space.section.*`), `radius.*`, `stroke.*`, `size.*`, `aspect.*`, `layout.*` (content widths, gutters, header), `breakpoint.*`, `motion.*`, `logo.*`, `label.size.*`.

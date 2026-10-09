@@ -14,7 +14,8 @@ The design system grows as more of the brand is discovered (new templates, a new
 | A change to the website theme (`src/styles/theme.css`) or a component | `tokens/tokens.json` and `guidelines/13-web-components.md` (source `website <file>`) | if it breaks a rule or WCAG AA, add it to "Website fixes" instead of adopting it |
 | A UI glyph from the website | `assets/ui/svg/` | catalogue kind `ui-glyph` |
 | A newer guideline PDF | replace or add under `source/`, re-run `scripts/extract/extract_pdf.py` | re-check clip coordinates in the script; diff the guidelines |
-| A new design language or variant (SaaS/product UI, Landing v2, …) | `playground/src/variants/<id>/` via `cd playground && pnpm new:variant <id>`: DTCG `tokens.json` layered over core, `styles.css`, pages | once adopted, merge its `tokens.json` into `tokens/tokens.json` and log the decision |
+| A change to a blue-bearing asset | `assets/`, then `python3 scripts/build_v2_assets.py` so `assets/v2/` and the catalogue follow | never edit `assets/v2/` by hand |
+| A new design language or variant (SaaS/product UI, Brand v2, …) | `playground/src/variants/<id>/` via `cd playground && pnpm new:variant <id>`: DTCG `tokens.json` layered over core, `styles.css`, pages | once adopted, merge its `tokens.json` into `tokens/tokens.json` and log the decision |
 | Something the skill should know | `skills/manage-and-more-brand/SKILL.md` (keep it short; link to guidelines) | |
 
 ## Status labels
@@ -50,6 +51,7 @@ If you changed `playground/`:
 
 ```bash
 cd playground && pnpm typecheck && pnpm test && pnpm build
+pnpm shot <variant> <page> [--vp 390] [--mode dark]   # then look at the PNG in playground/shots/
 ```
 
 Then add a line to `CHANGELOG.md` under "Unreleased".

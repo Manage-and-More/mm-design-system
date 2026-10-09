@@ -18,6 +18,7 @@ Read in order the first time; afterwards jump straight to the topic. Every page 
 | 12 | [Voice and tone](12-voice-and-tone.md) | How the brand sounds: headline patterns, CTAs, writing rules (from the website) |
 | 13 | [Web components](13-web-components.md) | Header, hero, sections, arrow link, cards, carousels, FAQ, footer; exact specs from manageandmore.de |
 | 14 | [Motion](14-motion.md) | Hover, scroll, loading, opening and closing; durations, easings, reduced motion |
+| 15 | [Brand v2](15-brand-v2.md) | The quiet, hairline-drawn language for tech products (hackathon platform, CRM, SaaS): tokens, rules, components, figures, deviations |
 | — | [Sources and discrepancies](sources-and-discrepancies.md) | Website vs PDF, adopted patterns, open website fixes, PDF errors, decisions log |
 
 Status values: `canonical` (from the PDF), `adopted` (from the manageandmore.de codebase, approved as the screen standard), `derived` (added here, e.g. accessibility fixes), `observed` (seen in the wild, not approved).

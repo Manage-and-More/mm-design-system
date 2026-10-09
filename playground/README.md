@@ -1,6 +1,6 @@
 # Design system playground
 
-A local app for browsing the Manage and More design system and **variants** of it: the current brand (Brand v1) today, and later a SaaS/product language, a Landing v2, and others. Each variant renders in an isolated canvas, so you can compare variants side by side at real breakpoints.
+A local app for browsing the Manage and More design system and **variants** of it: the programme brand (Brand v1) and Brand v2 for tech products today, and later a SaaS/product UI language and others. Each variant renders in an isolated canvas, so you can compare variants side by side at real breakpoints.
 
 ```bash
 cd playground
@@ -20,8 +20,20 @@ Node ≥ 22.12 (`.nvmrc`: 24). Stack: Vite 8, React 19, Tailwind CSS 4, TypeScri
 - **Copy anything:** every CSS variable, hex value, asset path and code snippet is a chip with a copy icon. Long values truncate at the start (the unique end stays visible) but copy in full.
 - **Uniform cards:** colour and asset cards share one structure (media, name, copy chip, footer with source and Notes) and equal row heights at any width. Design rationale is folded: Notes slide up over the card instead of resizing it.
 - **Brand v1:** the components, patterns and landing page from `examples/` as React, styled by the unchanged `examples/mm-base.css`. Assets are browsed from `assets/catalog.json`.
+- **Brand v2:** the tech-product language (`guidelines/15-brand-v2.md`): light and dark tokens in `src/variants/brand-v2/tokens.json`, the language itself read in place from `examples/brand-v2.css`, components, docs pages, the hackathon landing template and the hairline figures (`playground/hairline/`).
 
 Nothing in the design system is copied or edited. Tokens, assets, fonts and `mm-base.css` are read in place through the `@ds` alias (the repo root).
+
+## Check a page without a browser in hand
+
+```bash
+pnpm shot brand-v2 landing                      # full-page PNG at 1280px → playground/shots/
+pnpm shot brand-v2 landing --vp 390 --mode dark # phone width, dark mode
+pnpm shot brand-v2 figures --at 300,420         # hold the pointer at a point first (hover, hairline figures)
+pnpm shot --url 'http://localhost:5173/canvas.html?variant=brand&page=hero'
+```
+
+`scripts/shot.mjs` starts Vite itself, waits for fonts and figures to settle, writes the picture and prints every console error or warning (exit 1 if any). It uses `playwright-core` with your Chrome, or the Chromium from `pnpm exec playwright-core install chromium`. The same browser rasterises SVGs for `scripts/build_v2_assets.py` (`scripts/render_svg.mjs` at the repo root) and runs the hairline skill's `look.mjs`.
 
 ## Add a variant
 
@@ -58,6 +70,7 @@ Status is `canonical`, `draft` or `experimental`. Pages with the same `slug` lin
 
 - A path that exists in core **overrides** it; a new path is **added**.
 - References resolve against the variant first, then core. They stay live `var()`s, so overriding `color.brand.black` also changes `color.semantic.text`.
+- `hideTokens: ['color.brand.yellow']` in `variant.ts` retires core tokens from the variant's Foundations pages and contrast matrix (Brand v2 has no yellow).
 - `$extensions.mm.modes.dark` values are emitted under `:root[data-mode="dark"]`. Add `'dark'` to `modes` in `variant.ts` to enable the toolbar toggle.
 - `plugins/vite-plugin-mm-tokens.ts` writes `generated/tokens.css` and `generated/tokens.json` (gitignored) and regenerates on save. CSS hot-updates; docs pages reload.
 - CSS names match `scripts/build_tokens.py` (`color.semantic.text` → `--mm-color-semantic-text`), and `pnpm test` checks parity with `tokens/build/tokens.css`. When a variant is ready to become core, its `tokens.json` merges into `tokens/tokens.json` unchanged.

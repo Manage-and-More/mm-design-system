@@ -2,6 +2,11 @@
 
 Instructions for AI agents (Claude Code, Codex, Cursor, Copilot, …) working **with** or **on** this repository.
 
+## Which brand?
+
+- **Brand v1**, the programme (manageandmore.de, print, the scholarship): `assets/`, `tokens/build/tokens.css`, guidelines 01–14, `examples/landing-page.html`.
+- **Brand v2**, tech products (hackathon platform, CRM, SaaS, their landing pages): `assets/v2/` (same file names, blue `#0071E3`), `tokens.css` + `tokens/build/variants/brand-v2.css`, `guidelines/15-brand-v2.md` on top of 01–14, `examples/brand-v2.html` + `brand-v2.css`. Catalogue entries carry `brand: "v1" | "v2"`. Never mix the two blues on one surface.
+
 ## If you are applying the brand to another project
 
 Use the skill: `[skills/manage-and-more-brand/SKILL.md](skills/manage-and-more-brand/SKILL.md)`. It contains the essentials and a review checklist. Then:
@@ -24,6 +29,7 @@ Use the skill: `[skills/manage-and-more-brand/SKILL.md](skills/manage-and-more-b
 | Grid, widths, spacing, radii                        | [guidelines/10-layout.md](guidelines/10-layout.md)                                 |
 | Web UI: header, hero, sections, CTAs, cards, footer | [guidelines/13-web-components.md](guidelines/13-web-components.md)                 |
 | Hover, scroll, loading, open/close animation        | [guidelines/14-motion.md](guidelines/14-motion.md)                                 |
+| Landing page or UI for a tech product (hackathon, CRM, SaaS) | [guidelines/15-brand-v2.md](guidelines/15-brand-v2.md); start from `examples/brand-v2.html` |
 | Slides, letters, e-mail signature, merch            | [guidelines/11-applications.md](guidelines/11-applications.md)                     |
 | Writing copy                                        | [guidelines/12-voice-and-tone.md](guidelines/12-voice-and-tone.md)                 |
 | Conflicts, website differences, open website fixes  | [guidelines/sources-and-discrepancies.md](guidelines/sources-and-discrepancies.md) |
@@ -38,11 +44,12 @@ Use the skill: `[skills/manage-and-more-brand/SKILL.md](skills/manage-and-more-b
 
 ## Hard rules (never break)
 
-- Never redraw, recolour, re-space or retype the logo or the BY UNTERNEHMERTUM label; use the files. No all-blue logo.
+- Never redraw, recolour, re-space or retype the logo or the BY UNTERNEHMERTUM label; use the files. No all-blue logo. **One exception:** Brand v2 (tech products) uses the logo with the swirl in its own blue `#0071E3`, from `assets/v2/logo/` only (decision 2026-10-09, see `guidelines/15-brand-v2.md`); never use those files for the programme brand.
 - Only palette colours (plus `#007D9E` for blue text and focus rings). No gradients, shadows or glows.
 - Rounded corners only with the radius tokens (`card`, `feature`, `pill`) on photos, cards, chips and controls. Sections, colour blocks, logo and labels stay square.
 - No white text on blue (2.98:1): text on blue is black. No brand-blue text on white: use `#007D9E`.
 - Web type: Sharp Sans 500/800 where the project has the licensed files, Work Sans fallback. **Never commit Sharp Sans files to this repo** (it may be shared outside the team).
+- **No kicker labels.** Never put a small uppercase tracked line (an "eyebrow", "kicker" or "overline", with or without a leading dash or rule) above a heading or a card title. The heading carries the message; status goes into a chip, counts into the copy. This applies to every design language, Brand v1 included.
 - Motion is short and reactive only (no parallax, scroll-triggered entrances or marquees); every animation stops under `prefers-reduced-motion`.
 - Treat photos in `assets/photography/` as references; flag rights and consent before publishing.
 
@@ -70,9 +77,10 @@ Follow `[CONTRIBUTING.md](CONTRIBUTING.md)`. In short:
 - The PDF is canonical for print and identity assets; the website repo `manage-and-more-website` is the adopted standard for screens. New knowledge goes into the matching guideline page with its source; conflicts go into `guidelines/sources-and-discrepancies.md`.
 - When the website changes its theme (`src/styles/theme.css`) or a component, update the tokens and `guidelines/13-web-components.md` to match, or log the difference. For look and motion, the live site wins over the rebuild repo (`guidelines/14-motion.md`).
 - Edit tokens only in `tokens/tokens.json`, then run `python3 scripts/build_tokens.py`. Never edit `tokens/build/*` by hand.
-- New design languages (SaaS/product UI, Landing v2, …) start as playground variants: `cd playground && pnpm new:variant <id>`. A variant's `tokens.json` uses the core format and paths; merge it into `tokens/tokens.json` only once the brand owner adopts it. The playground reads tokens, assets and `examples/mm-base.css` in place; never copy them into it, and keep Sharp Sans in the gitignored `playground/fonts-local/`.
+- New design languages (SaaS/product UI, Brand v2, …) start as playground variants: `cd playground && pnpm new:variant <id>`. A variant's `tokens.json` uses the core format and paths; merge it into `tokens/tokens.json` only once the brand owner adopts it. The playground reads tokens, assets and `examples/mm-base.css` in place; never copy them into it, and keep Sharp Sans in the gitignored `playground/fonts-local/`.
 - If you changed `playground/`, run `pnpm typecheck && pnpm test && pnpm build` there.
-- Every new file in `assets/` needs an entry in `assets/catalog.json`.
+- **Look at what you changed.** `cd playground && pnpm shot <variant> <page> [--vp 390] [--mode dark] [--at x,y]` writes a full-page screenshot to `playground/shots/` and prints console errors; read the picture before saying a page is done. For a figure, the hairline skill's `look.mjs` is the check. For `assets/v2/`, open the PNGs next to their `assets/` originals.
+- Every new file in `assets/` needs an entry in `assets/catalog.json`. `assets/v2/` is generated: never edit it, run `python3 scripts/build_v2_assets.py` after changing a source asset.
 - Run `python3 scripts/validate.py` before committing; CI runs it too.
 - Add a line to `CHANGELOG.md`.
 

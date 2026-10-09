@@ -10,6 +10,10 @@
 - [Tailwind v4 theme](tokens/build/tailwind.theme.css)
 - [Playground](playground/README.md): Vite + React app with token-driven Foundations pages and design-language variants layered over core tokens
 
+## Two brands
+- Brand v1, the programme (manageandmore.de, print): [assets/](assets/README.md), [tokens.css](tokens/build/tokens.css), guidelines 01–14, [example page](examples/landing-page.html)
+- Brand v2, tech products (hackathon platform, CRM, SaaS): [guidelines/15-brand-v2.md](guidelines/15-brand-v2.md), [assets/v2/](assets/v2/README.md) (same file names, blue #0071E3, no accent), [variant tokens](tokens/build/variants/brand-v2.css), [example page](examples/brand-v2.html), [hairline figures](examples/hairline-figures.js)
+
 ## Guidelines
 - [Logo](guidelines/02-logo.md)
 - [Endorsement labels](guidelines/03-endorsement-labels.md)
@@ -24,4 +28,5 @@
 - [Voice and tone](guidelines/12-voice-and-tone.md)
 - [Web components](guidelines/13-web-components.md)
 - [Motion](guidelines/14-motion.md)
+- [Brand v2](guidelines/15-brand-v2.md)
 - [Sources and discrepancies](guidelines/sources-and-discrepancies.md)

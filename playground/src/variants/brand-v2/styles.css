@@ -1,0 +1,26 @@
+/* Brand v2: quiet page, one living drawing. Core tokens first, then this variant's
+   overrides from tokens.json (light and dark). Components are .v2-* classes so that they
+   never collide with Brand v1's mm-* classes in Compare. */
+@import 'tailwindcss' source(none);
+@source './';
+
+@import '@ds/tokens/build/tokens.css';
+@import './generated/tokens.css';
+@import '@ds/assets/fonts/work-sans/work-sans.css';
+/* The language itself, shared with examples/brand-v2.html. Layered so utilities in pages can adjust it. */
+@import '@ds/examples/brand-v2.css' layer(components);
+
+@custom-variant dark (&:where([data-mode='dark'], [data-mode='dark'] *));
+
+@theme inline {
+  --color-surface: var(--mm-color-semantic-background);
+  --color-surface-subtle: var(--mm-color-semantic-background-subtle);
+  --color-raised: var(--mm-color-surface-raised);
+  --color-fg: var(--mm-color-semantic-text);
+  --color-fg-muted: var(--mm-color-semantic-text-muted);
+  --color-accent: var(--mm-color-semantic-accent);
+  --color-action: var(--mm-color-semantic-action);
+  --color-band: var(--mm-color-surface-band);
+  --color-line: var(--mm-color-semantic-border);
+  --font-sans: var(--mm-font-family-web);
+}

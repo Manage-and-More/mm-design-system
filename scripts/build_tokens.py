@@ -10,6 +10,9 @@ Outputs (do not edit by hand):
   tokens/build/tokens.flat.json    {"color.brand.blue": "#00A2CD", ...}
   tokens/build/tailwind.preset.js  Tailwind CSS v3 preset (theme.extend)
   tokens/build/tailwind.theme.css  Tailwind CSS v4 @theme block (standalone, literal values)
+  tokens/build/variants/<id>.css   one file per playground variant (playground/src/variants/<id>/tokens.json),
+                                   layered over tokens.css: overrides and additions, dark values under
+                                   :root[data-mode="dark"]; the same output as the playground's Vite plugin
 """
 import json, re, sys
 from pathlib import Path
@@ -124,8 +127,70 @@ def build():
     return files
 
 
+VARIANTS = ROOT / "playground/src/variants"
+
+
+def variant_css(core_flat, own):
+    """CSS for one variant's tokens.json: references stay live var()s, modes go under :root[data-mode]."""
+    flat = dict(flatten(own))
+    merged = {**core_flat, **flat}
+    name = lambda k: k.replace(".", "-")
+
+    def to_css(v, type_=None):
+        if isinstance(v, str):
+            m = re.fullmatch(r"\{([^}]+)\}", v)
+            if m:
+                if m.group(1) not in merged:
+                    raise SystemExit(f"variant token references unknown {m.group(1)}")
+                return f"var(--mm-{name(m.group(1))})"
+            return v
+        if type_ == "shadow" and isinstance(v, (dict, list)):
+            def one(sh):
+                parts = ["inset" if sh.get("inset") else "", sh["offsetX"], sh["offsetY"], sh["blur"], sh.get("spread", "0px"), sh["color"]]
+                return " ".join(p for p in parts if p)
+            return ", ".join(one(sh) for sh in (v if isinstance(v, list) else [v]))
+        return css_value(v, type_)
+
+    def type_of(k):
+        t = flat[k].get("$type")
+        if t:
+            return t
+        node, parts = own, k.split(".")
+        for part in parts:
+            node = node[part]
+            if "$type" in node:
+                t = node["$type"]
+        return t
+
+    lines = [f"/* {HEADER.replace('tokens/tokens.json', 'playground/src/variants/<id>/tokens.json')} Layer after tokens.css. */", ":root {"]
+    modes = {}
+    for k, t in flat.items():
+        lines.append(f"  --mm-{name(k)}: {to_css(t['$value'], type_of(k))};")
+        for mode, mv in t.get("$extensions", {}).get("mm", {}).get("modes", {}).items():
+            modes.setdefault(mode, []).append(f"  --mm-{name(k)}: {to_css(mv, type_of(k))};")
+    lines.append("}")
+    for mode, ml in modes.items():
+        lines += ["", f':root[data-mode="{mode}"] {{', *ml, "}"]
+    return "\n".join(lines) + "\n"
+
+
+def build_variants():
+    core_flat = dict(flatten(json.loads(SRC.read_text())))
+    files = {}
+    for tj in sorted(VARIANTS.glob("*/tokens.json")):
+        vid = tj.parent.name
+        if vid.startswith("_") or vid == "brand":
+            continue
+        own = json.loads(tj.read_text())
+        if not own:
+            continue
+        files[OUT / "variants" / f"{vid}.css"] = variant_css(core_flat, own)
+    return files
+
+
 def main():
     files = build()
+    files.update(build_variants())
     check = "--check" in sys.argv
     stale = []
     OUT.mkdir(parents=True, exist_ok=True)
@@ -135,6 +200,7 @@ def main():
             if not p.exists() or p.read_text() != content:
                 stale.append(fname)
         else:
+            p.parent.mkdir(parents=True, exist_ok=True)
             p.write_text(content)
             print("wrote", p.relative_to(ROOT))
     if stale:

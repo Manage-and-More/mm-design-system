@@ -20,7 +20,7 @@ const { positionals, values } = parseArgs({
 
 const id = positionals[0];
 if (!id || !/^[a-z][a-z0-9-]*$/.test(id)) {
-  console.error('Usage: pnpm new:variant <id> [--name "Name"] [--summary "One line"] [--based-on brand]\n  id: lowercase letters, digits and dashes, e.g. saas or landing-v2');
+  console.error('Usage: pnpm new:variant <id> [--name "Name"] [--summary "One line"] [--based-on brand]\n  id: lowercase letters, digits and dashes, e.g. saas or brand-v2');
   process.exit(1);
 }
 const target = path.join(variantsDir, id);

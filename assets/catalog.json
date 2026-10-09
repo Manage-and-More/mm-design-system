@@ -1,5 +1,5 @@
 {
-  "$description": "Machine-readable index of every file in assets/. Keep it complete: scripts/validate.py fails if a file is missing here or an entry points nowhere. kind: logo|symbol|label|lockup|icon|ui-glyph|illustration|infographic|photo|font|license. ui-glyph = small functional UI marks (arrows, chevron, check, plus/minus, close, menu, quote, social) from the live site's icon set, distinct from the brand pictogram icons. use_on: backgrounds the asset is approved for; [\"any\"] for self-contained artwork and photos, [] for files that are not placed on a background (fonts, licences). rights: usage note where rights or consent need checking.",
+  "$description": "Machine-readable index of every file in assets/. Keep it complete: scripts/validate.py fails if a file is missing here or an entry points nowhere. kind: logo|symbol|label|lockup|icon|ui-glyph|illustration|infographic|photo|font|license. ui-glyph = small functional UI marks (arrows, chevron, check, plus/minus, close, menu, quote, social) from the live site's icon set, distinct from the brand pictogram icons. use_on: backgrounds the asset is approved for; [\"any\"] for self-contained artwork and photos, [] for files that are not placed on a background (fonts, licences). rights: usage note where rights or consent need checking. brand: \"v1\" = the programme brand (assets/, #00A2CD), \"v2\" = Brand v2 for tech products (assets/v2/, #0071E3; built by scripts/build_v2_assets.py).",
   "assets": [
     {
       "path": "assets/logo/svg/mm-logo-primary.svg",
@@ -15,7 +15,8 @@
       "tags": [
         "logo",
         "primary"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/png/mm-logo-primary.png",
@@ -31,7 +32,8 @@
       "tags": [
         "logo",
         "primary"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/svg/mm-logo-primary-on-dark.svg",
@@ -45,7 +47,8 @@
       "tags": [
         "logo",
         "primary"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/png/mm-logo-primary-on-dark.png",
@@ -59,7 +62,8 @@
       "tags": [
         "logo",
         "primary"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/svg/mm-logo-black.svg",
@@ -74,7 +78,8 @@
       "tags": [
         "logo",
         "mono"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/png/mm-logo-black.png",
@@ -89,7 +94,8 @@
       "tags": [
         "logo",
         "mono"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/svg/mm-logo-white.svg",
@@ -104,7 +110,8 @@
       "tags": [
         "logo",
         "mono"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/png/mm-logo-white.png",
@@ -119,7 +126,8 @@
       "tags": [
         "logo",
         "mono"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/svg/mm-symbol-blue.svg",
@@ -134,7 +142,8 @@
       "tags": [
         "symbol",
         "favicon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/png/mm-symbol-blue.png",
@@ -149,7 +158,8 @@
       "tags": [
         "symbol",
         "favicon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/svg/mm-symbol-black.svg",
@@ -164,7 +174,8 @@
       "tags": [
         "symbol",
         "favicon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/png/mm-symbol-black.png",
@@ -179,7 +190,8 @@
       "tags": [
         "symbol",
         "favicon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/svg/mm-symbol-white.svg",
@@ -193,7 +205,8 @@
       "tags": [
         "symbol",
         "favicon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/logo/png/mm-symbol-white.png",
@@ -207,7 +220,8 @@
       "tags": [
         "symbol",
         "favicon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/svg/by-unternehmertum-label-black.svg",
@@ -222,7 +236,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/png/by-unternehmertum-label-black.png",
@@ -237,7 +252,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/svg/by-unternehmertum-label-blue.svg",
@@ -251,7 +267,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/png/by-unternehmertum-label-blue.png",
@@ -265,7 +282,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/svg/by-unternehmertum-label-outline-black.svg",
@@ -279,7 +297,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/png/by-unternehmertum-label-outline-black.png",
@@ -293,7 +312,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/svg/by-unternehmertum-label-white.svg",
@@ -308,7 +328,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/png/by-unternehmertum-label-white.png",
@@ -323,7 +344,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/svg/by-unternehmertum-label-outline-white.svg",
@@ -338,7 +360,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/png/by-unternehmertum-label-outline-white.png",
@@ -353,7 +376,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/svg/descriptor-lockup-outline-black.svg",
@@ -367,7 +391,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/png/descriptor-lockup-outline-black.png",
@@ -381,7 +406,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/svg/descriptor-lockup-outline-label-black.svg",
@@ -395,7 +421,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/png/descriptor-lockup-outline-label-black.png",
@@ -409,7 +436,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/svg/descriptor-lockup-solid-black.svg",
@@ -423,7 +451,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/png/descriptor-lockup-solid-black.png",
@@ -437,7 +466,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/svg/descriptor-lockup-label-blue.svg",
@@ -450,7 +480,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/png/descriptor-lockup-label-blue.png",
@@ -463,7 +494,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/svg/descriptor-lockup-solid-blue.svg",
@@ -476,7 +508,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/png/descriptor-lockup-solid-blue.png",
@@ -489,7 +522,8 @@
       "tags": [
         "endorsement",
         "unternehmertum"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/building.svg",
@@ -503,7 +537,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/building-blue.png",
@@ -515,7 +550,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/building-black.png",
@@ -529,7 +565,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/calendar.svg",
@@ -543,7 +580,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/calendar-blue.png",
@@ -555,7 +593,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/calendar-black.png",
@@ -569,7 +608,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/chat.svg",
@@ -583,7 +623,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/chat-blue.png",
@@ -595,7 +636,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/chat-black.png",
@@ -609,7 +651,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/connected-car.svg",
@@ -623,7 +666,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/connected-car-blue.png",
@@ -635,7 +679,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/connected-car-black.png",
@@ -649,7 +694,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/education.svg",
@@ -663,7 +709,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/education-blue.png",
@@ -675,7 +722,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/education-black.png",
@@ -689,7 +737,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/globe.svg",
@@ -703,7 +752,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/globe-blue.png",
@@ -715,7 +765,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/globe-black.png",
@@ -729,7 +780,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/health.svg",
@@ -743,7 +795,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/health-blue.png",
@@ -755,7 +808,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/health-black.png",
@@ -769,7 +823,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/map.svg",
@@ -783,7 +838,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/map-blue.png",
@@ -795,7 +851,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/map-black.png",
@@ -809,7 +866,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/money.svg",
@@ -823,7 +881,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/money-blue.png",
@@ -835,7 +894,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/money-black.png",
@@ -849,7 +909,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/network.svg",
@@ -863,7 +924,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/network-blue.png",
@@ -875,7 +937,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/network-black.png",
@@ -889,7 +952,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/robot-arm.svg",
@@ -903,7 +967,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/robot-arm-blue.png",
@@ -915,7 +980,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/robot-arm-black.png",
@@ -929,7 +995,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/rocket.svg",
@@ -943,7 +1010,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/rocket-blue.png",
@@ -955,7 +1023,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/rocket-black.png",
@@ -969,7 +1038,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/signpost.svg",
@@ -983,7 +1053,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/signpost-blue.png",
@@ -995,7 +1066,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/signpost-black.png",
@@ -1009,7 +1081,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/team.svg",
@@ -1023,7 +1096,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/team-blue.png",
@@ -1035,7 +1109,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/team-black.png",
@@ -1049,7 +1124,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/technology.svg",
@@ -1063,7 +1139,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/technology-blue.png",
@@ -1075,7 +1152,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/technology-black.png",
@@ -1089,7 +1167,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/svg/tools.svg",
@@ -1103,7 +1182,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/tools-blue.png",
@@ -1115,7 +1195,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/png/tools-black.png",
@@ -1129,7 +1210,8 @@
       ],
       "tags": [
         "icon"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/illustrations/svg/illustration-city-port.svg",
@@ -1143,7 +1225,8 @@
       "use_on": [
         "white",
         "light-grey"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/illustrations/png/illustration-city-port.png",
@@ -1157,7 +1240,8 @@
       "use_on": [
         "white",
         "light-grey"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/illustrations/svg/illustration-idea-head-on-yellow.svg",
@@ -1170,7 +1254,8 @@
       ],
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/illustrations/png/illustration-idea-head-on-yellow.png",
@@ -1183,7 +1268,8 @@
       ],
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/illustrations/svg/illustration-wind-tower.svg",
@@ -1197,7 +1283,8 @@
       "use_on": [
         "white",
         "light-grey"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/illustrations/png/illustration-wind-tower.png",
@@ -1211,7 +1298,8 @@
       "use_on": [
         "white",
         "light-grey"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/illustrations/svg/illustration-ufo-on-black.svg",
@@ -1224,7 +1312,8 @@
       ],
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/illustrations/png/illustration-ufo-on-black.png",
@@ -1237,7 +1326,8 @@
       ],
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/infographics/svg/infographics-examples.svg",
@@ -1252,7 +1342,8 @@
       "use_on": [
         "white",
         "light-grey"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/infographics/png/infographics-examples.png",
@@ -1267,7 +1358,8 @@
       "use_on": [
         "white",
         "light-grey"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/cover/cover-01.jpg",
@@ -1282,7 +1374,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/events/events-01.jpg",
@@ -1297,7 +1390,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/events/events-02.jpg",
@@ -1312,7 +1406,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/events/events-03.jpg",
@@ -1327,7 +1422,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/events/events-04.jpg",
@@ -1342,7 +1438,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/merchandise/merchandise-01.jpg",
@@ -1357,7 +1454,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/people/people-01.jpg",
@@ -1372,7 +1470,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/people/people-02.jpg",
@@ -1387,7 +1486,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/people/people-03.jpg",
@@ -1402,7 +1502,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/people/people-04.jpg",
@@ -1417,7 +1518,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/people/people-05.jpg",
@@ -1432,7 +1534,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/principles/principles-01.jpg",
@@ -1447,7 +1550,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/principles/principles-02.jpg",
@@ -1462,7 +1566,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/principles/principles-03.jpg",
@@ -1477,7 +1582,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/principles/principles-04.jpg",
@@ -1492,7 +1598,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/principles/principles-05.jpg",
@@ -1507,7 +1614,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/principles/principles-06.jpg",
@@ -1522,7 +1630,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/startups/startups-01.jpg",
@@ -1537,7 +1646,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/startups/startups-02.jpg",
@@ -1552,7 +1662,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/startups/startups-03.jpg",
@@ -1567,7 +1678,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/startups/startups-04.jpg",
@@ -1582,7 +1694,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/startups/startups-05.jpg",
@@ -1597,7 +1710,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/tech/tech-01.jpg",
@@ -1612,7 +1726,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/tech/tech-02.jpg",
@@ -1627,7 +1742,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/tech/tech-03.jpg",
@@ -1642,7 +1758,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/tech/tech-04.jpg",
@@ -1657,7 +1774,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/tech/tech-05.jpg",
@@ -1672,7 +1790,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/toning/toning-01.jpg",
@@ -1687,7 +1806,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/toning/toning-02-blue-tint.jpg",
@@ -1702,7 +1822,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/toning/toning-02.jpg",
@@ -1717,7 +1838,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/toning/toning-03.jpg",
@@ -1732,7 +1854,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/toning/toning-04-blue-tint.jpg",
@@ -1747,7 +1870,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/toning/toning-04.jpg",
@@ -1762,7 +1886,8 @@
       "rights": "UnternehmerTUM example image; check rights before publishing",
       "use_on": [
         "any"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/OFL.txt",
@@ -1773,7 +1898,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/desktop/WorkSans-Italic[wght].ttf",
@@ -1784,7 +1910,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/desktop/WorkSans[wght].ttf",
@@ -1795,7 +1922,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-400-italic.woff2",
@@ -1806,7 +1934,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-400-normal.woff2",
@@ -1817,7 +1946,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-500-italic.woff2",
@@ -1828,7 +1958,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-500-normal.woff2",
@@ -1839,7 +1970,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-700-italic.woff2",
@@ -1850,7 +1982,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-700-normal.woff2",
@@ -1861,7 +1994,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-800-italic.woff2",
@@ -1872,7 +2006,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-800-normal.woff2",
@@ -1883,7 +2018,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-ext-wght-italic.woff2",
@@ -1894,7 +2030,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-ext-wght-normal.woff2",
@@ -1905,7 +2042,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-wght-italic.woff2",
@@ -1916,7 +2054,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/web/work-sans-latin-wght-normal.woff2",
@@ -1927,7 +2066,8 @@
         "font",
         "work-sans"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/fonts/work-sans/work-sans.css",
@@ -1939,7 +2079,8 @@
         "work-sans",
         "css"
       ],
-      "use_on": []
+      "use_on": [],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/svg/descriptor-lockup-outline-white.svg",
@@ -1954,7 +2095,8 @@
         "endorsement",
         "unternehmertum",
         "footer"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/labels/png/descriptor-lockup-outline-white.png",
@@ -1969,7 +2111,8 @@
         "endorsement",
         "unternehmertum",
         "footer"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/arrow-right.svg",
@@ -1986,7 +2129,8 @@
       "tags": [
         "ui",
         "arrow"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/arrow-left.svg",
@@ -2003,7 +2147,8 @@
       "tags": [
         "ui",
         "arrow"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/check.svg",
@@ -2020,7 +2165,8 @@
       "tags": [
         "ui",
         "check"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/plus.svg",
@@ -2037,7 +2183,8 @@
       "tags": [
         "ui",
         "plus"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/quote.svg",
@@ -2055,7 +2202,8 @@
         "ui",
         "quote",
         "testimonial"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/linkedin.svg",
@@ -2073,7 +2221,8 @@
         "ui",
         "social",
         "linkedin"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/photography/website/cohort-group.webp",
@@ -2091,7 +2240,8 @@
         "hero",
         "community"
       ],
-      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media",
+      "brand": "v1"
     },
     {
       "path": "assets/photography/website/bootcamp-workshop.webp",
@@ -2108,7 +2258,8 @@
         "program",
         "hero"
       ],
-      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media",
+      "brand": "v1"
     },
     {
       "path": "assets/photography/website/graduation.webp",
@@ -2125,7 +2276,8 @@
         "celebration",
         "group"
       ],
-      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media",
+      "brand": "v1"
     },
     {
       "path": "assets/photography/website/event-talk.webp",
@@ -2142,7 +2294,8 @@
         "talk",
         "audience"
       ],
-      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media",
+      "brand": "v1"
     },
     {
       "path": "assets/photography/website/scholars-group.webp",
@@ -2159,7 +2312,8 @@
         "group",
         "portrait"
       ],
-      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media",
+      "brand": "v1"
     },
     {
       "path": "assets/photography/website/startup-tour-dinner.webp",
@@ -2176,7 +2330,8 @@
         "international",
         "event"
       ],
-      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media",
+      "brand": "v1"
     },
     {
       "path": "assets/photography/website/coaching.webp",
@@ -2193,7 +2348,8 @@
         "people",
         "interaction"
       ],
-      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media",
+      "brand": "v1"
     },
     {
       "path": "assets/photography/website/alumni-group.webp",
@@ -2210,7 +2366,8 @@
         "group",
         "community"
       ],
-      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media"
+      "rights": "Manage and More's own photo, used on manageandmore.de; shows real people, confirm consent before reuse in other media",
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/arrow-up.svg",
@@ -2227,7 +2384,8 @@
       "tags": [
         "ui",
         "arrow"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/arrow-down.svg",
@@ -2244,7 +2402,8 @@
       "tags": [
         "ui",
         "arrow"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/chevron-down.svg",
@@ -2261,7 +2420,8 @@
       "tags": [
         "ui",
         "chevron"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/minus.svg",
@@ -2278,7 +2438,8 @@
       "tags": [
         "ui",
         "minus"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/close.svg",
@@ -2295,7 +2456,8 @@
       "tags": [
         "ui",
         "close"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/hamburger.svg",
@@ -2312,7 +2474,8 @@
       "tags": [
         "ui",
         "hamburger"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/artificial-intelligence.svg",
@@ -2331,7 +2494,8 @@
         "web",
         "ai",
         "technology"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/digital.svg",
@@ -2350,7 +2514,8 @@
         "web",
         "digital",
         "screen"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/drone.svg",
@@ -2369,7 +2534,8 @@
         "web",
         "drone",
         "technology"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/education-skills.svg",
@@ -2388,7 +2554,8 @@
         "web",
         "education",
         "learning"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/events.svg",
@@ -2406,7 +2573,8 @@
         "icon",
         "web",
         "events"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/fast-track.svg",
@@ -2425,7 +2593,8 @@
         "web",
         "speed",
         "fast-track"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/flexible.svg",
@@ -2443,7 +2612,8 @@
         "icon",
         "web",
         "flexible"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/goals.svg",
@@ -2462,7 +2632,8 @@
         "web",
         "goals",
         "target"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/grant-equity-budget.svg",
@@ -2481,7 +2652,8 @@
         "web",
         "money",
         "funding"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/healthcare.svg",
@@ -2499,7 +2671,8 @@
         "icon",
         "web",
         "health"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/heart.svg",
@@ -2518,7 +2691,8 @@
         "web",
         "community",
         "heart"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/human-centered.svg",
@@ -2537,7 +2711,8 @@
         "web",
         "people",
         "design-thinking"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/international.svg",
@@ -2556,7 +2731,8 @@
         "web",
         "international",
         "globe"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/location-campus.svg",
@@ -2575,7 +2751,8 @@
         "web",
         "location",
         "campus"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/location-hotspot.svg",
@@ -2593,7 +2770,8 @@
         "icon",
         "web",
         "location"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/mentoring-coaching.svg",
@@ -2612,7 +2790,8 @@
         "web",
         "coaching",
         "mentoring"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/mobility.svg",
@@ -2632,7 +2811,8 @@
         "mobility",
         "logistics",
         "transport"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/network.svg",
@@ -2650,7 +2830,8 @@
         "icon",
         "web",
         "network"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/pitch.svg",
@@ -2669,7 +2850,8 @@
         "web",
         "pitch",
         "presentation"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/rocket.svg",
@@ -2688,7 +2870,8 @@
         "web",
         "rocket",
         "startup"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/schedule-appointment.svg",
@@ -2707,7 +2890,8 @@
         "web",
         "calendar",
         "schedule"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/smart-city.svg",
@@ -2725,7 +2909,8 @@
         "icon",
         "web",
         "city"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/smart-industry.svg",
@@ -2745,7 +2930,8 @@
         "industry",
         "manufacturing",
         "factory"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/talents-news.svg",
@@ -2764,7 +2950,8 @@
         "web",
         "talents",
         "news"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/team.svg",
@@ -2783,7 +2970,8 @@
         "web",
         "team",
         "people"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/technology.svg",
@@ -2801,7 +2989,8 @@
         "icon",
         "web",
         "technology"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/time.svg",
@@ -2820,7 +3009,8 @@
         "web",
         "time",
         "clock"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/unicorn.svg",
@@ -2839,7 +3029,8 @@
         "web",
         "unicorn",
         "startup"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/workshop.svg",
@@ -2857,7 +3048,8 @@
         "icon",
         "web",
         "workshop"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/info.svg",
@@ -2875,7 +3067,8 @@
         "icon",
         "web",
         "info"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/mail.svg",
@@ -2894,7 +3087,8 @@
         "web",
         "mail",
         "contact"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/phone.svg",
@@ -2913,7 +3107,8 @@
         "web",
         "phone",
         "contact"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/search.svg",
@@ -2931,7 +3126,8 @@
         "icon",
         "web",
         "search"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/download.svg",
@@ -2949,7 +3145,8 @@
         "icon",
         "web",
         "download"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/play.svg",
@@ -2968,7 +3165,8 @@
         "web",
         "play",
         "video"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/icons/web/zoom.svg",
@@ -2986,7 +3184,8 @@
         "icon",
         "web",
         "zoom"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/chevron-left.svg",
@@ -3003,7 +3202,8 @@
       "tags": [
         "ui",
         "chevron"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/chevron-right.svg",
@@ -3020,7 +3220,8 @@
       "tags": [
         "ui",
         "chevron"
-      ]
+      ],
+      "brand": "v1"
     },
     {
       "path": "assets/ui/svg/chevron-up.svg",
@@ -3037,7 +3238,924 @@
       "tags": [
         "ui",
         "chevron"
-      ]
+      ],
+      "brand": "v1"
+    },
+    {
+      "kind": "logo",
+      "description": "Brand v2 (#0071E3): One-colour black logo. Vector.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/svg/mm-logo-black.svg; no blue in the file; copied unchanged)",
+      "use_on": [
+        "white",
+        "light-grey",
+        "yellow"
+      ],
+      "tags": [
+        "logo",
+        "mono"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/svg/mm-logo-black.svg"
+    },
+    {
+      "kind": "logo",
+      "description": "Brand v2 (#0071E3): One-colour black logo. PNG 1200px wide, transparent.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/png/mm-logo-black.png; re-rendered from the Brand v2 SVG at 1200px)",
+      "use_on": [
+        "white",
+        "light-grey",
+        "yellow"
+      ],
+      "tags": [
+        "logo",
+        "mono"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/png/mm-logo-black.png"
+    },
+    {
+      "kind": "logo",
+      "description": "Brand v2 (#0071E3): Primary logo for dark backgrounds: blue symbol, white wordmark. Vector.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/svg/mm-logo-primary-on-dark.svg; #00A2CD -> #2997FF)",
+      "use_on": [
+        "black",
+        "dark-photo"
+      ],
+      "tags": [
+        "logo",
+        "primary"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/svg/mm-logo-primary-on-dark.svg"
+    },
+    {
+      "kind": "logo",
+      "description": "Brand v2 (#0071E3): Primary logo for dark backgrounds: blue symbol, white wordmark. PNG 1200px wide, transparent.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/png/mm-logo-primary-on-dark.png; re-rendered from the Brand v2 SVG at 1200px)",
+      "use_on": [
+        "black",
+        "dark-photo"
+      ],
+      "tags": [
+        "logo",
+        "primary"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/png/mm-logo-primary-on-dark.png"
+    },
+    {
+      "kind": "logo",
+      "description": "Brand v2 (#0071E3): Primary logo: blue symbol, black wordmark. Vector.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/svg/mm-logo-primary.svg; #00A2CD -> #0071E3)",
+      "use_on": [
+        "white",
+        "light-grey",
+        "yellow",
+        "light-photo"
+      ],
+      "tags": [
+        "logo",
+        "primary"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/svg/mm-logo-primary.svg"
+    },
+    {
+      "kind": "logo",
+      "description": "Brand v2 (#0071E3): Primary logo: blue symbol, black wordmark. PNG 1200px wide, transparent.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/png/mm-logo-primary.png; re-rendered from the Brand v2 SVG at 1200px)",
+      "use_on": [
+        "white",
+        "light-grey",
+        "yellow",
+        "light-photo"
+      ],
+      "tags": [
+        "logo",
+        "primary"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/png/mm-logo-primary.png"
+    },
+    {
+      "kind": "logo",
+      "description": "Brand v2 (#0071E3): One-colour white logo. Vector.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/svg/mm-logo-white.svg; no blue in the file; copied unchanged)",
+      "use_on": [
+        "blue",
+        "black",
+        "dark-photo"
+      ],
+      "tags": [
+        "logo",
+        "mono"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/svg/mm-logo-white.svg"
+    },
+    {
+      "kind": "logo",
+      "description": "Brand v2 (#0071E3): One-colour white logo. PNG 1200px wide, transparent.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/png/mm-logo-white.png; re-rendered from the Brand v2 SVG at 1200px)",
+      "use_on": [
+        "blue",
+        "black",
+        "dark-photo"
+      ],
+      "tags": [
+        "logo",
+        "mono"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/png/mm-logo-white.png"
+    },
+    {
+      "kind": "symbol",
+      "description": "Brand v2 (#0071E3): Symbol only (black). For favicons, avatars and sizes below 32px.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/svg/mm-symbol-black.svg; no blue in the file; copied unchanged)",
+      "use_on": [
+        "white",
+        "light-grey",
+        "yellow"
+      ],
+      "tags": [
+        "symbol",
+        "favicon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/svg/mm-symbol-black.svg"
+    },
+    {
+      "kind": "symbol",
+      "description": "Brand v2 (#0071E3): Symbol only (black). For favicons, avatars and sizes below 32px.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/png/mm-symbol-black.png; re-rendered from the Brand v2 SVG at 512px)",
+      "use_on": [
+        "white",
+        "light-grey",
+        "yellow"
+      ],
+      "tags": [
+        "symbol",
+        "favicon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/png/mm-symbol-black.png"
+    },
+    {
+      "kind": "symbol",
+      "description": "Brand v2 (#0071E3): Symbol only (blue). For favicons, avatars and sizes below 32px.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/svg/mm-symbol-blue.svg; #00A2CD -> #0071E3)",
+      "use_on": [
+        "white",
+        "black",
+        "light-grey"
+      ],
+      "tags": [
+        "symbol",
+        "favicon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/svg/mm-symbol-blue.svg"
+    },
+    {
+      "kind": "symbol",
+      "description": "Brand v2 (#0071E3): Symbol only (blue). For favicons, avatars and sizes below 32px.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/png/mm-symbol-blue.png; re-rendered from the Brand v2 SVG at 512px)",
+      "use_on": [
+        "white",
+        "black",
+        "light-grey"
+      ],
+      "tags": [
+        "symbol",
+        "favicon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/png/mm-symbol-blue.png"
+    },
+    {
+      "kind": "symbol",
+      "description": "Brand v2 (#0071E3): Symbol only (white). For favicons, avatars and sizes below 32px.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/svg/mm-symbol-white.svg; no blue in the file; copied unchanged)",
+      "use_on": [
+        "blue",
+        "black"
+      ],
+      "tags": [
+        "symbol",
+        "favicon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/svg/mm-symbol-white.svg"
+    },
+    {
+      "kind": "symbol",
+      "description": "Brand v2 (#0071E3): Symbol only (white). For favicons, avatars and sizes below 32px.",
+      "source": "derived (scripts/build_v2_assets.py from assets/logo/png/mm-symbol-white.png; re-rendered from the Brand v2 SVG at 512px)",
+      "use_on": [
+        "blue",
+        "black"
+      ],
+      "tags": [
+        "symbol",
+        "favicon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/logo/png/mm-symbol-white.png"
+    },
+    {
+      "kind": "label",
+      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, solid black.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/svg/by-unternehmertum-label-black.svg; no blue in the file; copied unchanged)",
+      "use_on": [
+        "white",
+        "light-grey",
+        "photo"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/svg/by-unternehmertum-label-black.svg"
+    },
+    {
+      "kind": "label",
+      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, solid black.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/png/by-unternehmertum-label-black.png; re-rendered from the Brand v2 SVG at 600px)",
+      "use_on": [
+        "white",
+        "light-grey",
+        "photo"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/png/by-unternehmertum-label-black.png"
+    },
+    {
+      "kind": "label",
+      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, solid M&M blue.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/svg/by-unternehmertum-label-blue.svg; #00A2CD -> #0071E3)",
+      "use_on": [
+        "white",
+        "black"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/svg/by-unternehmertum-label-blue.svg"
+    },
+    {
+      "kind": "label",
+      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, solid M&M blue.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/png/by-unternehmertum-label-blue.png; re-rendered from the Brand v2 SVG at 600px)",
+      "use_on": [
+        "white",
+        "black"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/png/by-unternehmertum-label-blue.png"
+    },
+    {
+      "kind": "label",
+      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, black outline, transparent.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/svg/by-unternehmertum-label-outline-black.svg; no blue in the file; copied unchanged)",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/svg/by-unternehmertum-label-outline-black.svg"
+    },
+    {
+      "kind": "label",
+      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, black outline, transparent.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/png/by-unternehmertum-label-outline-black.png; re-rendered from the Brand v2 SVG at 600px)",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/png/by-unternehmertum-label-outline-black.png"
+    },
+    {
+      "kind": "label",
+      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, white outline, transparent. On photos only when calm or shaded (website hero); on busy photos use the solid white label.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/svg/by-unternehmertum-label-outline-white.svg; no blue in the file; copied unchanged)",
+      "use_on": [
+        "black",
+        "blue",
+        "dark-photo"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/svg/by-unternehmertum-label-outline-white.svg"
+    },
+    {
+      "kind": "label",
+      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, white outline, transparent. On photos only when calm or shaded (website hero); on busy photos use the solid white label.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/png/by-unternehmertum-label-outline-white.png; re-rendered from the Brand v2 SVG at 600px)",
+      "use_on": [
+        "black",
+        "blue",
+        "dark-photo"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/png/by-unternehmertum-label-outline-white.png"
+    },
+    {
+      "kind": "label",
+      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, solid white.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/svg/by-unternehmertum-label-white.svg; no blue in the file; copied unchanged)",
+      "use_on": [
+        "black",
+        "blue",
+        "dark-photo"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/svg/by-unternehmertum-label-white.svg"
+    },
+    {
+      "kind": "label",
+      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, solid white.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/png/by-unternehmertum-label-white.png; re-rendered from the Brand v2 SVG at 600px)",
+      "use_on": [
+        "black",
+        "blue",
+        "dark-photo"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/png/by-unternehmertum-label-white.png"
+    },
+    {
+      "kind": "lockup",
+      "description": "Brand v2 (#0071E3): Descriptor black outline + solid blue logo label.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/svg/descriptor-lockup-label-blue.svg; #00A2CD -> #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/svg/descriptor-lockup-label-blue.svg"
+    },
+    {
+      "kind": "lockup",
+      "description": "Brand v2 (#0071E3): Descriptor black outline + solid blue logo label.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/png/descriptor-lockup-label-blue.png; re-rendered from the Brand v2 SVG at 900px)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/png/descriptor-lockup-label-blue.png"
+    },
+    {
+      "kind": "lockup",
+      "description": "Brand v2 (#0071E3): ENTREPRENEURIAL EDUCATION descriptor + logo label, both black outline.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/svg/descriptor-lockup-outline-black.svg; no blue in the file; copied unchanged)",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/svg/descriptor-lockup-outline-black.svg"
+    },
+    {
+      "kind": "lockup",
+      "description": "Brand v2 (#0071E3): ENTREPRENEURIAL EDUCATION descriptor + logo label, both black outline.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/png/descriptor-lockup-outline-black.png; re-rendered from the Brand v2 SVG at 900px)",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/png/descriptor-lockup-outline-black.png"
+    },
+    {
+      "kind": "lockup",
+      "description": "Brand v2 (#0071E3): Descriptor black outline + solid black logo label.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/svg/descriptor-lockup-outline-label-black.svg; no blue in the file; copied unchanged)",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/svg/descriptor-lockup-outline-label-black.svg"
+    },
+    {
+      "kind": "lockup",
+      "description": "Brand v2 (#0071E3): Descriptor black outline + solid black logo label.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/png/descriptor-lockup-outline-label-black.png; re-rendered from the Brand v2 SVG at 900px)",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/png/descriptor-lockup-outline-label-black.png"
+    },
+    {
+      "kind": "lockup",
+      "description": "Brand v2 (#0071E3): Descriptor + logo label, both white outline. For blue or black website footers.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/svg/descriptor-lockup-outline-white.svg; no blue in the file; copied unchanged)",
+      "use_on": [
+        "blue",
+        "black"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum",
+        "footer"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/svg/descriptor-lockup-outline-white.svg"
+    },
+    {
+      "kind": "lockup",
+      "description": "Brand v2 (#0071E3): Descriptor + logo label, both white outline. For blue or black website footers.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/png/descriptor-lockup-outline-white.png; re-rendered from the Brand v2 SVG at 900px)",
+      "use_on": [
+        "blue",
+        "black"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum",
+        "footer"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/png/descriptor-lockup-outline-white.png"
+    },
+    {
+      "kind": "lockup",
+      "description": "Brand v2 (#0071E3): Descriptor solid black + logo label black outline.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/svg/descriptor-lockup-solid-black.svg; no blue in the file; copied unchanged)",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/svg/descriptor-lockup-solid-black.svg"
+    },
+    {
+      "kind": "lockup",
+      "description": "Brand v2 (#0071E3): Descriptor solid black + logo label black outline.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/png/descriptor-lockup-solid-black.png; re-rendered from the Brand v2 SVG at 900px)",
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/png/descriptor-lockup-solid-black.png"
+    },
+    {
+      "kind": "lockup",
+      "description": "Brand v2 (#0071E3): Descriptor solid blue + logo label black outline.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/svg/descriptor-lockup-solid-blue.svg; #00A2CD -> #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/svg/descriptor-lockup-solid-blue.svg"
+    },
+    {
+      "kind": "lockup",
+      "description": "Brand v2 (#0071E3): Descriptor solid blue + logo label black outline.",
+      "source": "derived (scripts/build_v2_assets.py from assets/labels/png/descriptor-lockup-solid-blue.png; re-rendered from the Brand v2 SVG at 900px)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "endorsement",
+        "unternehmertum"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/labels/png/descriptor-lockup-solid-blue.png"
+    },
+    {
+      "kind": "illustration",
+      "description": "Brand v2 (#0071E3): City and port scene, line art with a big blue circle. Page crop; contains off-canvas leftovers.",
+      "source": "derived (scripts/build_v2_assets.py from assets/illustrations/svg/illustration-city-port.svg; #00A2CD -> #0071E3)",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ],
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/illustrations/svg/illustration-city-port.svg"
+    },
+    {
+      "kind": "illustration",
+      "description": "Brand v2 (#0071E3): City and port scene, line art with a big blue circle.",
+      "source": "derived (scripts/build_v2_assets.py from assets/illustrations/png/illustration-city-port.png; re-rendered from the Brand v2 SVG at 1448px)",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ],
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/illustrations/png/illustration-city-port.png"
+    },
+    {
+      "kind": "illustration",
+      "description": "Brand v2 (#0071E3): Head in profile with gears, bulb, rocket; line art on full yellow. Page crop; contains off-canvas leftovers.",
+      "source": "derived (scripts/build_v2_assets.py from assets/illustrations/svg/illustration-idea-head-on-yellow.svg; #00A2CD -> #0071E3; yellow -> #ECECEF (no accent colour in Brand v2))",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ],
+      "use_on": [
+        "any"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/illustrations/svg/illustration-idea-head-on-yellow.svg"
+    },
+    {
+      "kind": "illustration",
+      "description": "Brand v2 (#0071E3): Head in profile with gears, bulb, rocket; line art on full yellow.",
+      "source": "derived (scripts/build_v2_assets.py from assets/illustrations/png/illustration-idea-head-on-yellow.png; re-rendered from the Brand v2 SVG at 1440px)",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ],
+      "use_on": [
+        "any"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/illustrations/png/illustration-idea-head-on-yellow.png"
+    },
+    {
+      "kind": "illustration",
+      "description": "Brand v2 (#0071E3): Wind turbine, Olympic tower and drone; line art with a big blue circle. Page crop; contains off-canvas leftovers.",
+      "source": "derived (scripts/build_v2_assets.py from assets/illustrations/svg/illustration-wind-tower.svg; #00A2CD -> #0071E3; yellow -> #ECECEF (no accent colour in Brand v2))",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ],
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/illustrations/svg/illustration-wind-tower.svg"
+    },
+    {
+      "kind": "illustration",
+      "description": "Brand v2 (#0071E3): Wind turbine, Olympic tower and drone; line art with a big blue circle.",
+      "source": "derived (scripts/build_v2_assets.py from assets/illustrations/png/illustration-wind-tower.png; re-rendered from the Brand v2 SVG at 1095px)",
+      "tags": [
+        "illustration",
+        "style-reference"
+      ],
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/illustrations/png/illustration-wind-tower.png"
+    },
+    {
+      "kind": "infographic",
+      "description": "Brand v2 (#0071E3): Infographic examples: stacked bar, bubble chart, timeline, area chart.",
+      "source": "derived (scripts/build_v2_assets.py from assets/infographics/svg/infographics-examples.svg; #00A2CD -> #0071E3; yellow -> #BFDBFF (no accent colour in Brand v2))",
+      "tags": [
+        "infographic",
+        "chart",
+        "style-reference"
+      ],
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/infographics/svg/infographics-examples.svg"
+    },
+    {
+      "kind": "infographic",
+      "description": "Brand v2 (#0071E3): Infographic examples: stacked bar, bubble chart, timeline, area chart.",
+      "source": "derived (scripts/build_v2_assets.py from assets/infographics/png/infographics-examples.png; re-rendered from the Brand v2 SVG at 1845px)",
+      "tags": [
+        "infographic",
+        "chart",
+        "style-reference"
+      ],
+      "use_on": [
+        "white",
+        "light-grey"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/infographics/png/infographics-examples.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Building line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/building-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/building-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Calendar line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/calendar-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/calendar-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Chat line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/chat-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/chat-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Connected car line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/connected-car-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/connected-car-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Education line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/education-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/education-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Globe line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/globe-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/globe-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Health line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/health-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/health-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Map line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/map-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/map-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Money line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/money-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/money-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Network line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/network-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/network-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Robot arm line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/robot-arm-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/robot-arm-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Rocket line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/rocket-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/rocket-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Signpost line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/signpost-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/signpost-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Team line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/team-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/team-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Technology line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/technology-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/technology-blue.png"
+    },
+    {
+      "kind": "icon",
+      "description": "Brand v2 (#0071E3): Tools line icon, blue, 256px PNG.",
+      "source": "derived (scripts/build_v2_assets.py from assets/icons/png/tools-blue.png; rendered in #0071E3)",
+      "use_on": [
+        "white"
+      ],
+      "tags": [
+        "icon"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/icons/png/tools-blue.png"
+    },
+    {
+      "kind": "photo",
+      "description": "Brand v2 (#0071E3): Reference photo: toning. Blue tint made with scripts/tint_photo.py.",
+      "source": "derived (scripts/build_v2_assets.py from assets/photography/toning/toning-02-blue-tint.jpg; re-tinted with scripts/tint_photo.py --blue #0071E3)",
+      "tags": [
+        "photo",
+        "toning",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/photography/toning/toning-02-blue-tint.jpg"
+    },
+    {
+      "kind": "photo",
+      "description": "Brand v2 (#0071E3): Reference photo: toning. Blue tint made with scripts/tint_photo.py.",
+      "source": "derived (scripts/build_v2_assets.py from assets/photography/toning/toning-04-blue-tint.jpg; re-tinted with scripts/tint_photo.py --blue #0071E3)",
+      "tags": [
+        "photo",
+        "toning",
+        "style-reference"
+      ],
+      "rights": "UnternehmerTUM example image; check rights before publishing",
+      "use_on": [
+        "any"
+      ],
+      "brand": "v2",
+      "path": "assets/v2/photography/toning/toning-04-blue-tint.jpg"
     }
   ]
 }

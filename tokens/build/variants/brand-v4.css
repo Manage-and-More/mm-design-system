@@ -1,0 +1,35 @@
+/* Generated from playground/src/variants/<id>/tokens.json by scripts/build_tokens.py. Do not edit. Layer after tokens.css. */
+:root {
+  --mm-color-semantic-text-muted: rgb(0 0 0 / 0.7);
+  --mm-color-semantic-text-quiet: rgb(0 0 0 / 0.45);
+  --mm-color-semantic-border: rgb(0 0 0 / 0.14);
+  --mm-color-semantic-border-inverse: rgb(255 255 255 / 0.16);
+  --mm-color-semantic-text-inverse-muted: rgb(255 255 255 / 0.66);
+  --mm-color-surface-paper: var(--mm-color-brand-white);
+  --mm-color-surface-tile: rgb(0 0 0 / 0.045);
+  --mm-color-surface-dark: var(--mm-color-brand-black);
+  --mm-color-surface-block: var(--mm-color-brand-blue);
+  --mm-color-surface-mockup: var(--mm-color-brand-white);
+  --mm-color-surface-scrim: rgb(0 0 0 / 0.88);
+  --mm-color-surface-light: var(--mm-color-brand-blue);
+  --mm-font-family-display: var(--mm-font-family-web);
+  --mm-font-weight-display: 500;
+  --mm-font-weight-wordmark: 800;
+  --mm-font-size-h1: 4rem;
+  --mm-font-size-h2: 2.75rem;
+  --mm-font-size-body-studio: 0.9375rem;
+  --mm-font-size-label: 0.6875rem;
+  --mm-font-size-card-title: 1.25rem;
+  --mm-font-size-figure: 7.5rem;
+  --mm-font-letter-spacing-display: -0.03em;
+  --mm-font-letter-spacing-caps: 0.04em;
+  --mm-font-line-height-display: 1.04;
+  --mm-radius-chrome: var(--mm-radius-pill);
+  --mm-radius-plate: var(--mm-radius-none);
+  --mm-radius-mockup: var(--mm-radius-card);
+  --mm-layout-gutter-page: 40px;
+  --mm-layout-gutter-page-mobile: 20px;
+  --mm-motion-easing-studio: cubic-bezier(0.22, 1, 0.36, 1);
+  --mm-motion-duration-arrive: 1250ms;
+  --mm-motion-duration-fade: 700ms;
+}

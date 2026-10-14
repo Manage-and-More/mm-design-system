@@ -1,0 +1,58 @@
+/* Generated from playground/src/variants/<id>/tokens.json by scripts/build_tokens.py. Do not edit. Layer after tokens.css. */
+:root {
+  --mm-color-brand-blue: #0071E3;
+  --mm-color-semantic-background: #F5F5F7;
+  --mm-color-semantic-background-subtle: #ECECEF;
+  --mm-color-semantic-text: var(--mm-color-brand-black);
+  --mm-color-semantic-text-muted: rgb(0 0 0 / 0.6);
+  --mm-color-semantic-text-quiet: rgb(0 0 0 / 0.4);
+  --mm-color-semantic-border: rgb(0 0 0 / 0.12);
+  --mm-color-semantic-action: var(--mm-color-brand-blue);
+  --mm-color-semantic-focus-ring: var(--mm-color-brand-blue);
+  --mm-color-surface-raised: var(--mm-color-brand-white);
+  --mm-color-surface-tile: #ECECEF;
+  --mm-color-surface-night: #08111F;
+  --mm-color-surface-night-deep: #03060C;
+  --mm-color-surface-band: #0071E3;
+  --mm-color-atmosphere-glow: #2997FF;
+  --mm-color-atmosphere-glow-core: #CFE5FF;
+  --mm-color-atmosphere-glow-deep: #0071E3;
+  --mm-color-on-night-text: #FFFFFF;
+  --mm-color-on-night-text-muted: rgb(255 255 255 / 0.62);
+  --mm-color-on-night-text-quiet: rgb(255 255 255 / 0.4);
+  --mm-color-on-night-line: rgb(255 255 255 / 0.14);
+  --mm-font-weight-headline: 500;
+  --mm-font-weight-body: 400;
+  --mm-font-letter-spacing-display: -0.04em;
+  --mm-font-letter-spacing-headline: -0.025em;
+  --mm-font-letter-spacing-label: 0.02em;
+  --mm-font-size-studio-h1: clamp(2.75rem, 1rem + 8.4vw, 9.25rem);
+  --mm-font-size-studio-h2: clamp(2rem, 1.5rem + 1.4vw, 2.875rem);
+  --mm-font-size-studio-statement: clamp(1.75rem, 1rem + 2.4vw, 3rem);
+  --mm-font-size-studio-figure: clamp(4rem, 2rem + 5vw, 7.5rem);
+  --mm-font-size-studio-body: 0.9375rem;
+  --mm-font-size-studio-small: 0.8125rem;
+  --mm-font-size-studio-label: 0.6875rem;
+  --mm-radius-card: 0;
+  --mm-radius-feature: 0;
+  --mm-layout-gutter-page: 40px;
+  --mm-layout-gutter-page-mobile: 20px;
+  --mm-motion-easing-decelerate: cubic-bezier(0.22, 1, 0.36, 1);
+  --mm-motion-easing-quick: cubic-bezier(0.4, 0, 0.2, 1);
+  --mm-motion-duration-arrive: 1250ms;
+  --mm-motion-duration-reveal: 700ms;
+}
+
+:root[data-mode="dark"] {
+  --mm-color-brand-blue: #2997FF;
+  --mm-color-semantic-background: #070C16;
+  --mm-color-semantic-background-subtle: #111A2A;
+  --mm-color-semantic-text: var(--mm-color-brand-white);
+  --mm-color-semantic-text-muted: rgb(255 255 255 / 0.62);
+  --mm-color-semantic-text-quiet: rgb(255 255 255 / 0.4);
+  --mm-color-semantic-border: rgb(255 255 255 / 0.14);
+  --mm-color-semantic-action: var(--mm-color-brand-blue);
+  --mm-color-semantic-focus-ring: var(--mm-color-brand-blue);
+  --mm-color-surface-raised: #0E1522;
+  --mm-color-surface-tile: #111A2A;
+}

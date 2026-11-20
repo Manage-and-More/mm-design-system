@@ -23,7 +23,7 @@ Two square-box labels connect Manage and More to its umbrella brand UnternehmerT
 |---|---|---|
 | [`by-unternehmertum-label-black.svg`](../assets/labels/svg/by-unternehmertum-label-black.svg) | solid black box, white text | white, light, photos |
 | [`by-unternehmertum-label-white.svg`](../assets/labels/svg/by-unternehmertum-label-white.svg) | solid white box, black text | black, blue, dark photos |
-| [`by-unternehmertum-label-blue.svg`](../assets/labels/svg/by-unternehmertum-label-blue.svg) | solid M&M blue box, white text | white, black |
+| [`by-unternehmertum-label-blue.svg`](../assets/labels/svg/by-unternehmertum-label-blue.svg) | solid MM blue box, white text | white, black |
 | [`by-unternehmertum-label-outline-black.svg`](../assets/labels/svg/by-unternehmertum-label-outline-black.svg) | black outline, black text, transparent | calm light backgrounds |
 | [`by-unternehmertum-label-outline-white.svg`](../assets/labels/svg/by-unternehmertum-label-outline-white.svg) | white outline, white text, transparent | calm dark or blue backgrounds |
 

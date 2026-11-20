@@ -12,7 +12,7 @@ status: adopted (website copy is the reference for screens)
 ## Basics
 
 - **Language:** English only. The programme "is conducted entirely in English". The PDF itself is German.
-- **Name:** "Manage and More" in running text and titles. The short form "MM" appears in compound names ("MM Alumni Community", "MM Alumni Association"). Avoid "Manage & More" in body copy (the website uses it once, on the Program page). The LinkedIn handle reads "Manage&More by UnternehmerTUM".
+- **Name:** "Manage and More" in running text and titles. The short form "MM" appears in compound names ("MM Alumni Community", "MM Alumni Association"). Never write "M&M" or "Manage & More", not even informally. The LinkedIn handle reads "Manage and More by UnternehmerTUM".
 - **Umbrella:** "UnternehmerTUM", described as "Europe's #1 startup hub".
 - **Positioning line:** "Enabling entrepreneurial leaders of tomorrow." Sub-line: "People who build and scale companies."
 - **Description:** "Manage and More is the flagship entrepreneurship program for top talent in Munich, a central part of Europe's #1 startup hub, UnternehmerTUM."

@@ -36,7 +36,7 @@ tokens: tokens/tokens.json#color
 |---|---|---|---|
 | Blue text | `#007D9E` | `--mm-color-accessible-blue-text` (semantic: `--mm-color-semantic-accent-text`, `--mm-color-semantic-focus-ring`) | Small blue text and focus rings on white (4.74:1) and black (4.43:1). |
 
-This is a deeper shade of M&M blue that passes WCAG AA. It is **not** a new brand colour: never use it for surfaces, the logo, illustrations or print. Where the brand blue already passes (blue text on black, 7.05:1), keep the brand blue.
+This is a deeper shade of MM blue that passes WCAG AA. It is **not** a new brand colour: never use it for surfaces, the logo, illustrations or print. Where the brand blue already passes (blue text on black, 7.05:1), keep the brand blue.
 
 CMYK notes: the PDF prints wrong CMYK values for White, Grey and 80% Black (a stray "M70"). The values above are corrected to K-only greys, which match the RGB values. See [sources-and-discrepancies.md](sources-and-discrepancies.md).
 

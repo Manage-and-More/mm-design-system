@@ -13,7 +13,7 @@ status: canonical
 
 - Ordered via the UnternehmerTUM **Web2Print** system. Each sub-brand has one master; teams choose one of two front options once.
 - **Front:** the Manage and More logo, centred on white with a thin frame (as shown).
-- **Back, line by line:** Name / Title / Phone (mobile or landline, prefixed "P") / E-mail / buffer line 1 / buffer line 2 / **company in blue Extrabold** ("UnternehmerTUM GmbH") / street / postcode, city, country / URL. Company block in M&M blue.
+- **Back, line by line:** Name / Title / Phone (mobile or landline, prefixed "P") / E-mail / buffer line 1 / buffer line 2 / **company in blue Extrabold** ("UnternehmerTUM GmbH") / street / postcode, city, country / URL. Company block in MM blue.
 - **No logo label on business cards.**
 
 ## Letterhead and Google Docs template (PDF p.35)
@@ -81,7 +81,7 @@ Template (fill in the placeholders; copy as HTML):
 - **Pages:** Home, Program, Application, People, Startups, Alumni, Imprint, Privacy Policy. English only.
 - **Structure:** fixed transparent header → full-bleed hero (photo or video, black shade, two-tone h1, BY UNTERNEHMERTUM label in the corner) → alternating black and white sections, with blue for emphasis → black footer.
 - **Footer:** black rather than the PDF's blue, with address, social and legal links. The descriptor + label lock-up still has to be added.
-- Every component is specified in [13-web-components.md](13-web-components.md). To build a new M&M page, start from [`examples/landing-page.html`](../examples/landing-page.html), or use `tokens/build/tailwind.theme.css` in a Tailwind v4 project.
+- Every component is specified in [13-web-components.md](13-web-components.md). To build a new MM page, start from [`examples/landing-page.html`](../examples/landing-page.html), or use `tokens/build/tailwind.theme.css` in a Tailwind v4 project.
 
 ## Presentations *(PDF p.20-21 + page anatomy of the PDF)*
 

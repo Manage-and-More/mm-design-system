@@ -54,7 +54,7 @@ assets/icons/             16 monoline icons from the PDF (SVG currentColor + PNG
 assets/ui/                UI glyphs from the live website (arrows, chevron, check, plus/minus, close, menu, quote, LinkedIn)
 assets/illustrations/     line-art illustrations (SVG + PNG)
 assets/infographics/      chart style examples
-assets/photography/       reference photos by topic + tint examples; website/ = M&M's own photos
+assets/photography/       reference photos by topic + tint examples; website/ = MM's own photos
 assets/fonts/work-sans/   Work Sans (OFL), web + desktop
 examples/                 Brand v1: mm-base.css + landing-page.html · Brand v2: brand-v2.css + brand-v2.html + hairline-figures.js
 playground/               Vite + React app to browse the system and its variants (pnpm dev)

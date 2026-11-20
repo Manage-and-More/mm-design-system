@@ -67,7 +67,7 @@ These website details break a brand or accessibility rule. The design system doc
 | F13 | `Logo.tsx` via `--color-highlight: #00A2CC`; `public/brand/logo.svg` `#04A2CC` | Logo blue 1 unit off `#00A2CD`; the legacy SVG has one fill colour (all-blue) | Use `#00A2CD`; delete the unused all-blue SVG |
 | F14 | `src/lib/fonts.ts` fallback | Falls back to system UI fonts, not Work Sans | Add Work Sans to the fallback stack |
 | F15 | Copy | "Manage & More" (Program), "Start-up Project" vs "Start-Up Project" | "Manage and More", "Start-Up Project" |
-| F16 | Startups hero | Night-sky image instead of documentary photography | Prefer a real M&M photo |
+| F16 | Startups hero | Night-sky image instead of documentary photography | Prefer a real MM photo |
 | F17 | `ArrowLink.tsx` | Outlined circle, round-capped arrow, 4px nudge (differs from the live site) | Filled sticker, live arrow glyph, scale 1.1 over 250ms |
 | F18 | `Disclosure` (Application) | Outlined circle, "+" rotating 45°, no height animation | Plus/minus sticker turning 180° (300ms), height 350ms |
 | F19 | `Header.tsx` | Turns black 95% + blur at 20px over 300ms, no shrink; nav links fade opacity | Solid black at 60px, padding shrink from 992px, 500ms; underline wipe on links |
@@ -98,8 +98,8 @@ The PDF is from April 2020. UnternehmerTUM has since published "UnternehmerTUM i
 | P4 | 10-11 | Text says "Logos von Aligned Brands", but Manage and More is an Endorsed Brand (own symbol, p.9) | Treated as Endorsed Brand |
 | P5 | 2 vs 9/13 | Table of contents says "2.1 Endorsed Brands", "2.2 Label"; pages say "Logoaufbau", "2.2 Logo Label" | Cosmetic |
 | P6 | 36 | E-mail mock-up uses link blue `#44ABD2`, not `#00A2CD` | Use `#00A2CD` |
-| P7 | 9 | Logo construction refers to the UnternehmerTUM "U" as unit, which is not part of the M&M logo | U = height of the M&M symbol |
-| P8 | 34-36 | Mock-ups show UnternehmerTUM people, numbers and Twitter/Facebook | Replace with current M&M data |
+| P7 | 9 | Logo construction refers to the UnternehmerTUM "U" as unit, which is not part of the MM logo | U = height of the MM symbol |
+| P8 | 34-36 | Mock-ups show UnternehmerTUM people, numbers and Twitter/Facebook | Replace with current MM data |
 
 ## Decisions log
 

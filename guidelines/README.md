@@ -4,7 +4,7 @@ Read in order the first time; afterwards jump straight to the topic. Every page 
 
 | # | Page | What it answers |
 |---|---|---|
-| 01 | [Brand foundation](01-brand-foundation.md) | Who is M&M, how it relates to UnternehmerTUM |
+| 01 | [Brand foundation](01-brand-foundation.md) | Who is MM, how it relates to UnternehmerTUM |
 | 02 | [Logo](02-logo.md) | Which logo file, clear space, misuse |
 | 03 | [Endorsement labels](03-endorsement-labels.md) | BY UNTERNEHMERTUM label, ENTREPRENEURIAL EDUCATION descriptor |
 | 04 | [Colour](04-color.md) | Palette, usage, contrast |

@@ -4,7 +4,7 @@ Experimental. The `studio-landing` skill ("quiet page, loud weather") applied to
 
 ## Decisions
 
-- **Cluster: Architectural.** Sharp Sans is a geometric grotesk, which is the Architectural display face. Soft and Editorial both rest on a serif, and the brand has no serif (Sharp Sans or Work Sans only). Brand v1 is also already built like Architectural: hard black and white blocks plus one blue block. The warmth that Soft would get from a serif comes from candid M&M photography instead (the cohort, Startup Tour dinner, coaching).
+- **Cluster: Architectural.** Sharp Sans is a geometric grotesk, which is the Architectural display face. Soft and Editorial both rest on a serif, and the brand has no serif (Sharp Sans or Work Sans only). Brand v1 is also already built like Architectural: hard black and white blocks plus one blue block. The warmth that Soft would get from a serif comes from candid MM photography instead (the cohort, Startup Tour dinner, coaching).
 - **Serif question:** no serif anywhere. One weight (500) for headlines, body, numerals and labels. The one giant caps moment (800) is the outline wordmark in the footer.
 - **Accent: blue `#00A2CD` is the one hue, both accent and low light.** Kuro uses its orange the same way, as the button and the glow. Yellow is left out because two saturated hues break the skill's one-accent rule, and guideline 04 already keeps yellow off the website.
 - **Paper:** white, framed by the black photo hero and the black ending. Dark band is pure black with grain, which is on palette.

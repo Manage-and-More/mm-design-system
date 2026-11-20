@@ -258,7 +258,7 @@
     {
       "path": "assets/labels/svg/by-unternehmertum-label-blue.svg",
       "kind": "label",
-      "description": "BY UNTERNEHMERTUM logo label, solid M&M blue.",
+      "description": "BY UNTERNEHMERTUM logo label, solid MM blue.",
       "source": "pdf p.13",
       "use_on": [
         "white",
@@ -273,7 +273,7 @@
     {
       "path": "assets/labels/png/by-unternehmertum-label-blue.png",
       "kind": "label",
-      "description": "BY UNTERNEHMERTUM logo label, solid M&M blue.",
+      "description": "BY UNTERNEHMERTUM logo label, solid MM blue.",
       "source": "pdf p.13",
       "use_on": [
         "white",
@@ -2227,7 +2227,7 @@
     {
       "path": "assets/photography/website/cohort-group.webp",
       "kind": "photo",
-      "description": "Whole cohort in black M&M hoodies cheering outdoors, shot from above. 1920x960. People-page hero.",
+      "description": "Whole cohort in black MM hoodies cheering outdoors, shot from above. 1920x960. People-page hero.",
       "source": "manage-and-more-website public/images/people/hero.webp (Manage and More's own photo)",
       "use_on": [
         "any"
@@ -2300,7 +2300,7 @@
     {
       "path": "assets/photography/website/scholars-group.webp",
       "kind": "photo",
-      "description": "Close group of smiling scholars in M&M hoodies. 800x800.",
+      "description": "Close group of smiling scholars in MM hoodies. 800x800.",
       "source": "manage-and-more-website public/images/program/workshops.webp (Manage and More's own photo)",
       "use_on": [
         "any"
@@ -3497,7 +3497,7 @@
     },
     {
       "kind": "label",
-      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, solid M&M blue.",
+      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, solid MM blue.",
       "source": "derived (scripts/build_v2_assets.py from assets/labels/svg/by-unternehmertum-label-blue.svg; #00A2CD -> #0071E3)",
       "use_on": [
         "white",
@@ -3512,7 +3512,7 @@
     },
     {
       "kind": "label",
-      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, solid M&M blue.",
+      "description": "Brand v2 (#0071E3): BY UNTERNEHMERTUM logo label, solid MM blue.",
       "source": "derived (scripts/build_v2_assets.py from assets/labels/png/by-unternehmertum-label-blue.png; re-rendered from the Brand v2 SVG at 600px)",
       "use_on": [
         "white",

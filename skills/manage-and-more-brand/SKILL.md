@@ -1,6 +1,6 @@
 ---
 name: manage-and-more-brand
-description: Apply the Manage and More (M&M, by UnternehmerTUM) brand - logo files, colours, fonts, web components matching manageandmore.de, icons, illustrations, photo style, tokens - to any website, app, slide deck, document, social graphic, e-mail signature or merch; also use to review a design for brand compliance.
+description: Apply the Manage and More (MM, by UnternehmerTUM) brand - logo files, colours, fonts, web components matching manageandmore.de, icons, illustrations, photo style, tokens - to any website, app, slide deck, document, social graphic, e-mail signature or merch; also use to review a design for brand compliance.
 ---
 
 # Manage and More brand
@@ -111,7 +111,7 @@ Full spec: `guidelines/15-brand-v2.md`. It sits on top of the Brand v1 rules (lo
 - [ ] Sharp Sans 500/800 with Work Sans fallback (Arial only for office/e-mail); headlines 800, line-height 1.15 on screens; body 500; left-aligned; no italic
 - [ ] Web: hero + alternating black/white sections, two-tone headings, sticker arrow-link CTAs
 - [ ] Radii only from tokens (card, feature, pill); sections, colour blocks, logo and labels square
-- [ ] Icons monoline single-colour; UI glyphs only in controls; photos documentary, preferably M&M's own
+- [ ] Icons monoline single-colour; UI glyphs only in controls; photos documentary, preferably MM's own
 - [ ] Endorsement present: label in the hero/print corner, descriptor lock-up in the website footer
 - [ ] Motion only from `14-motion.md` (durations and easings from tokens); nothing moves on its own
 - [ ] Focus visible (2px `#007D9E`, black on blue), icon-only controls ≥ 44px, `prefers-reduced-motion` stops all non-essential motion

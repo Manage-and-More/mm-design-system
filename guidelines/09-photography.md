@@ -46,7 +46,7 @@ Recreate the treatment with [`scripts/tint_photo.py`](../scripts/tint_photo.py) 
 
 - **Hero:** full-bleed photo (source files 1920×960, 2:1) or a muted background video, under a **flat black shade** of 20-60% (`--mm-opacity-shade-*`) so the white headline stays legible. This is the exception to "no text over photos": allowed only with the shade, and only when the contrast checks in [13-web-components.md](13-web-components.md#hero) pass.
 - **In grids:** cropped with `object-fit: cover` to fixed ratios: 4:3 photo cards, 4:5 team portraits (focus at 38% from the top), 1:1 scholar and testimonial portraits, 16:9 video. Rounded with `--mm-radius-card` (grids) or `--mm-radius-feature` (large media).
-- **Content:** Manage and More's own photos: whole generations in M&M hoodies, workshops, talks, Startup Tour dinners, coaching, graduation. They match the PDF principles (documentary, real people, interaction, natural light).
+- **Content:** Manage and More's own photos: whole generations in MM hoodies, workshops, talks, Startup Tour dinners, coaching, graduation. They match the PDF principles (documentary, real people, interaction, natural light).
 - B/W and blue tint are not used on the website today.
 - Exception: the Startups hero is a night-sky image, not a documentary photo; for new heroes prefer real people.
 
@@ -54,7 +54,7 @@ Recreate the treatment with [`scripts/tint_photo.py`](../scripts/tint_photo.py) 
 
 `assets/photography/<topic>/` contains the example photos from the PDF, downscaled to 1600px: `cover`, `principles`, `people`, `events`, `startups`, `tech`, `toning` (originals plus `*-blue-tint.jpg` examples), `merchandise`.
 
-[`assets/photography/website/`](../assets/photography/website/) holds a curated set of **Manage and More's own photos** from manageandmore.de (WebP): cohort group, bootcamp workshop, graduation, event talk, scholars group, Startup Tour dinner, coaching, alumni group. They are the best references for the real M&M look.
+[`assets/photography/website/`](../assets/photography/website/) holds a curated set of **Manage and More's own photos** from manageandmore.de (WebP): cohort group, bootcamp workshop, graduation, event talk, scholars group, Startup Tour dinner, coaching, alumni group. They are the best references for the real MM look.
 
 > **Usage rights:** the PDF photos are UnternehmerTUM example photos taken from the guideline. Use them as **style references and internal mock-ups**. Check rights with the Manage and More / UnternehmerTUM marketing team before publishing them. For real projects use Manage and More's own event and community photos. The website photos are Manage and More's own, but they show real people: confirm consent before using them outside the website.
 

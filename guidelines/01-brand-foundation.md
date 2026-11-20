@@ -9,7 +9,7 @@ status: canonical
 
 ## In one paragraph
 
-Manage and More (M&M) is an **Endorsed Brand** of **UnternehmerTUM** (Ring 3 in the UnternehmerTUM brand architecture). It has its **own symbol and wordmark, its own colour (blue `#00A2CD`), its own website and social channels**, and it shows that it belongs to UnternehmerTUM through the **BY UNTERNEHMERTUM logo label**. It uses the **UnternehmerTUM corporate typefaces** (Sharp Sans, or Work Sans as the free alternative).
+Manage and More (MM) is an **Endorsed Brand** of **UnternehmerTUM** (Ring 3 in the UnternehmerTUM brand architecture). It has its **own symbol and wordmark, its own colour (blue `#00A2CD`), its own website and social channels**, and it shows that it belongs to UnternehmerTUM through the **BY UNTERNEHMERTUM logo label**. It uses the **UnternehmerTUM corporate typefaces** (Sharp Sans, or Work Sans as the free alternative).
 
 ## The four rings (PDF p.5)
 
@@ -35,11 +35,11 @@ Definitions (PDF p.4):
 ## What this means in practice
 
 1. Always lead with the Manage and More logo; add the BY UNTERNEHMERTUM label (and, where useful, the ENTREPRENEURIAL EDUCATION descriptor) to show the endorsement. See [03-endorsement-labels.md](03-endorsement-labels.md).
-2. Use M&M blue as the signature colour, never UnternehmerTUM blue for the label.
+2. Use MM blue as the signature colour, never UnternehmerTUM blue for the label.
 3. Use Sharp Sans (Manage and More holds a licence) for everything designed, with Work Sans as the free fallback; Arial only for e-mail and office documents.
 4. Do not invent sub-logos for programmes, tracks or events without an explicit decision by the brand owner.
 
 ## Name usage
 
 - Written name: **Manage and More** (the PDF and website write "and"; the logo sets it in capitals as "MANAGE AND MORE").
-- Short form: **M&M** is used informally; prefer the full name in titles and first mentions. *(Inferred from common use; the PDF does not define a short form.)*
+- Short form: **MM**; prefer the full name in titles and first mentions. Never "M&M" or "Manage & More".
